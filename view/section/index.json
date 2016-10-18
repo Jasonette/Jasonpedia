@@ -47,7 +47,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Tests/blob/master/view/section/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/view/section/index.json",
             "view": "web"
           }
         }

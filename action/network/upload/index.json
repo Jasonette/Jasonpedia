@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Footer Examples",
+      "title": "$network.upload examples",
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
@@ -24,7 +24,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/view/layer/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/action/network/upload/index.json",
             "view": "web"
           }
         }
@@ -33,13 +33,19 @@
         {
           "items": [
             {
-              "type": "label",
-              "class": "bold",
-              "text": "CatchAll!",
-              "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/pokemon/idex.json",
-                "transitiona": "modal"
-              }
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "class": "bold",
+                "text": "imagejason",
+                "href": {
+                  "url": "https://imagejason.herokuapp.com"
+                }
+              }, {
+                "type": "label",
+                "class": "normal",
+                "text": "takes photo using $media.camera, and uploads it to imagejason.herokuapp.com via $network.upload"
+              }]
             }
           ]
         }

@@ -24,7 +24,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Tests/blob/master/view/footer/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/view/footer/index.json",
             "view": "web"
           }
         }
@@ -37,7 +37,7 @@
               "class": "bold",
               "text": "Chat Input",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/footer/input.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/input.json"
               }
             },
             {
@@ -45,7 +45,7 @@
               "class": "bold",
               "text": "Tabs",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/footer/tabs.json",
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/tabs.json",
                 "transition": "modal"
               }
             }
