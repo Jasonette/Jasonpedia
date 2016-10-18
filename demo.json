@@ -18,7 +18,10 @@
           "type": "$reload"
         },
         "$load": {
-          "type": "$kill"
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
         }
       }
     },
