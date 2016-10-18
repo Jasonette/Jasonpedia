@@ -37,7 +37,7 @@
               "class": "bold",
               "text": "CatchAll!",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/pokemon/idex.json",
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/pokemon/index.json",
                 "transitiona": "modal"
               }
             }
