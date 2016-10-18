@@ -73,8 +73,7 @@
               },
               "text": "Check out Live DEMO",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/demo.json",
-                "fresh": "true"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/demo.json"
               }
             },
             {

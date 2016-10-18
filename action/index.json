@@ -284,16 +284,9 @@
             {
               "type": "label",
               "text": "$network",
-              "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/JasonPedia/master/action/network/index.json"
-              }
-            }
-            {
-              "type": "label",
-              "text": "$media.camera + $network.upload",
               "class": "bold",
               "href": {
-                "url": "https://imagejason.herokuapp.com"
+                "url": "https://raw.githubusercontent.com/Jasonette/JasonPedia/master/action/network/index.json"
               }
             }
           ]
