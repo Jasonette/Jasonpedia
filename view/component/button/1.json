@@ -1,0 +1,19 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Rectangle Button"
+    },
+    "body": {
+      "sections": [{
+        "items": [{
+          "type": "button",
+          "style": {
+            "font": "HelveticaNeue-Bold",
+            "size": "15"
+          },
+          "text": "I'm a button"
+        }]
+      }]
+    }
+  }
+}

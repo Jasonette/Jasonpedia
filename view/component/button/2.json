@@ -1,0 +1,24 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Rounded Button"
+    },
+    "body": {
+      "sections": [{
+        "items": [{
+          "type": "button",
+          "style": {
+            "font": "HelveticaNeue-Bold",
+            "background": "#000000",
+            "color": "#ffffff",
+            "width": "200",
+            "height": "200",
+            "corner_radius": "100",
+            "size": "15"
+          },
+          "text": "I'm a button"
+        }]
+      }]
+    }
+  }
+}

@@ -74,7 +74,7 @@
               },
               "text": "Check out Live DEMO",
               "href": {
-                "url": "http://www.jasonbase.com/things/xXQ"
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/demo.json"
               }
             },
             {
@@ -103,7 +103,7 @@
               },
               "text": "View documentation",
               "href": {
-                "url": "https://github.com/Jasonette/documentation/blob/master/README.md",
+                "url": "https://jasonette.github.io/documentation",
                 "view": "Web"
               }
             }

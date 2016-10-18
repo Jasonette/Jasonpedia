@@ -24,7 +24,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "http://www.jasonbase.com/things/xXQ/edit",
+            "url": "https://github.com/Jasonette/Tests/blob/master/demo.json",
             "view": "web"
           }
         }

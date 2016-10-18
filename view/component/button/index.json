@@ -1,0 +1,28 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Buttons",
+      "data": [
+        { "type": "Rectangle button", "url": "1.json" },
+        { "type": "Rounded button", "url": "2.json" }
+      ],
+      "templates": {
+        "body": {
+          "sections": [{
+            "items": [{
+              "type": "label",
+              "style": {
+                "font": "HelveticaNeue-Bold",
+                "size": "15"
+              },
+              "href": {
+                "url": "{{url}}"
+              },
+              "text": "{{type}}"
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
