@@ -57,7 +57,8 @@
               "text": "Top Bar (header)",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/header/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/header/index.json",
+                "fresh": "true"
               }
             },
             {
@@ -65,7 +66,8 @@
               "text": "Scrolling Items (sections)",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/section/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/section/index.json",
+                "fresh": "true"
               }
             },
             {
@@ -73,7 +75,8 @@
               "text": "Floating Items (layers)",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/index.json",
+                "fresh": "true"
               }
             },
             {
@@ -81,7 +84,8 @@
               "text": "Bottom Bar (footer)",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/index.json",
+                "fresh": "true"
               }
             },
             {
@@ -89,7 +93,8 @@
               "text": "Actions",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/index.json",
+                "fresh": "true"
               }
             },
             {
@@ -97,7 +102,8 @@
               "text": "Href",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/href/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/href/index.json",
+                "fresh": "true"
               }
             },
             {
@@ -105,7 +111,8 @@
               "text": "Background Styling",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/background/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/background/index.json",
+                "fresh": "true"
               }
             },
             {
