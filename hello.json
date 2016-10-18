@@ -2,7 +2,6 @@
   "$jason": {
     "head": {
       "title": "{ ˃̵̑ᴥ˂̵̑}",
-      "offline": "true",
       "actions": {
         "$foreground": {
           "type": "$reload"
