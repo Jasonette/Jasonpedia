@@ -1,0 +1,125 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Jasonette Demo",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "http://www.jasonbase.com/things/xXQ/edit",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "vertical",
+              "style": {
+                "background": "rgba(14,122,254,0.1)"
+              },
+              "href": {
+                "url": "mailto:?subject=Documentation&body=https://github.com/Jasonette/documentation",
+                "view": "app"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "text": "Send yourself Documentation",
+                  "class": "bold",
+                  "style": {
+                    "color": "rgb(14,122,254)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "label",
+              "text": "Top Bar (header)",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/qp5.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Scrolling Items (sections)",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/jYJ.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Floating Items (layers)",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/4j1",
+                "transition": "modal"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Bottom Bar (footer)",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/G2z.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Actions",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/nbD.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Href",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/6rq.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Background Styling",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/XgL.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Network related",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/V8l.json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
