@@ -1,0 +1,662 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Sections Example",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(154, 205, 50)",
+          "size": "12"
+        },
+        "carousel_img": {
+          "height": "210",
+          "width": "210"
+        },
+        "avatar_img": {
+          "height": "70",
+          "width": "70",
+          "corner_radius": "35"
+        },
+        "username": {
+          "font": "Avenir",
+          "size": "15"
+        },
+        "center": {
+          "align": "center"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "style": {
+        "background": "#ECA73E"
+      },
+      "header": {
+        "style": {
+          "background": "#ECA73E"
+        },
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Tests/blob/master/view/section/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "type": "horizontal",
+          "header": {
+            "type": "horizontal",
+            "style": {
+              "align": "center",
+              "background": "#ECA73E",
+              "opacity": "0.2",
+              "spacing": "10"
+            },
+            "components": [
+              {
+                "type": "image",
+                "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/swipehorizontal.png",
+                "style": {
+                  "width": "50"
+                }
+              },
+              {
+                "type": "label",
+                "class": "bold",
+                "text": "horizontally scrolling section"
+              }
+            ]
+          },
+          "items": [
+            {
+              "type": "vertical",
+              "style": {
+                "width": "210",
+                "padding": "10",
+                "background": "#ffffff",
+                "align": "center",
+                "height": "300"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "carousel_img",
+                  "url": "http://i.giphy.com/OmK8lulOMQ9XO.gif"
+                },
+                {
+                  "type": "label",
+                  "text": "Mr. Fisherman",
+                  "class": "username center"
+                },
+                {
+                  "type": "button",
+                  "text": "Meow",
+                  "style": {
+                    "background": "rgb(100, 149, 237)",
+                    "color": "#ffffff",
+                    "align": "center",
+                    "width": "150",
+                    "height": "40"
+                  },
+                  "action": {
+                    "type": "$audio.play",
+                    "options": {
+                      "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/cat.mp3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "width": "210",
+                "height": "300"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "carousel_img",
+                  "url": "http://i.giphy.com/mSjXH05z06rIY.gif"
+                },
+                {
+                  "type": "label",
+                  "text": "Mr. Lick",
+                  "class": "username center"
+                },
+                {
+                  "type": "button",
+                  "text": "Meow",
+                  "style": {
+                    "background": "rgb(100, 149, 237)",
+                    "color": "#ffffff",
+                    "align": "center",
+                    "width": "150",
+                    "height": "40"
+                  },
+                  "action": {
+                    "type": "$audio.play",
+                    "options": {
+                      "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/cat.mp3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "width": "210",
+                "height": "300"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "carousel_img",
+                  "url": "http://i.giphy.com/icJi1WogcfJJu.gif"
+                },
+                {
+                  "type": "label",
+                  "text": "Mr. High",
+                  "class": "username center"
+                },
+                {
+                  "type": "button",
+                  "text": "Meow",
+                  "style": {
+                    "background": "rgb(100, 149, 237)",
+                    "color": "#ffffff",
+                    "align": "center",
+                    "width": "150",
+                    "height": "40"
+                  },
+                  "action": {
+                    "type": "$audio.play",
+                    "options": {
+                      "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/cat.mp3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "width": "210",
+                "height": "300"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "carousel_img",
+                  "url": "http://i.giphy.com/l46CmfBwnQeMpu0bS.gif"
+                },
+                {
+                  "type": "label",
+                  "text": "Mr. DJ",
+                  "class": "username center"
+                },
+                {
+                  "type": "button",
+                  "text": "Meow",
+                  "style": {
+                    "background": "rgb(100, 149, 237)",
+                    "color": "#ffffff",
+                    "align": "center",
+                    "width": "150",
+                    "height": "40"
+                  },
+                  "action": {
+                    "type": "$audio.play",
+                    "options": {
+                      "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/cat.mp3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "width": "210",
+                "height": "300"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "carousel_img",
+                  "url": "http://i.giphy.com/yedDQGWwq0heU.gif"
+                },
+                {
+                  "type": "label",
+                  "text": "Mr. Lazy",
+                  "class": "username center"
+                },
+                {
+                  "type": "button",
+                  "text": "Meow",
+                  "style": {
+                    "background": "rgb(100, 149, 237)",
+                    "color": "#ffffff",
+                    "align": "center",
+                    "width": "150",
+                    "height": "40"
+                  },
+                  "action": {
+                    "type": "$audio.play",
+                    "options": {
+                      "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/cat.mp3"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "horizontal",
+            "style": {
+              "background": "#ECA73E",
+              "align": "center",
+              "spacing": "10"
+            },
+            "components": [
+              {
+                "type": "image",
+                "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/swipevertical.png",
+                "style": {
+                  "width": "50"
+                }
+              },
+              {
+                "type": "label",
+                "class": "bold",
+                "text": "vertically scrolling section"
+              }
+            ]
+          },
+          "items": [
+            {
+              "type": "horizontal",
+              "style": {
+                "spacing": "10",
+                "background": "#ffffff"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "avatar_img",
+                  "url": "http://i.giphy.com/OmK8lulOMQ9XO.gif"
+                },
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "username",
+                      "text": "Mr. Fisherman"
+                    },
+                    {
+                      "type": "label",
+                      "class": "normal",
+                      "text": "Busy fishing on the iPhone"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "spacing": "10",
+                "background": "#ffffff"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "avatar_img",
+                  "url": "http://i.giphy.com/mSjXH05z06rIY.gif"
+                },
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "username",
+                      "text": "Mr. Lick"
+                    },
+                    {
+                      "type": "label",
+                      "class": "normal",
+                      "text": "Super hungry"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "spacing": "10",
+                "background": "#ffffff"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "avatar_img",
+                  "url": "http://i.giphy.com/icJi1WogcfJJu.gif"
+                },
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "username",
+                      "text": "Mr. High"
+                    },
+                    {
+                      "type": "label",
+                      "class": "normal",
+                      "text": "Why is everything so beautiful?"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "spacing": "10",
+                "background": "#ffffff"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "avatar_img",
+                  "url": "http://i.giphy.com/l46CmfBwnQeMpu0bS.gif"
+                },
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "username",
+                      "text": "Mr. DJ"
+                    },
+                    {
+                      "type": "label",
+                      "class": "normal",
+                      "text": "Check out my latest dope track: 'Organic salad'"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "spacing": "10",
+                "background": "#ffffff"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "class": "avatar_img",
+                  "url": "http://i.giphy.com/yedDQGWwq0heU.gif"
+                },
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "username",
+                      "text": "Mr. Lazy"
+                    },
+                    {
+                      "type": "label",
+                      "class": "normal",
+                      "text": "Whatever,"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "horizontal",
+            "style": {
+              "background": "#ECA73E",
+              "align": "center",
+              "spacing": "10"
+            },
+            "components": [
+              {
+                "type": "image",
+                "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/swipemenu.png",
+                "style": {
+                  "width": "50"
+                }
+              },
+              {
+                "type": "label",
+                "class": "bold",
+                "text": "Sliding menu example"
+              }
+            ]
+          },
+          "items": [
+            {
+              "type": "horizontal",
+              "menu": {
+                "items": [
+                  {
+                    "text": "Fish"
+                  },
+                  {
+                    "text": "Lick",
+                    "style": {
+                      "background": "rgb(154, 205, 50)"
+                    },
+                    "action": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Licked"
+                      }
+                    }
+                  },
+                  {
+                    "text": "High",
+                    "style": {
+                      "background": "#FFFF00"
+                    },
+                    "url": ""
+                  },
+                  {
+                    "text": "DJ",
+                    "style": {
+                      "background": "#ff0000"
+                    },
+                    "url": ""
+                  }
+                ]
+              },
+              "style": {
+                "spacing": "10",
+                "distribution": "left",
+                "align": "center",
+                "background": "#ffffff"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "text": "?",
+                  "style": {
+                    "size": "40",
+                    "align": "center",
+                    "width": "40",
+                    "font": "HelveticaNeue-Bold"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "username",
+                      "text": "Mr. Mystery"
+                    },
+                    {
+                      "type": "label",
+                      "class": "normal",
+                      "text": "<- Slide left to reveal the menu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "horizontal",
+            "style": {
+              "background": "#ECA73E",
+              "align": "center",
+              "spacing": "10"
+            },
+            "components": [
+              {
+                "type": "image",
+                "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/map.png",
+                "style": {
+                  "width": "50"
+                }
+              },
+              {
+                "type": "label",
+                "class": "bold",
+                "text": "Map component"
+              }
+            ]
+          },
+          "items": [
+            {
+              "type": "map",
+              "region": {
+                "coord": "40.7409395,-74.0083886",
+                "width": "50"
+              },
+              "pins": [
+                {
+                  "title": "Le Bain",
+                  "description": "Best club in NYC",
+                  "coord": "40.7409395,-74.0083886",
+                  "style": {
+                    "selected": "true"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%",
+                "padding": "0",
+                "height": "200"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "horizontal",
+            "style": {
+              "background": "#ECA73E",
+              "align": "center",
+              "spacing": "10"
+            },
+            "components": [
+              {
+                "type": "image",
+                "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/form.png",
+                "style": {
+                  "width": "50"
+                }
+              },
+              {
+                "type": "label",
+                "class": "bold",
+                "text": "Form components"
+              }
+            ]
+          },
+          "items": [
+            {
+              "type": "textarea",
+              "name": "multiline_content",
+              "placeholder": "Type something...",
+              "style": {
+                "background": "#ffffff",
+                "width": "100%",
+                "align": "right",
+                "height": "200"
+              }
+            },
+            {
+              "type": "space",
+              "style": {
+                "width": "100%",
+                "background": "#ebebeb",
+                "height": "10"
+              }
+            },
+            {
+              "type": "textfield",
+              "name": "singleline_content",
+              "value": "44",
+              "placeholder": "Say something...",
+              "style": {
+                "background": "#ffffff",
+                "width": "100%"
+              }
+            },
+            {
+              "type": "space",
+              "style": {
+                "width": "100%",
+                "background": "#ebebeb",
+                "height": "10"
+              }
+            },
+            {
+              "type": "slider",
+              "name": "gauge",
+              "style": {
+                "color": "#ff0000",
+                "background": "#ffffff"
+              },
+              "action": {
+                "type": "$util.banner",
+                "options": {
+                  "title": "Value",
+                  "description": "{{parseFloat($get.gauge)*100}}%"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

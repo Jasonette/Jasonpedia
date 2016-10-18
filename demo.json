@@ -57,7 +57,7 @@
               "text": "Top Bar (header)",
               "class": "bold",
               "href": {
-                "url": "http://www.jasonbase.com/things/qp5.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/header/index.json"
               }
             },
             {
@@ -65,7 +65,7 @@
               "text": "Scrolling Items (sections)",
               "class": "bold",
               "href": {
-                "url": "http://www.jasonbase.com/things/jYJ.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/section/index.json"
               }
             },
             {
@@ -73,8 +73,7 @@
               "text": "Floating Items (layers)",
               "class": "bold",
               "href": {
-                "url": "http://www.jasonbase.com/things/4j1",
-                "transition": "modal"
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/layer/index.json
               }
             },
             {
@@ -82,7 +81,7 @@
               "text": "Bottom Bar (footer)",
               "class": "bold",
               "href": {
-                "url": "http://www.jasonbase.com/things/G2z.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/footer/index.json"
               }
             },
             {

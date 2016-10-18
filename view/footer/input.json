@@ -1,0 +1,59 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Input Footer",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "send": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Message",
+            "description": "{{$get.message}}"
+          }
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Tests/blob/master/view/footer/input.json",
+            "view": "web"
+          }
+        }
+      },
+      "footer": {
+        "input": {
+          "left": {
+            "image": "https://s3.amazonaws.com/www.textcast.co/icons/cam%402x.png",
+            "action": {
+              "type": "$media.camera"
+            }
+          },
+          "name": "message",
+          "placeholder": "Say something...",
+          "right": {
+            "text": "Send",
+            "action": {
+              "trigger": "send"
+            }
+          }
+        }
+      }
+    }
+  }
+}

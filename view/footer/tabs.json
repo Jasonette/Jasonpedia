@@ -1,0 +1,121 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Tabs Footer",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "send": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Message",
+            "description": "{{$get.message}}"
+          }
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "http://www.jasonbase.com/things/ppY/edit",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "Fullscreen transition",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/w3G",
+                "transition": "fullscreen"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Next",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/ppY"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Next",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/ppY"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Next",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/ppY"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Next",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/ppY"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Next",
+              "class": "bold",
+              "href": {
+                "url": "http://www.jasonbase.com/things/ppY"
+              }
+            }
+          ]
+        }
+      ],
+      "footer": {
+        "tabs": {
+          "style": {
+            "background": "#ffffff"
+          },
+          "items": [
+            {
+              "image": "https://s3-us-west-2.amazonaws.com/www.jasonclient.org/topsecret%402x.png",
+              "text": "Top Secret",
+              "url": "http://www.jasonbase.com/things/ppY.json"
+            },
+            {
+              "image": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/info%402x.png",
+              "text": "Info",
+              "badge": "2",
+              "url": "http://www.jasonbase.com/things/ppY.json"
+            },
+            {
+              "image": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/apps%402x.png",
+              "text": "Collection",
+              "url": "http://www.jasonbase.com/things/ppY.json"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

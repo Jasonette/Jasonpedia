@@ -1,0 +1,226 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Pokemon Cam",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "monster": "placeholder",
+            "caption": "placeholder",
+            "background": {
+              "type": "camera",
+              "options": {
+                "device": "back"
+              }
+            }
+          },
+          "success": {
+            "trigger": "camera"
+          }
+        },
+        "toggle_direction": {
+          "type": "$set",
+          "options": [
+            {
+              "{{#if 'options' in $get.background}}": {
+                "background": {
+                  "type": "camera"
+                }
+              }
+            },
+            {
+              "{{#else}}": {
+                "background": {
+                  "type": "camera",
+                  "options": {
+                    "device": "back"
+                  }
+                }
+              }
+            }
+          ],
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "changed camera direction"
+              }
+            }
+          }
+        },
+        "backpack": {
+          "type": "$href",
+          "options": {
+            "url": "https://github.com/Jasonette/Tests/blob/master/view/layer/index.json",
+            "transition": "modal"
+          }
+        },
+        "camera": {
+          "type": "$set",
+          "options": {
+            "data_url": "{{$jason.data_url}}",
+            "editing": "true",
+            "ui": "true"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "background": "{{$get.background}}"
+          },
+          "header": {
+            "title": " ",
+            "style": {
+              "background": "rgba(0,0,0,0)",
+              "color": "rgba(255,255,255,0.3)"
+            },
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Tests/blob/master/view/layer/index.json",
+                "view": "web"
+              }
+            }
+          },
+          "layers": [
+            [
+              {
+                "{{#if $get.monster && $get.monster != 'placeholder'}}": {
+                  "type": "image",
+                  "style": {
+                    "left": "50%-75",
+                    "bottom": "200",
+                    "width": "150",
+                    "border": "rgba(0,0,0,0)",
+                    "rotate": "true",
+                    "resize": "true",
+                    "move": "true"
+                  },
+                  "name": "monster",
+                  "action": {
+                    "trigger": "toggle"
+                  },
+                  "url": "{{$get.monster}}"
+                }
+              }
+            ],
+            [
+              {
+                "{{#if $get.caption && $get.caption != 'placeholder'}}": {
+                  "type": "label",
+                  "name": "annotation",
+                  "style": {
+                    "background": "rgba(0,0,0,0.1)",
+                    "color": "#ffffff",
+                    "bottom": "500",
+                    "align": "center",
+                    "padding": "10",
+                    "left": "50%-125",
+                    "width": "250",
+                    "size": "20",
+                    "font": "AvenirNext-Regular",
+                    "height": "60",
+                    "corner_radius": "30",
+                    "move": "true",
+                    "resize": "true"
+                  },
+                  "action": {
+                    "trigger": "toggle"
+                  },
+                  "text": "{{$get.caption}}"
+                }
+              }
+            ],
+            {
+              "type": "image",
+              "style": {
+                "right": "15",
+                "top": "60",
+                "width": "60"
+              },
+              "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/pokear.png",
+              "action": {
+                "trigger": "toggle_direction"
+              }
+            },
+            {
+              "type": "image",
+              "style": {
+                "left": "15",
+                "top": "50",
+                "height": "60"
+              },
+              "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/pokerun.png",
+              "action": {
+                "type": "$util.banner",
+                "options": {
+                  "title": "$util.banner action triggered!",
+                  "description": "You can attach an action to a layer"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "style": {
+                "right": "10",
+                "bottom": "10",
+                "width": "80"
+              },
+              "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/pokebackpack.png",
+              "action": {
+                "trigger": "backpack"
+              }
+            },
+            {
+              "type": "image",
+              "style": {
+                "right": "10",
+                "bottom": "95",
+                "width": "80"
+              },
+              "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/pokecamera.png",
+              "action": {
+                "type": "$snapshot",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  },
+                  "success": {
+                    "type": "$render"
+                  }
+                }
+              }
+            },
+            {
+              "type": "image",
+              "style": {
+                "left": "50%-65",
+                "bottom": "0",
+                "width": "130",
+                "height": "130",
+                "move": "true",
+                "resize": "true",
+                "rotate": "true"
+              },
+              "name": "ball",
+              "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/fakeball.png"
+            }
+          ]
+        }
+      },
+      "icon": "https://s3.amazonaws.com/jasonette/uploads/thing/icon/Y0J/thumb_icon"
+    }
+  }
+}

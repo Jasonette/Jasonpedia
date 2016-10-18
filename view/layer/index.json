@@ -1,0 +1,49 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Footer Examples",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Tests/blob/master/view/layer/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "CatchAll!",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/layer/pokemon/idex.json",
+                "transitiona": "modal"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

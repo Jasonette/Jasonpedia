@@ -1,0 +1,151 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Items",
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/layer/pokemon/db.json"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "background": "#fcfffc"
+          },
+          "nav": {
+            "style": {
+              "background": "#fdfffc",
+              "color": "#4e7174",
+              "font": "AvenirNext-Regular",
+              "size": "18"
+            }
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "style": {
+                    "padding": "10",
+                    "background": "#414141",
+                    "color": "#ffffff",
+                    "size": "12"
+                  },
+                  "text": "This app was built with Jasonette, an app that lets you create an app. Learn more here.",
+                  "href": {
+                    "url": "http://www.jasonette.com",
+                    "view": "Web"
+                  }
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "15",
+                    "spacing": "3",
+                    "background": "#e9ffde"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Catch your own custom monster!",
+                      "style": {
+                        "size": "14",
+                        "color": "#44696c",
+                        "font": "AvenirNext-Bold"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Check out what others caught, and upload your own.",
+                      "style": {
+                        "size": "12",
+                        "color": "#44696c",
+                        "font": "AvenirNext-Regular"
+                      }
+                    }
+                  ],
+                  "href": {
+                    "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/view/layer/pokemon/more.json"
+                  }
+                }
+              ]
+            },
+            {
+              "items": {
+                "{{#each $jason}}": {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "10",
+                    "spacing": "10"
+                  },
+                  "action": {
+                    "type": "$close",
+                    "success": {
+                      "type": "$set",
+                      "options": {
+                        "monster": "{{url}}",
+                        "caption": "{{name + '    /    CP ???'}}"
+                      },
+                      "success": {
+                        "type": "$render",
+                        "success": {
+                          "type": "$util.banner",
+                          "options": {
+                            "title": "Move and resize",
+                            "description": "You can hide the resize button by tapping the sticker"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "style": {
+                        "width": "80"
+                      },
+                      "url": "{{url}}"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "{{name}}",
+                          "style": {
+                            "color": "#44696c",
+                            "font": "AvenirNext-Regular",
+                            "size": "18"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "style": {
+                            "color": "#6f8d8d",
+                            "font": "AvenirNext-Regular",
+                            "size": "12"
+                          },
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "$jason": {
+    "head": {
+      "title": "More to catch!",
+      "actions": {
+        "$foreground": {
+          "trigger": "refresh"
+        },
+        "$load": {
+          "trigger": "refresh"
+        },
+        "refresh": {
+          "type": "$network.request",
+          "options": {
+            "url": "http://stickermatic.herokuapp.com/items.json"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "background": "#fcfffc",
+            "border": "none"
+          },
+          "nav": {
+            "style": {
+              "background": "#fdfffc",
+              "color": "#4e7174",
+              "font": "AvenirNext-Regular",
+              "size": "18"
+            },
+            "items": [
+              {
+                "type": "search",
+                "name": "query",
+                "action": {
+                  "type": "$network.request",
+                  "options": {
+                    "url": "https://stickermatic.herokuapp.com/search.json?query={{$get.query}}"
+                  },
+                  "success": {
+                    "type": "$render"
+                  }
+                }
+              }
+            ]
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "20",
+                    "spacing": "20",
+                    "background": "#e9ffde"
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "url": "https://d30y9cdsu7xlg0.cloudfront.net/png/534489-200.png",
+                      "style": {
+                        "width": "40"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Upload your own monster",
+                          "style": {
+                            "size": "14",
+                            "color": "#44696c",
+                            "font": "AvenirNext-Bold"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "text": "Upload a transparent PNG and catch'em all!",
+                          "style": {
+                            "size": "12",
+                            "color": "#44696c",
+                            "font": "AvenirNext-Regular"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "href": {
+                    "view": "App",
+                    "url": "http://stickermatic.herokuapp.com/items/new"
+                  }
+                }
+              ]
+            },
+            {
+              "items": {
+                "{{#each $jason}}": {
+                  "action": {
+                    "type": "$util.picker",
+                    "options": {
+                      "items": [
+                        {
+                          "text": "Catch'em!",
+                          "action": {
+                            "type": "$close",
+                            "success": {
+                              "type": "$set",
+                              "options": {
+                                "monster": "{{url}}",
+                                "caption": "{{description}}"
+                              },
+                              "success": {
+                                "type": "$render"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "text": "Edit caption",
+                          "action": {
+                            "type": "$href",
+                            "options": {
+                              "url": "{{edit_url}}",
+                              "view": "App"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "20",
+                    "spacing": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "style": {
+                        "height": "120"
+                      },
+                      "url": "{{url}}"
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{description}}",
+                      "style": {
+                        "color": "#44696c",
+                        "font": "AvenirNext-Regular",
+                        "size": "18"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
