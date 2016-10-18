@@ -1,0 +1,52 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Addressbook demo",
+      "description": "$util.addressbook accesses the addressbook and returns the array of contacts",
+      "tags": [
+        "contacts",
+        "addressbook"
+      ],
+      "preview": "http://i.imgur.com/TPTZ8Fv.png",
+      "actions": {
+        "$load": {
+          "type": "$util.addressbook",
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": {
+                "{{#each $jason}}": {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "5",
+                    "spacing": "5"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "{{name}}"
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{JSON.stringify(phone)}}"
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{JSON.stringify(email)}}"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

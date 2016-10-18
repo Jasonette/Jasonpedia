@@ -1,0 +1,297 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Jasonette Actions",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "background": "#ffffff",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "padding": "10",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "form_alert": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Demo alert with input",
+            "description": "Try entering values and press OK",
+            "form": [
+              {
+                "name": "username",
+                "placeholder": "Enter username"
+              },
+              {
+                "name": "password",
+                "placeholder": "Enter password",
+                "type": "secure"
+              }
+            ]
+          },
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "title": "You have entered:",
+              "description": "{{$jason.username}} and {{$jason.password}}"
+            }
+          }
+        }
+      }
+    },
+    "body": {
+      "style": {
+        "background": "#191919"
+      },
+      "header": {
+        "style": {
+          "background": "#191919",
+          "color": "#ffffff"
+        },
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Tests/blob/master/action/index.json"
+            "view": "web"
+          }
+        },
+        "search": {
+          "name": "query",
+          "placeholder": "Enter keyword",
+          "style": {
+            "dark": "true",
+            "background": "#191919"
+          },
+          "action": {
+            "type": "$util.banner",
+            "options": {
+              "title": "{{$get.query}}",
+              "description": "The content inside the search input is {{$get.query}}"
+            }
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "$util.banner",
+              "class": "bold",
+              "action": {
+                "type": "$util.banner",
+                "options": {
+                  "title": "Hello world",
+                  "description": "I'm a banner. I display a title and a description."
+                }
+              }
+            },
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "$util.toast",
+              "action": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "I'm a toast. I display a simple text."
+                }
+              }
+            },
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "$util.alert (basic)",
+              "action": {
+                "type": "$util.alert",
+                "options": {
+                  "title": "Basic Alert",
+                  "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "$util.alert (with input fields)",
+              "action": {
+                "trigger": "form_alert"
+              }
+            },
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "$util.picker",
+              "action": {
+                "type": "$util.picker",
+                "options": {
+                  "items": [
+                    {
+                      "text": "Trigger $util.banner",
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Hi I'm a banner",
+                          "description": "I'm triggered by a picker"
+                        }
+                      }
+                    },
+                    {
+                      "text": "Trigger $util.alert",
+                      "action": {
+                        "type": "$util.alert",
+                        "options": {
+                          "title": "Hi I'm an alert",
+                          "description": "I'm triggerred by an alert"
+                        }
+                      }
+                    },
+                    {
+                      "text": "Trigger $audio.play",
+                      "action": {
+                        "type": "$audio.play",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/www.textcast.co/icons/yo.mp3"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$util.datepicker",
+              "class": "bold",
+              "action": {
+                "type": "$util.datepicker",
+                "success": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Selected time is",
+                    "description": "{{(new Date(parseInt($jason.value) * 1000)).toString()}}"
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$util.addressbook",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Tests/master/action/addressbook.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.play",
+              "class": "bold",
+              "action": {
+                "type": "$media.play",
+                "options": {
+                  "url": "https://docs.google.com/file/d/0B7g1h4sDEtjuZy1lWDBmTlBwZlk/edit?pli=1"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.picker + $util.share (photo)",
+              "class": "bold",
+              "action": {
+                "type": "$media.picker",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.camera + $util.share (photo)",
+              "class": "bold",
+              "action": {
+                "type": "$media.camera",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.camera + $util.share (photo with editing)",
+              "class": "bold",
+              "action": {
+                "type": "$media.camera",
+                "options": {
+                  "edit": "true"
+                },
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.camera + $util.share (video)",
+              "class": "bold",
+              "action": {
+                "type": "$media.camera",
+                "options": {
+                  "type": "video"
+                },
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "video",
+                        "file_url": "{{$jason.file_url}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.camera + $network.upload",
+              "class": "bold",
+              "href": {
+                "url": "https://imagejason.herokuapp.com"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
