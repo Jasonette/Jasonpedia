@@ -80,7 +80,7 @@
                 "type": "vertical",
                 "style": {
                   "width": "200",
-                  "height": "200",
+                  "height": "300",
                   "padding": "10",
                   "align": "center"
                 },
@@ -98,7 +98,7 @@
                   "text": "{{name}}",
                   "style": {
                     "font": "ChalkboardSE-Bold",
-                    "size": "14",
+                    "size": "25",
                     "color": "#ffffff"
                   }
                 }]
@@ -165,7 +165,8 @@
                   "text": "{{name}}",
                   "style": {
                     "font": "ChalkboardSE-Bold",
-                    "size": "14",
+                    "size": "25",
+                    "padding": "10",
                     "color": "#ffffff"
                   }
                 }]
