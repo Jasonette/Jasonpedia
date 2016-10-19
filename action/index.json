@@ -5,11 +5,10 @@
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
-          "padding": "10",
           "align": "center",
           "background": "#ffffff",
-          "width": "180",
-          "height": "80",
+          "width": "140",
+          "height": "90",
           "size": "15"
         },
         "normal": {
@@ -18,8 +17,8 @@
           "size": "12"
         },
         "card": {
-          "width": "200",
-          "padding": "10",
+          "width": "150",
+          "padding": "5",
           "corner_radius": "2",
           "height": "100",
           "align": "center",
