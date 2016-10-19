@@ -85,6 +85,13 @@
             "width": "200",
             "height": "200"
           },
+          "header": {
+            "type": "label",
+            "text": "$util",
+            "style": {
+              "background": "#ffffff"
+            }
+          },
           "items": [
             {
               "type": "label",
@@ -192,7 +199,18 @@
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
               }
-            },
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Rest",
+            "style": {
+              "background": "#ffffff"
+            }
+          },
+          "items": [
             {
               "type": "label",
               "text": "$media.play",
