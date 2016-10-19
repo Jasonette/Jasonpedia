@@ -1,0 +1,36 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Vertical Layout"
+      "style": {
+        "note": {
+          "color": "#ffffff",
+          "font": "HelveticaNeue-Bold",
+          "size": "15"
+        }
+      }
+    },
+    "body": {
+      "sections": [{
+        "items": [{
+          "type": "vertical",
+          "style": {
+            "height": "300",
+            "background": "#FF5733"
+          },
+          "components": [{
+            "type": "label",
+            "class": "note",
+            "text": "Top"
+          }, {
+            "type": "space"
+          }, {
+            "type": "label",
+            "class": "note",
+            "text": "Bottom"
+          }]
+        }]
+      }]
+    }
+  }
+}
