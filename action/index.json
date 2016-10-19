@@ -80,6 +80,11 @@
       },
       "sections": [
         {
+          "style": {
+            "horizontal": "true",
+            "width": "200",
+            "height": "200"
+          },
           "items": [
             {
               "type": "label",
