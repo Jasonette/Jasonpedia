@@ -58,7 +58,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/JasonPedia/blob/master/action/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/action/index.json",
             "view": "web"
           }
         },
@@ -185,7 +185,7 @@
               "text": "$util.addressbook",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/JasonPedia/master/action/addressbook.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/addressbook.json"
               }
             },
             {
@@ -286,7 +286,7 @@
               "text": "$network",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/JasonPedia/master/action/network/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/network/index.json"
               }
             }
           ]
