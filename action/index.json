@@ -235,13 +235,13 @@
             {
               "type": "vertical",
               "class": "card",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
+              },
               "components": [{
                 "type": "label",
                 "text": "$util.addressbook",
                 "class": "bold",
-                "href": {
-                  "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
-                }
               }]
             }
           ]
