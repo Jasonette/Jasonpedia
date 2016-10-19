@@ -165,7 +165,7 @@
               "components": [{
                 "type": "label",
                 "class": "bold",
-                "text": "$util.alert (with input fields)",
+                "text": "$util.alert (with input fields)"
               }]
             },
             {
