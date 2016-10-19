@@ -1,0 +1,46 @@
+{
+  "$jason": {
+    "head": {
+      "title": "$geo",
+      "templates": {
+        "coord": {
+          "sections": [{
+            "items": [{
+              "type": "label",
+              "text": "{{$jason.coord}}"
+            }, {
+              "type": "label",
+              "text": "Get current location",
+              "action": {
+                "type": "$geo.get",
+                "success": {
+                  "type": "$render",
+                  "options": {
+                    "template": "coord"
+                  }
+                }
+              }
+            }]
+          }]
+        },
+        "body": {
+          "sections": [{
+            "items": [{
+              "type": "label",
+              "text": "Get current location",
+              "action": {
+                "type": "$geo.get",
+                "success": {
+                  "type": "$render",
+                  "options": {
+                    "template": "coord"
+                  }
+                }
+              }
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
