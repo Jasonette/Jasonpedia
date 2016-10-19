@@ -13,6 +13,14 @@
           }
         }
       },
+      "styles": {
+        "labels": {
+          "size": "20",
+          "padding": "50",
+          "font": "HelveticaNeue-Bold",
+          "align": "center"
+        }
+      },
       "templates": {
         "map": {
           "sections": [{
@@ -29,11 +37,7 @@
             }, {
               "type": "label",
               "text": "Display current location",
-              "style": {
-                "size": "20",
-                "font": "HelveticaNeue-Bold",
-                "align": "center"
-              },
+              "class": "labels",
               "action": {
                 "type": "$geo.get",
                 "success": {
@@ -50,21 +54,18 @@
           "sections": [{
             "items": [{
               "type": "label",
+              "class": "labels",
               "text": "{{$jason.coord}}"
             }, {
               "type": "label",
-              "text": "Display current location",
-              "style": {
-                "size": "20",
-                "font": "HelveticaNeue-Bold",
-                "align": "center"
-              },
+              "text": "Map current location",
+              "class": "labels",
               "action": {
                 "type": "$geo.get",
                 "success": {
                   "type": "$render",
                   "options": {
-                    "template": "coord"
+                    "template": "map"
                   }
                 }
               }
@@ -76,11 +77,7 @@
             "items": [{
               "type": "label",
               "text": "Display current location",
-              "style": {
-                "size": "20",
-                "font": "HelveticaNeue-Bold",
-                "align": "center"
-              },
+              "class": "labels",
               "action": {
                 "type": "$geo.get",
                 "success": {
@@ -93,11 +90,7 @@
             }, {
               "type": "label",
               "text": "Map current location",
-              "style": {
-                "size": "20",
-                "font": "HelveticaNeue-Bold",
-                "align": "center"
-              },
+              "class": "labels",
               "action": {
                 "type": "$geo.get",
                 "success": {
