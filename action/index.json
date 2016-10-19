@@ -387,6 +387,9 @@
               "type": "label",
               "text": "$network",
               "class": "bold",
+              "style": {
+                "align": "left"
+              },
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/action/network/index.json"
               }
