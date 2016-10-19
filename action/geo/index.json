@@ -18,6 +18,16 @@
           "size": "20",
           "font": "HelveticaNeue-Bold",
           "align": "center"
+        },
+        "left": {
+          "bottom": "50",
+          "left": "50",
+          "width": "100"
+        },
+        "right": {
+          "bottom": "50",
+          "right": "50",
+          "width": "100"
         }
       },
       "templates": {
@@ -25,12 +35,7 @@
           "layers": [{
             "type": "label",
             "text": "Display",
-            "class": "labels",
-            "style": {
-              "bottom": "50",
-              "left": "50",
-              "width": "100"
-            },
+            "class": "labels left",
             "action": {
               "type": "$geo.get",
               "success": {
@@ -43,12 +48,7 @@
           }, {
             "type": "label",
             "text": "Map",
-            "class": "labels",
-            "style": {
-              "bottom": "50",
-              "left": "50",
-              "width": "100"
-            },
+            "class": "labels right",
             "action": {
               "type": "$geo.get",
               "success": {
@@ -78,12 +78,7 @@
           "layers": [{
             "type": "label",
             "text": "Display",
-            "class": "labels",
-            "style": {
-              "bottom": "50",
-              "left": "50",
-              "width": "100"
-            },
+            "class": "labels left",
             "action": {
               "type": "$geo.get",
               "success": {
@@ -96,12 +91,7 @@
           }, {
             "type": "label",
             "text": "Map",
-            "class": "labels",
-            "style": {
-              "bottom": "50",
-              "left": "50",
-              "width": "100"
-            },
+            "class": "labels right",
             "action": {
               "type": "$geo.get",
               "success": {
@@ -124,12 +114,7 @@
           "layers": [{
             "type": "label",
             "text": "Display",
-            "class": "labels",
-            "style": {
-              "bottom": "50",
-              "left": "50",
-              "width": "100"
-            },
+            "class": "labels left",
             "action": {
               "type": "$geo.get",
               "success": {
@@ -142,12 +127,7 @@
           }, {
             "type": "label",
             "text": "Map",
-            "class": "labels",
-            "style": {
-              "bottom": "50",
-              "left": "50",
-              "width": "100"
-            },
+            "class": "labels right",
             "action": {
               "type": "$geo.get",
               "success": {
