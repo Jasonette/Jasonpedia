@@ -21,7 +21,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/href/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/core/href/index.json",
             "view": "web"
           }
         }
@@ -34,7 +34,7 @@
               "text": "Push transition to another Jason View",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/href/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/core/href/index.json"
               }
             },
             {
@@ -42,7 +42,7 @@
               "text": "Modal transition to another Jason View",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/href/index.json",
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/core/href/index.json",
                 "transition": "modal"
               }
             },
