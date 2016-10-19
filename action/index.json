@@ -7,6 +7,8 @@
           "font": "HelveticaNeue-CondensedBold",
           "padding": "10",
           "background": "#ffffff",
+          "width": "180",
+          "height": "80",
           "size": "15"
         },
         "normal": {
