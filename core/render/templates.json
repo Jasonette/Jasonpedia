@@ -42,7 +42,7 @@
               "background": "#f8d728"
             },
             "menu": {
-              "text": "Switch view",
+              "text": "Switch Template",
               "action": {
                 "type": "$menu",
                 "options": {
@@ -79,8 +79,8 @@
               "{{#each members}}": {
                 "type": "vertical",
                 "style": {
-                  "width": "100",
-                  "height": "100",
+                  "width": "200",
+                  "height": "200",
                   "padding": "10",
                   "align": "center"
                 },
@@ -88,10 +88,10 @@
                   "type": "image",
                   "url": "{{image}}",
                   "style": {
-                    "width": "60",
-                    "height": "60",
-                    "padding": "20",
-                    "corner_radius": "30"
+                    "width": "180",
+                    "height": "180",
+                    "padding": "10",
+                    "corner_radius": "90"
                   }
                 }, {
                   "type": "label",
@@ -116,7 +116,7 @@
               "background": "#f8d728"
             },
             "menu": {
-              "text": "Switch view",
+              "text": "Switch Template",
               "action": {
                 "type": "$menu",
                 "options": {
@@ -155,9 +155,10 @@
                   "type": "image",
                   "url": "{{image}}",
                   "style": {
-                    "width": "60",
-                    "height": "60",
-                    "corner_radius": "30"
+                    "width": "180",
+                    "height": "180",
+                    "padding": "10",
+                    "corner_radius": "90"
                   }
                 }, {
                   "type": "label",
