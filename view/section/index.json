@@ -122,6 +122,9 @@
               "type": "vertical",
               "style": {
                 "width": "210",
+                "padding": "10",
+                "background": "#ffffff",
+                "align": "center",
                 "height": "300"
               },
               "components": [
@@ -158,6 +161,9 @@
               "type": "vertical",
               "style": {
                 "width": "210",
+                "padding": "10",
+                "background": "#ffffff",
+                "align": "center",
                 "height": "300"
               },
               "components": [
@@ -194,6 +200,9 @@
               "type": "vertical",
               "style": {
                 "width": "210",
+                "padding": "10",
+                "background": "#ffffff",
+                "align": "center",
                 "height": "300"
               },
               "components": [
@@ -230,6 +239,9 @@
               "type": "vertical",
               "style": {
                 "width": "210",
+                "padding": "10",
+                "background": "#ffffff",
+                "align": "center",
                 "height": "300"
               },
               "components": [
@@ -292,7 +304,7 @@
               "type": "horizontal",
               "style": {
                 "spacing": "10",
-                "background": "#ffffff"
+                "background": "#edf0ff"
               },
               "components": [
                 {
@@ -321,7 +333,7 @@
               "type": "horizontal",
               "style": {
                 "spacing": "10",
-                "background": "#ffffff"
+                "background": "#edf0ff"
               },
               "components": [
                 {
@@ -350,7 +362,7 @@
               "type": "horizontal",
               "style": {
                 "spacing": "10",
-                "background": "#ffffff"
+                "background": "#edf0ff"
               },
               "components": [
                 {
@@ -379,7 +391,7 @@
               "type": "horizontal",
               "style": {
                 "spacing": "10",
-                "background": "#ffffff"
+                "background": "#edf0ff"
               },
               "components": [
                 {
@@ -408,7 +420,7 @@
               "type": "horizontal",
               "style": {
                 "spacing": "10",
-                "background": "#ffffff"
+                "background": "#edf0ff"
               },
               "components": [
                 {
