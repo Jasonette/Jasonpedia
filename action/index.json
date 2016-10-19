@@ -19,7 +19,7 @@
         "card": {
           "width": "150",
           "padding": "5",
-          "corner_radius": "2",
+          "corner_radius": "4",
           "height": "100",
           "align": "center",
           "background": "#f5f5f5"
@@ -381,8 +381,7 @@
             "text": "$network",
             "style": {
               "background": "#ebebeb"
-            },
-            "class": "normal"
+            }
           },
           "items": [
             {
