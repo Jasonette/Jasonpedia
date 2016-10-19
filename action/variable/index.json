@@ -21,6 +21,9 @@
       },
       "templates": {
         "body": {
+          "header": {
+            "title": "Local Variables"
+          },
           "sections": [
             {
               "items": [{
@@ -37,7 +40,7 @@
             {
               "header": {
                 "type": "label",
-                "text": "textarea",
+                "text": "textfield",
                 "style": {
                   "background": "#f5f5f5"
                 }
