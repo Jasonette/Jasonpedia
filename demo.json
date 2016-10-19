@@ -31,6 +31,14 @@
       },
       "sections": [
         {
+          "header": {
+            "type": "label",
+            "class": "normal",
+            "style": {
+              "background": "#ebebeb"
+            },
+            "text": "Official demo"
+          },
           "items": [
             {
               "type": "vertical",
@@ -77,7 +85,23 @@
               }
             }
           ]
-        }
+        },
+        {
+          "header": {
+            "type": "vertical",
+            "style": {
+              "background": "#ebebeb"
+            },
+            "components": [{
+              "type": "label",
+              "class": "bold",
+              "text": "Community demos"
+            }, {
+              "type": "label",
+              "class": "normal",
+              "text": "Cool JSON snippets shared by the community. Wrote a cool/useful JSON markup? Share it here so others can use it"
+            }]
+          },
       ]
     }
   }
