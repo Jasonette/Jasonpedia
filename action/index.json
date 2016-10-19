@@ -16,7 +16,7 @@
         },
         "card": {
           "width": "200",
-          "padding": "5",
+          "padding": "10",
           "height": "100",
           "align": "center",
           "background": "#ebebeb"
@@ -106,111 +106,138 @@
           },
           "items": [
             {
-              "type": "label",
-              "text": "$util.banner",
-              "class": "bold card",
-              "action": {
-                "type": "$util.banner",
-                "options": {
-                  "title": "Hello world",
-                  "description": "I'm a banner. I display a title and a description."
-                }
-              }
-            },
-            {
-              "type": "label",
-              "class": "bold card",
-              "text": "$util.toast",
-              "action": {
-                "type": "$util.toast",
-                "options": {
-                  "text": "I'm a toast. I display a simple text."
-                }
-              }
-            },
-            {
-              "type": "label",
-              "class": "bold card",
-              "text": "$util.alert (basic)",
-              "action": {
-                "type": "$util.alert",
-                "options": {
-                  "title": "Basic Alert",
-                  "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
-                }
-              }
-            },
-            {
-              "type": "label",
-              "class": "bold card",
-              "text": "$util.alert (with input fields)",
-              "action": {
-                "trigger": "form_alert"
-              }
-            },
-            {
-              "type": "label",
-              "class": "bold card",
-              "text": "$util.picker",
-              "action": {
-                "type": "$util.picker",
-                "options": {
-                  "items": [
-                    {
-                      "text": "Trigger $util.banner",
-                      "action": {
-                        "type": "$util.banner",
-                        "options": {
-                          "title": "Hi I'm a banner",
-                          "description": "I'm triggered by a picker"
-                        }
-                      }
-                    },
-                    {
-                      "text": "Trigger $util.alert",
-                      "action": {
-                        "type": "$util.alert",
-                        "options": {
-                          "title": "Hi I'm an alert",
-                          "description": "I'm triggerred by an alert"
-                        }
-                      }
-                    },
-                    {
-                      "text": "Trigger $audio.play",
-                      "action": {
-                        "type": "$audio.play",
-                        "options": {
-                          "url": "https://s3.amazonaws.com/www.textcast.co/icons/yo.mp3"
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "type": "label",
-              "text": "$util.datepicker",
-              "class": "bold card",
-              "action": {
-                "type": "$util.datepicker",
-                "success": {
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "type": "label",
+                "text": "$util.banner",
+                "class": "bold",
+                "action": {
                   "type": "$util.banner",
                   "options": {
-                    "title": "Selected time is",
-                    "description": "{{(new Date(parseInt($jason.value) * 1000)).toString()}}"
+                    "title": "Hello world",
+                    "description": "I'm a banner. I display a title and a description."
                   }
                 }
-              }
+              }]
             },
             {
-              "type": "label",
-              "text": "$util.addressbook",
-              "class": "bold",
-              "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
-              }
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "class": "bold",
+                "text": "$util.toast",
+                "action": {
+                  "type": "$util.toast",
+                  "options": {
+                    "text": "I'm a toast. I display a simple text."
+                  }
+                }
+              }]
+            },
+            {
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "type": "label",
+                "class": "bold",
+                "text": "$util.alert (basic)",
+                "action": {
+                  "type": "$util.alert",
+                  "options": {
+                    "title": "Basic Alert",
+                    "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
+                  }
+                }
+              }]
+            },
+            {
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "type": "label",
+                "class": "bold",
+                "text": "$util.alert (with input fields)",
+                "action": {
+                  "trigger": "form_alert"
+                }
+              }]
+            },
+            {
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "type": "label",
+                "class": "bold card",
+                "text": "$util.picker",
+                "action": {
+                  "type": "$util.picker",
+                  "options": {
+                    "items": [
+                      {
+                        "text": "Trigger $util.banner",
+                        "action": {
+                          "type": "$util.banner",
+                          "options": {
+                            "title": "Hi I'm a banner",
+                            "description": "I'm triggered by a picker"
+                          }
+                        }
+                      },
+                      {
+                        "text": "Trigger $util.alert",
+                        "action": {
+                          "type": "$util.alert",
+                          "options": {
+                            "title": "Hi I'm an alert",
+                            "description": "I'm triggerred by an alert"
+                          }
+                        }
+                      },
+                      {
+                        "text": "Trigger $audio.play",
+                        "action": {
+                          "type": "$audio.play",
+                          "options": {
+                            "url": "https://s3.amazonaws.com/www.textcast.co/icons/yo.mp3"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }]
+            },
+            {
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "type": "label",
+                "text": "$util.datepicker",
+                "class": "bold",
+                "action": {
+                  "type": "$util.datepicker",
+                  "success": {
+                    "type": "$util.banner",
+                    "options": {
+                      "title": "Selected time is",
+                      "description": "{{(new Date(parseInt($jason.value) * 1000)).toString()}}"
+                    }
+                  }
+                }
+              }]
+            },
+            {
+              "type": "vertical",
+              "class": "card",
+              "components": [{
+                "type": "label",
+                "text": "$util.addressbook",
+                "class": "bold",
+                "href": {
+                  "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
+                }
+              }]
             }
           ]
         },
