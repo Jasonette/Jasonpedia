@@ -6,7 +6,7 @@
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
           "padding": "10",
-          "background": "#ffffff",
+          "background": "#ff0000",
           "width": "180",
           "height": "80",
           "size": "15"
@@ -127,6 +127,7 @@
               "type": "vertical",
               "class": "card",
               "components": [{
+                "type": "label",
                 "class": "bold",
                 "text": "$util.toast",
                 "action": {
@@ -170,7 +171,7 @@
               "class": "card",
               "components": [{
                 "type": "label",
-                "class": "bold card",
+                "class": "bold",
                 "text": "$util.picker",
                 "action": {
                   "type": "$util.picker",
