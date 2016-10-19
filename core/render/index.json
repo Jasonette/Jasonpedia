@@ -41,7 +41,7 @@
               "components": [{
                 "type": "label",
                 "text": "Multiple templates",
-                "class": "bold",
+                "class": "bold"
               }, {
                 "type": "label",
                 "text": "Switching between multiple different templates",
