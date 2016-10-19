@@ -7,6 +7,14 @@
           "font": "Georgia",
           "size": "16"
         }
+      },
+      "actions": {
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
       }
     },
     "body": {
