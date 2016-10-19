@@ -13,9 +13,6 @@
         }
       },
       "actions": {
-        "$load": {
-          "type": "$render"
-        },
         "$foreground": {
           "type": "$reload"
         }
