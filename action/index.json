@@ -15,7 +15,8 @@
           "size": "12"
         },
         "card": {
-          "width": "300",
+          "width": "200",
+          "padding": "5",
           "height": "200",
           "background": "#ffffff"
         }
@@ -93,14 +94,14 @@
             "type": "label",
             "text": "$util",
             "style": {
-              "background": "#ffffff"
+              "background": "#ebebeb"
             }
           },
           "items": [
             {
               "type": "label",
               "text": "$util.banner",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$util.banner",
                 "options": {
@@ -111,7 +112,7 @@
             },
             {
               "type": "label",
-              "class": "bold",
+              "class": "bold card",
               "text": "$util.toast",
               "action": {
                 "type": "$util.toast",
@@ -122,7 +123,7 @@
             },
             {
               "type": "label",
-              "class": "bold",
+              "class": "bold card",
               "text": "$util.alert (basic)",
               "action": {
                 "type": "$util.alert",
@@ -134,7 +135,7 @@
             },
             {
               "type": "label",
-              "class": "bold",
+              "class": "bold card",
               "text": "$util.alert (with input fields)",
               "action": {
                 "trigger": "form_alert"
@@ -142,7 +143,7 @@
             },
             {
               "type": "label",
-              "class": "bold",
+              "class": "bold card",
               "text": "$util.picker",
               "action": {
                 "type": "$util.picker",
@@ -184,7 +185,7 @@
             {
               "type": "label",
               "text": "$util.datepicker",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$util.datepicker",
                 "success": {
@@ -213,6 +214,9 @@
           },
           "header": {
             "type": "label",
+            "style": {
+              "background": "#ebebeb"
+            },
             "text": "$media",
           },
           "items": [
@@ -315,6 +319,9 @@
           "header": {
             "type": "label",
             "text": "$network",
+            "style": {
+              "background": "#ebebeb"
+            },
             "class": "bold"
           },
           "items": [
