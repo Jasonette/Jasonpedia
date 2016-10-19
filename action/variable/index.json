@@ -38,6 +38,7 @@
               "items": [{
                 "type": "textfield",
                 "name": "blank",
+                "focused": "true",
                 "action": {
                   "type": "$render"
                 }
