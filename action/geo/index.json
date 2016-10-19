@@ -2,6 +2,9 @@
   "$jason": {
     "head": {
       "title": "$geo",
+      "actions": {
+        "type": "$render"
+      },
       "templates": {
         "coord": {
           "sections": [{
