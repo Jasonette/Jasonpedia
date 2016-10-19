@@ -1,0 +1,51 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Local Variables",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "blank": "?"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": [{
+                "type": "label",
+                "text": "{{$get.blank}}",
+                "style": {
+                  "font": "HelveticaNeue-Bold",
+                  "size": "30",
+                  "padding": "20",
+                  "align": "center"
+                }
+              }]
+            },
+            {
+              "items": [{
+                "type": "textfield",
+                "name": "blank",
+                "action": {
+                  "type": "$render"
+                }
+              }]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
