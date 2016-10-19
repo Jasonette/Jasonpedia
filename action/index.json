@@ -13,6 +13,11 @@
           "font": "HelveticaNeue",
           "padding": "10",
           "size": "12"
+        },
+        "card": {
+          "width": "300",
+          "height": "200",
+          "background": "#ffffff"
         }
       },
       "actions": {
@@ -82,17 +87,13 @@
         {
           "type": "horizontal",
           "style": {
-            "width": "300",
-            "background": "#ffffff",
-            "height": "200"
+            "background": "#ffffff"
           },
           "header": {
             "type": "label",
             "text": "$util",
             "style": {
-              "background": "#ffffff",
-              "width": "300",
-              "height": "200"
+              "background": "#ffffff"
             }
           },
           "items": [
@@ -208,23 +209,17 @@
         {
           "type": "horizontal",
           "style": {
-            "width": "300",
-            "background": "#ffffff",
-            "height": "200"
+            "background": "#ffffff"
           },
           "header": {
             "type": "label",
             "text": "$media",
-            "style": {
-              "width": "300",
-              "height": "200"
-            }
           },
           "items": [
             {
               "type": "label",
               "text": "$media.play",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$media.play",
                 "options": {
@@ -235,7 +230,7 @@
             {
               "type": "label",
               "text": "$media.picker + $util.share (photo)",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$media.picker",
                 "success": {
@@ -254,7 +249,7 @@
             {
               "type": "label",
               "text": "$media.camera + $util.share (photo)",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$media.camera",
                 "success": {
@@ -273,7 +268,7 @@
             {
               "type": "label",
               "text": "$media.camera + $util.share (photo with editing)",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$media.camera",
                 "options": {
@@ -295,7 +290,7 @@
             {
               "type": "label",
               "text": "$media.camera + $util.share (video)",
-              "class": "bold",
+              "class": "bold card",
               "action": {
                 "type": "$media.camera",
                 "options": {
