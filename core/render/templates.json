@@ -29,8 +29,31 @@
         }]
       },
       "styles": {
-        
-      },
+        "labels": {
+          "size": "14",
+          "font": "HelveticaNeue-Bold",
+          "align": "center"
+        },
+        "left": {
+          "bottom": "50",
+          "left": "50",
+          "width": "100",
+          "height": "100",
+          "corner_radius": "50",
+          "color": "#ffffff",
+          "background": "#F2E205",
+          "padding": "20"
+        },
+        "right": {
+          "bottom": "50",
+          "right": "50",
+          "width": "100",
+          "height": "100",
+          "corner_radius": "50",
+          "color": "#ffffff",
+          "background": "#CE2121",
+          "padding": "20"
+        },
       "templates": {
         "horizontal": {
           "style": {
@@ -64,6 +87,24 @@
               }
             }
           },
+          "layers": [{
+            "type": "label",
+            "text": "Display",
+            "class": "labels left",
+            "action": {
+              "type": "$render",
+              "options": {
+                "template": "horizontal"
+              }
+            }
+          }, {
+            "type": "label",
+            "text": "Map",
+            "class": "labels right",
+            "action": {
+              "type": "$render"
+            }
+          }],
           "sections": [{
             "type": "horizontal",
             "header": {
@@ -116,30 +157,26 @@
           "header": {
             "style": {
               "background": "#f8d728"
-            },
-            "menu": {
-              "text": "Switch Template",
-              "action": {
-                "type": "$menu",
-                "options": {
-                  "items": [{
-                    "text": "Vertical",
-                    "action": {
-                      "type": "$render",
-                    }
-                  }, {
-                    "text": "Horizontal",
-                    "action": {
-                      "type": "$render",
-                      "options": {
-                        "template": "horizontal"
-                      }
-                    }
-                  }]
-                }
-              }
             }
           },
+          "layers": [{
+            "type": "label",
+            "text": "Display",
+            "class": "labels left",
+            "action": {
+              "type": "$render",
+              "options": {
+                "template": "horizontal"
+              }
+            }
+          }, {
+            "type": "label",
+            "text": "Map",
+            "class": "labels right",
+            "action": {
+              "type": "$render"
+            }
+          }],
           "sections": [{
             "header": {
               "type": "image",
