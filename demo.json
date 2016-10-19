@@ -7,6 +7,9 @@
           "font": "HelveticaNeue-CondensedBold",
           "size": "15"
         },
+        "padded": {
+          "padding": "10"
+        },
         "normal": {
           "font": "HelveticaNeue",
           "size": "12"
@@ -67,7 +70,7 @@
             {
               "type": "label",
               "text": "Core",
-              "class": "bold",
+              "class": "bold padded",
               "href": {
                 "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/core/index.json"
               }
@@ -75,7 +78,7 @@
             {
               "type": "label",
               "text": "View",
-              "class": "bold",
+              "class": "bold padded",
               "href": {
                 "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/index.json"
               }
@@ -83,7 +86,7 @@
             {
               "type": "label",
               "text": "Action",
-              "class": "bold",
+              "class": "bold padded",
               "href": {
                 "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/index.json"
               }
