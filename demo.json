@@ -34,7 +34,8 @@
             {
               "type": "vertical",
               "style": {
-                "background": "rgba(14,122,254,0.1)"
+                "background": "rgba(14,122,254,0.1)",
+                "padding": "10"
               },
               "href": {
                 "url": "mailto:?subject=Documentation&body=https://github.com/Jasonette/documentation",
