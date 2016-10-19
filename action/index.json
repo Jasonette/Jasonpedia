@@ -80,8 +80,8 @@
       },
       "sections": [
         {
+          "type": "horizontal",
           "style": {
-            "type": "horizontal",
             "width": "200",
             "height": "200"
           },
