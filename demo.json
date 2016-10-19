@@ -54,66 +54,26 @@
             },
             {
               "type": "label",
-              "text": "Top Bar (header)",
+              "text": "Core",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/header/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/core/index.json"
               }
             },
             {
               "type": "label",
-              "text": "Scrolling Items (sections)",
+              "text": "View",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/section/index.json"
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/index.json"
               }
             },
             {
               "type": "label",
-              "text": "Floating Items (layers)",
-              "class": "bold",
-              "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/index.json"
-              }
-            },
-            {
-              "type": "label",
-              "text": "Bottom Bar (footer)",
-              "class": "bold",
-              "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/index.json"
-              }
-            },
-            {
-              "type": "label",
-              "text": "Actions",
+              "text": "Action",
               "class": "bold",
               "href": {
                 "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/index.json"
-              }
-            },
-            {
-              "type": "label",
-              "text": "Href",
-              "class": "bold",
-              "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/href/index.json"
-              }
-            },
-            {
-              "type": "label",
-              "text": "Background Styling",
-              "class": "bold",
-              "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/background/index.json"
-              }
-            },
-            {
-              "type": "label",
-              "text": "Network related",
-              "class": "bold",
-              "href": {
-                "url": "http://www.jasonbase.com/things/V8l.json"
               }
             }
           ]

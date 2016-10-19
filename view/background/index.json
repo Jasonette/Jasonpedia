@@ -1,0 +1,178 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Background Styling Example",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "bg": "#00ff00"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "style": {
+              "background": "rgba(0,0,0,0)",
+              "color": "#ffffff"
+            },
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/view/background/index.json",
+                "view": "web"
+              },
+              "style": {
+                "color": "#ffffff"
+              }
+            }
+          },
+          "style": {
+            "background": "{{$get.bg}}"
+          },
+          "layers": [
+            {
+              "type": "image",
+              "url": "https://s3.amazonaws.com/www.textcast.co/icons/camera%402x.png",
+              "style": {
+                "left": "20",
+                "bottom": "20",
+                "color": "#ffffff"
+              },
+              "action": {
+                "type": "$snapshot",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "Red",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#ff0000",
+                "padding": "10",
+                "right": "20",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "220"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": "#ff0000"
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "Green",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#00ff00",
+                "padding": "10",
+                "right": "20",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "170"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": "#00ff00"
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "Cat",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#ffffff",
+                "right": "20",
+                "padding": "10",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "120"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": "http://i.giphy.com/Is0AJv4CEj9hm.gif"
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "Camera",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#ffffff",
+                "right": "20",
+                "padding": "10",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "70"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": {
+                    "type": "camera",
+                    "options": {
+                      "device": "back"
+                    }
+                  }
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "Mirror",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#ffffff",
+                "right": "20",
+                "padding": "10",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "20"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": {
+                    "type": "camera"
+                  }
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

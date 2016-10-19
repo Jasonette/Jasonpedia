@@ -1,0 +1,96 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Jasonette Demo",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/demo.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "Header",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/header/index.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Sections",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/section/index.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Layers",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/index.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Footer",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/index.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Layout",
+              "class": "bold",
+              "href": {
+                "url": ""
+              }
+            },
+            {
+              "type": "label",
+              "text": "Component",
+              "class": "bold",
+              "href": {
+                "url": ""
+              }
+            },
+            {
+              "type": "label",
+              "text": "Background",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/background/index.json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
