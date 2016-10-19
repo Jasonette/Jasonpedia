@@ -37,7 +37,10 @@
             {
               "header": {
                 "type": "label",
-                "text": "textarea"
+                "text": "textarea",
+                "style": {
+                  "background": "#f5f5f5"
+                }
               },
               "items": [
                 {
@@ -46,8 +49,6 @@
                     "type": "textfield",
                     "name": "blank",
                     "style": {
-                      "background": "#f5f5f5",
-                      "padding": "10",
                       "height": "30"
                     }
                   }, {
@@ -67,7 +68,10 @@
             {
               "header": {
                 "type": "label",
-                "text": "textarea"
+                "text": "textarea",
+                "style": {
+                  "background": "#f5f5f5"
+                }
               },
               "items": [
                 {
@@ -79,8 +83,6 @@
                     "type": "textarea",
                     "name": "blank",
                     "style": {
-                      "background": "#f5f5f5",
-                      "padding": "10",
                       "height": "100"
                     }
                   }, {
@@ -88,7 +90,7 @@
                     "text": "Done",
                     "style": {
                       "width": "60",
-                      "height": "60",
+                      "height": "30",
                       "color": "#ff0000"
                     },
                     "action": {
