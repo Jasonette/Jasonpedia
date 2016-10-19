@@ -92,11 +92,11 @@
                 {
                   "type": "image",
                   "class": "carousel_img",
-                  "url": "http://i.giphy.com/OmK8lulOMQ9XO.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/homer.jpg"
                 },
                 {
                   "type": "label",
-                  "text": "Mr. Fisherman",
+                  "text": "Homer Simpson",
                   "class": "username center"
                 },
                 {
@@ -128,11 +128,11 @@
                 {
                   "type": "image",
                   "class": "carousel_img",
-                  "url": "http://i.giphy.com/mSjXH05z06rIY.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/marge.png"
                 },
                 {
                   "type": "label",
-                  "text": "Mr. Lick",
+                  "text": "Marge Simpson",
                   "class": "username center"
                 },
                 {
@@ -164,11 +164,11 @@
                 {
                   "type": "image",
                   "class": "carousel_img",
-                  "url": "http://i.giphy.com/icJi1WogcfJJu.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/bart.png"
                 },
                 {
                   "type": "label",
-                  "text": "Mr. High",
+                  "text": "Bart Simpson",
                   "class": "username center"
                 },
                 {
@@ -200,11 +200,11 @@
                 {
                   "type": "image",
                   "class": "carousel_img",
-                  "url": "http://i.giphy.com/l46CmfBwnQeMpu0bS.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/lisa.jpg"
                 },
                 {
                   "type": "label",
-                  "text": "Mr. DJ",
+                  "text": "Lisa Simpson",
                   "class": "username center"
                 },
                 {
@@ -236,11 +236,11 @@
                 {
                   "type": "image",
                   "class": "carousel_img",
-                  "url": "http://i.giphy.com/yedDQGWwq0heU.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/maggie.png"
                 },
                 {
                   "type": "label",
-                  "text": "Mr. Lazy",
+                  "text": "Maggie Simpson",
                   "class": "username center"
                 },
                 {
@@ -298,7 +298,7 @@
                 {
                   "type": "image",
                   "class": "avatar_img",
-                  "url": "http://i.giphy.com/OmK8lulOMQ9XO.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/homer.jpg"
                 },
                 {
                   "type": "vertical",
@@ -306,12 +306,12 @@
                     {
                       "type": "label",
                       "class": "username",
-                      "text": "Mr. Fisherman"
+                      "text": "Homer Simpson"
                     },
                     {
                       "type": "label",
                       "class": "normal",
-                      "text": "Busy fishing on the iPhone"
+                      "text": "Donuts..."
                     }
                   ]
                 }
@@ -327,7 +327,7 @@
                 {
                   "type": "image",
                   "class": "avatar_img",
-                  "url": "http://i.giphy.com/mSjXH05z06rIY.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/marge.png"
                 },
                 {
                   "type": "vertical",
@@ -335,12 +335,12 @@
                     {
                       "type": "label",
                       "class": "username",
-                      "text": "Mr. Lick"
+                      "text": "Marge Simpson"
                     },
                     {
                       "type": "label",
                       "class": "normal",
-                      "text": "Super hungry"
+                      "text": "I don't mind if you pee in the shower, but only if you're taking a shower"
                     }
                   ]
                 }
@@ -356,7 +356,7 @@
                 {
                   "type": "image",
                   "class": "avatar_img",
-                  "url": "http://i.giphy.com/icJi1WogcfJJu.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/bart.png"
                 },
                 {
                   "type": "vertical",
@@ -364,12 +364,12 @@
                     {
                       "type": "label",
                       "class": "username",
-                      "text": "Mr. High"
+                      "text": "Bart Simpson"
                     },
                     {
                       "type": "label",
                       "class": "normal",
-                      "text": "Why is everything so beautiful?"
+                      "text": "Ay Caramba!"
                     }
                   ]
                 }
@@ -385,7 +385,7 @@
                 {
                   "type": "image",
                   "class": "avatar_img",
-                  "url": "http://i.giphy.com/l46CmfBwnQeMpu0bS.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/lisa.jpg"
                 },
                 {
                   "type": "vertical",
@@ -393,12 +393,12 @@
                     {
                       "type": "label",
                       "class": "username",
-                      "text": "Mr. DJ"
+                      "text": "Lisa Simpson"
                     },
                     {
                       "type": "label",
                       "class": "normal",
-                      "text": "Check out my latest dope track: 'Organic salad'"
+                      "text": "BAAAART!"
                     }
                   ]
                 }
@@ -414,7 +414,7 @@
                 {
                   "type": "image",
                   "class": "avatar_img",
-                  "url": "http://i.giphy.com/yedDQGWwq0heU.gif"
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/maggie.png"
                 },
                 {
                   "type": "vertical",
@@ -422,12 +422,12 @@
                     {
                       "type": "label",
                       "class": "username",
-                      "text": "Mr. Lazy"
+                      "text": "Maggie Simpson"
                     },
                     {
                       "type": "label",
                       "class": "normal",
-                      "text": "Whatever,"
+                      "text": "..."
                     }
                   ]
                 }
@@ -502,14 +502,9 @@
               },
               "components": [
                 {
-                  "type": "label",
-                  "text": "?",
-                  "style": {
-                    "size": "40",
-                    "align": "center",
-                    "width": "40",
-                    "font": "HelveticaNeue-Bold"
-                  }
+                  "type": "image",
+                  "class": "avatar_img",
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/krusty.png"
                 },
                 {
                   "type": "vertical",
@@ -517,7 +512,7 @@
                     {
                       "type": "label",
                       "class": "username",
-                      "text": "Mr. Mystery"
+                      "text": "Krusty the Clown"
                     },
                     {
                       "type": "label",
