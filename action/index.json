@@ -17,7 +17,8 @@
         "card": {
           "width": "200",
           "padding": "5",
-          "height": "200",
+          "height": "100",
+          "align": "center",
           "background": "#ffffff"
         }
       },
