@@ -411,6 +411,28 @@
               }
             }
           ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Geo",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$geo.get",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/geo/index.json"
+              }
+            }
+          ]
         }
       ]
     }
