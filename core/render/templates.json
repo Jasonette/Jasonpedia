@@ -101,7 +101,7 @@
                   "style": {
                     "font": "ChalkboardSE-Bold",
                     "size": "25",
-                    "color": "#ffffff"
+                    "color": "#1192f0"
                   }
                 }]
               }
@@ -172,7 +172,7 @@
                     "font": "ChalkboardSE-Bold",
                     "size": "25",
                     "padding": "10",
-                    "color": "#ffffff"
+                    "color": "#1192f0"
                   }
                 }]
               }
