@@ -24,14 +24,14 @@
           "left": "50",
           "corner_radius": "25",
           "background": "rgba(0,0,0,0.6)",
-          "padding": "10"
+          "padding": "20"
         },
         "right": {
           "bottom": "50",
           "right": "50",
           "corner_radius": "25",
           "background": "rgba(0,0,0,0.6)",
-          "padding": "10"
+          "padding": "20"
         }
       },
       "templates": {
