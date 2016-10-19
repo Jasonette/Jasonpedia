@@ -1,0 +1,48 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Component",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/view/component/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "button",
+              "class": "bold",
+              "href": {
+                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/component/button/index.json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
