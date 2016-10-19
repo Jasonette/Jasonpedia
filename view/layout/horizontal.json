@@ -4,10 +4,8 @@
       "title": "Horizontal Layout",
       "styles": {
         "note": {
-          "color": "#ffffff",
           "font": "Georgia",
-          "background": "#ff0000",
-          "size": "14"
+          "size": "16"
         }
       }
     },
@@ -22,6 +20,7 @@
           },
           "components": [{
             "type": "label",
+            "class": "note",
             "text": "When I first encounter René Redzepi, he is cutting a live elk in half with a chainsaw. Noma’s unwavering commitment to native, hyper-local Nordic foods requires its kitchen staff to spend hours every morning foraging the neighboring woodlands and shorelines for wild ingredients, and Redzepi has a gift for sensing gastronomic potential in everything around him."
           }, {
             "type": "label",
