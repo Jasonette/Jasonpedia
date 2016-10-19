@@ -47,7 +47,15 @@
       },
       "templates": {
         "map": {
+          "style": {
+            "background": "#50BFFF",
+            "color": "#ffffff"
+          },
           "header": {
+            "style": {
+              "background": "#50BFFF",
+              "color": "#ffffff"
+            },
             "title": "$geo"
           },
           "layers": [{
@@ -90,7 +98,15 @@
           }]
         },
         "coord": {
+          "style": {
+            "background": "#50BFFF",
+            "color": "#ffffff"
+          },
           "header": {
+            "style": {
+              "background": "#50BFFF",
+              "color": "#ffffff"
+            },
             "title": "$geo"
           },
           "layers": [{
@@ -129,7 +145,15 @@
           }]
         },
         "body": {
+          "style": {
+            "background": "#50BFFF",
+            "color": "#ffffff"
+          },
           "header": {
+            "style": {
+              "background": "#50BFFF",
+              "color": "#ffffff"
+            },
             "title": "$geo"
           },
           "layers": [{
