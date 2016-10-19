@@ -113,8 +113,7 @@
               "text": "Network related",
               "class": "bold",
               "href": {
-                "url": "http://www.jasonbase.com/things/V8l.json",
-                "fresh": "true"
+                "url": "http://www.jasonbase.com/things/V8l.json"
               }
             }
           ]
