@@ -24,7 +24,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/master/view/component/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/index.json",
             "view": "web"
           }
         }

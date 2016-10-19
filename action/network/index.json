@@ -38,7 +38,7 @@
             "menu": {
               "text": "View JSON",
               "href": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/master/action/network/index.json",
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/network/index.json",
                 "view": "web"
               }
             }
