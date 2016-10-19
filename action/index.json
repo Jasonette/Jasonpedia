@@ -81,18 +81,11 @@
         },
         "search": {
           "name": "query",
-          "placeholder": "Enter keyword",
+          "placeholder": "search actions",
           "style": {
             "dark": "true",
             "color": "#ffffff",
             "background": "#8bb92d"
-          },
-          "action": {
-            "type": "$util.banner",
-            "options": {
-              "title": "{{$get.query}}",
-              "description": "The content inside the search input is {{$get.query}}"
-            }
           }
         }
       },
