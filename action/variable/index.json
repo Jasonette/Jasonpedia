@@ -36,12 +36,21 @@
             },
             {
               "items": [{
-                "type": "textfield",
-                "name": "blank",
-                "focused": "true",
-                "action": {
-                  "type": "$render"
-                }
+                "type": "horizontal",
+                "components": [{
+                  "type": "textfield",
+                  "name": "blank",
+                }, {
+                  "type": "button",
+                  "text": "Done",
+                  "style": {
+                    "width": "80",
+                    "color": "#ff0000"
+                  },
+                  "action": {
+                    "type": "$render"
+                  }
+                }]
               }]
             }
           ]
