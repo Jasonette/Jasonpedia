@@ -82,8 +82,7 @@
         {
           "type": "horizontal",
           "style": {
-            "width": "200",
-            "height": "200"
+            "width": "200"
           },
           "header": {
             "type": "label",
@@ -203,9 +202,13 @@
           ]
         },
         {
+          "type": "horizontal",
+          "style": {
+            "width": "200"
+          },
           "header": {
             "type": "label",
-            "text": "Rest",
+            "text": "$media",
             "style": {
               "background": "#ffffff"
             }
@@ -303,7 +306,16 @@
                   }
                 }
               }
-            },
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "$network",
+            "class": "bold"
+          },
+          "items": [
             {
               "type": "label",
               "text": "$network",
