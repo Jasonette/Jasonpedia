@@ -83,7 +83,7 @@
           "placeholder": "Enter keyword",
           "style": {
             "dark": "true",
-            "background": "#191919"
+            "background": "#8bb92d"
           },
           "action": {
             "type": "$util.banner",
