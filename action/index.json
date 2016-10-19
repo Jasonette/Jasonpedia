@@ -253,10 +253,10 @@
           },
           "header": {
             "type": "label",
+            "text": "$media",
             "style": {
               "background": "#ebebeb"
             },
-            "text": "$media",
           },
           "items": [
             {
