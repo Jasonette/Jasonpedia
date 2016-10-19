@@ -5,7 +5,7 @@
       "styles": {
         "note": {
           "color": "#ffffff",
-          "font": "Georgia"
+          "font": "Georgia",
           "size": "14"
         }
       }
