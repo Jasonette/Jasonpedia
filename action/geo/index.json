@@ -5,6 +5,12 @@
       "actions": {
         "$load": {
           "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
         }
       },
       "templates": {
