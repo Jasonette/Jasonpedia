@@ -112,124 +112,124 @@
             {
               "type": "vertical",
               "class": "card",
+              "action": {
+                "type": "$util.banner",
+                "options": {
+                  "title": "Hello world",
+                  "description": "I'm a banner. I display a title and a description."
+                }
+              },
               "components": [{
                 "type": "label",
                 "text": "$util.banner",
-                "class": "bold",
-                "action": {
-                  "type": "$util.banner",
-                  "options": {
-                    "title": "Hello world",
-                    "description": "I'm a banner. I display a title and a description."
-                  }
-                }
+                "class": "bold"
               }]
             },
             {
               "type": "vertical",
               "class": "card",
+              "action": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "I'm a toast. I display a simple text."
+                }
+              },
               "components": [{
                 "type": "label",
                 "class": "bold",
-                "text": "$util.toast",
-                "action": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": "I'm a toast. I display a simple text."
-                  }
-                }
+                "text": "$util.toast"
               }]
             },
             {
               "type": "vertical",
               "class": "card",
+              "action": {
+                "type": "$util.alert",
+                "options": {
+                  "title": "Basic Alert",
+                  "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
+                }
+              },
               "components": [{
                 "type": "label",
                 "class": "bold",
-                "text": "$util.alert (basic)",
-                "action": {
-                  "type": "$util.alert",
-                  "options": {
-                    "title": "Basic Alert",
-                    "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
-                  }
-                }
+                "text": "$util.alert (basic)"
               }]
             },
             {
               "type": "vertical",
               "class": "card",
+              "action": {
+                "trigger": "form_alert"
+              },
               "components": [{
                 "type": "label",
                 "class": "bold",
                 "text": "$util.alert (with input fields)",
-                "action": {
-                  "trigger": "form_alert"
-                }
               }]
             },
             {
               "type": "vertical",
               "class": "card",
+              "action": {
+                "type": "$util.picker",
+                "options": {
+                  "items": [
+                    {
+                      "text": "Trigger $util.banner",
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Hi I'm a banner",
+                          "description": "I'm triggered by a picker"
+                        }
+                      }
+                    },
+                    {
+                      "text": "Trigger $util.alert",
+                      "action": {
+                        "type": "$util.alert",
+                        "options": {
+                          "title": "Hi I'm an alert",
+                          "description": "I'm triggerred by an alert"
+                        }
+                      }
+                    },
+                    {
+                      "text": "Trigger $audio.play",
+                      "action": {
+                        "type": "$audio.play",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/www.textcast.co/icons/yo.mp3"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
               "components": [{
                 "type": "label",
                 "class": "bold",
-                "text": "$util.picker",
-                "action": {
-                  "type": "$util.picker",
-                  "options": {
-                    "items": [
-                      {
-                        "text": "Trigger $util.banner",
-                        "action": {
-                          "type": "$util.banner",
-                          "options": {
-                            "title": "Hi I'm a banner",
-                            "description": "I'm triggered by a picker"
-                          }
-                        }
-                      },
-                      {
-                        "text": "Trigger $util.alert",
-                        "action": {
-                          "type": "$util.alert",
-                          "options": {
-                            "title": "Hi I'm an alert",
-                            "description": "I'm triggerred by an alert"
-                          }
-                        }
-                      },
-                      {
-                        "text": "Trigger $audio.play",
-                        "action": {
-                          "type": "$audio.play",
-                          "options": {
-                            "url": "https://s3.amazonaws.com/www.textcast.co/icons/yo.mp3"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                }
+                "text": "$util.picker"
               }]
             },
             {
               "type": "vertical",
               "class": "card",
+              "action": {
+                "type": "$util.datepicker",
+                "success": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Selected time is",
+                    "description": "{{(new Date(parseInt($jason.value) * 1000)).toString()}}"
+                  }
+                }
+              },
               "components": [{
                 "type": "label",
                 "text": "$util.datepicker",
-                "class": "bold",
-                "action": {
-                  "type": "$util.datepicker",
-                  "success": {
-                    "type": "$util.banner",
-                    "options": {
-                      "title": "Selected time is",
-                      "description": "{{(new Date(parseInt($jason.value) * 1000)).toString()}}"
-                    }
-                  }
-                }
+                "class": "bold"
               }]
             },
             {
@@ -260,20 +260,23 @@
           },
           "items": [
             {
-              "type": "label",
-              "text": "$media.play",
-              "class": "bold card",
+              "type": "vertical",
+              "class": "card",
               "action": {
                 "type": "$media.play",
                 "options": {
                   "url": "https://vo.fod4.com/v/25c17d6eb2/v600.mp4"
                 }
-              }
+              },
+              "components": [{
+                "type": "label",
+                "text": "$media.play",
+                "class": "bold"
+              }]
             },
             {
-              "type": "label",
-              "text": "$media.picker + $util.share (photo)",
-              "class": "bold card",
+              "type": "vertical",
+              "class": "card",
               "action": {
                 "type": "$media.picker",
                 "success": {
@@ -287,12 +290,16 @@
                     ]
                   }
                 }
-              }
+              },
+              "components": [{
+                "type": "label",
+                "text": "$media.picker + $util.share (photo)",
+                "class": "bold"
+              }]
             },
             {
-              "type": "label",
-              "text": "$media.camera + $util.share (photo)",
-              "class": "bold card",
+              "type": "vertical",
+              "class": "card",
               "action": {
                 "type": "$media.camera",
                 "success": {
@@ -306,12 +313,17 @@
                     ]
                   }
                 }
-              }
+              },
+              "components": [{
+                "type": "label",
+                "text": "$media.camera + $util.share (photo)",
+                "class": "bold"
+                }
+              }]
             },
             {
-              "type": "label",
-              "text": "$media.camera + $util.share (photo with editing)",
-              "class": "bold card",
+              "type": "vertical",
+              "class": "card",
               "action": {
                 "type": "$media.camera",
                 "options": {
@@ -328,12 +340,16 @@
                     ]
                   }
                 }
-              }
+              },
+              "components": [{
+                "type": "label",
+                "text": "$media.camera + $util.share (photo with editing)",
+                "class": "bold"
+              }]
             },
             {
-              "type": "label",
-              "text": "$media.camera + $util.share (video)",
-              "class": "bold card",
+              "type": "vertical",
+              "class": "card",
               "action": {
                 "type": "$media.camera",
                 "options": {
@@ -350,7 +366,12 @@
                     ]
                   }
                 }
-              }
+              },
+              "components": [{
+                "type": "label",
+                "text": "$media.camera + $util.share (video)",
+                "class": "bold"
+              }]
             }
           ]
         },
