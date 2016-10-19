@@ -20,9 +20,18 @@
           "image": "https://jasonette.github.io/Jasonpedia/assets/maggie.png"
         }]
       },
+      "styles": {
+        
+      },
       "templates": {
         "horizontal": {
+          "style": {
+            "background": "#f8d728"
+          },
           "header": {
+            "style": {
+              "background": "#f8d728"
+            },
             "menu": {
               "text": "Switch view",
               "action": {
@@ -48,6 +57,15 @@
           },
           "sections": [{
             "type": "horizontal",
+            "header": {
+              "type": "image",
+              "url": "https://jasonette.github.io/Jasonpedia/assets/simpsons.jpg",
+              "style": {
+                "width": "100%",
+                "padding": "0",
+                "z_index": "-1"
+              }
+            },
             "items": {
               "{{#each members}}": {
                 "type": "vertical",
@@ -74,7 +92,13 @@
           }]
         },
         "body": {
+          "style": {
+            "background": "#f8d728"
+          },
           "header": {
+            "style": {
+              "background": "#f8d728"
+            },
             "menu": {
               "text": "Switch view",
               "action": {
@@ -99,6 +123,15 @@
             }
           },
           "sections": [{
+            "header": {
+              "type": "image",
+              "url": "https://jasonette.github.io/Jasonpedia/assets/simpsons.jpg",
+              "style": {
+                "width": "100%",
+                "padding": "0",
+                "z_index": "-1"
+              }
+            },
             "items": {
               "{{#each members}}": {
                 "type": "horizontal",
