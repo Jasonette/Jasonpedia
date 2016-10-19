@@ -6,12 +6,22 @@
     "body": {
       "sections": [{
         "items": [{
-          "type": "button",
+          "type": "vertical",
           "style": {
-            "font": "HelveticaNeue-Bold",
-            "size": "15"
+            "align": "center"
           },
-          "text": "I'm a button"
+          "components": [{ 
+            "type": "button",
+            "style": {
+              "width": "200",
+              "height": "100",
+              "background": "#00ff00",
+              "color": "#ffffff",
+              "font": "HelveticaNeue-Bold",
+              "size": "15"
+            },
+            "text": "I'm a button"
+          }]
         }]
       }]
     }

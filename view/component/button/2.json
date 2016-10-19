@@ -6,17 +6,23 @@
     "body": {
       "sections": [{
         "items": [{
-          "type": "button",
+          "type": "vertical",
           "style": {
-            "font": "HelveticaNeue-Bold",
-            "background": "#000000",
-            "color": "#ffffff",
-            "width": "200",
-            "height": "200",
-            "corner_radius": "100",
-            "size": "15"
+            "align": "center"
           },
-          "text": "I'm a button"
+          "components": [{
+            "type": "button",
+            "style": {
+              "font": "HelveticaNeue-Bold",
+              "background": "#0000ff",
+              "color": "#ffffff",
+              "width": "200",
+              "height": "200",
+              "corner_radius": "100",
+              "size": "15"
+            },
+            "text": "YES"
+          }]
         }]
       }]
     }
