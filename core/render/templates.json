@@ -2,6 +2,14 @@
   "$jason": {
     "head": {
       "title": "$render templates",
+      "actions": {
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+      },
       "data": {
         "members": [{
           "name": "Bart",
@@ -26,7 +34,8 @@
       "templates": {
         "horizontal": {
           "style": {
-            "background": "#f8d728"
+            "background": "#f8d728",
+            "border": "none"
           },
           "header": {
             "style": {
@@ -72,6 +81,7 @@
                 "style": {
                   "width": "100",
                   "height": "100",
+                  "padding": "10",
                   "align": "center"
                 },
                 "components": [{
@@ -85,7 +95,12 @@
                   }
                 }, {
                   "type": "label",
-                  "text": "{{name}}"
+                  "text": "{{name}}",
+                  "style": {
+                    "font": "ChalkboardSE-Bold",
+                    "size": "14",
+                    "color": "#ffffff"
+                  }
                 }]
               }
             }
@@ -93,7 +108,8 @@
         },
         "body": {
           "style": {
-            "background": "#f8d728"
+            "background": "#f8d728",
+            "border": "none"
           },
           "header": {
             "style": {
@@ -145,7 +161,12 @@
                   }
                 }, {
                   "type": "label",
-                  "text": "{{name}}"
+                  "text": "{{name}}",
+                  "style": {
+                    "font": "ChalkboardSE-Bold",
+                    "size": "14",
+                    "color": "#ffffff"
+                  }
                 }]
               }
             }
