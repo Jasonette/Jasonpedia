@@ -21,7 +21,7 @@
     },
     "body": {
       "header": {
-        "title": "$render"
+        "title": "$render",
         "menu": {
           "text": "View JSON",
           "href": {
