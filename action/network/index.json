@@ -23,11 +23,11 @@
           "title": "imagejason",
           "description": "takes photo using $media.camera, and uploads it to imagejason.herokuapp.com via $network.upload"
         }, {
-          "url": "http://fureliza.herokuapp.com",
+          "url": "https://fureliza.herokuapp.com",
           "title": "eliza",
           "description": "make a $network.request to node.js express based chatbot server. Returns auto-generated output based on the input"
         }, {
-          "url": "http://sessionjason.herokuapp.com",
+          "url": "https://sessionjason.herokuapp.com/posts.json",
           "title": "Microblog with user account",
           "description": "Signs into the blog using token authentication ($network.request and $session.set) and make posts using $network.request"
         }]
