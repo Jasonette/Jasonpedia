@@ -83,6 +83,7 @@
           "placeholder": "Enter keyword",
           "style": {
             "dark": "true",
+            "color": "#ffffff",
             "background": "#8bb92d"
           },
           "action": {
