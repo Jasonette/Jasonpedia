@@ -190,7 +190,7 @@
               "text": "$util.addressbook",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/addressbook.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
               }
             },
             {
@@ -291,7 +291,7 @@
               "text": "$network",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/network/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/network/index.json"
               }
             }
           ]

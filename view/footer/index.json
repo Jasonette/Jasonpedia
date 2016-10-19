@@ -37,7 +37,7 @@
               "class": "bold",
               "text": "Chat Input",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/input.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/footer/input.json"
               }
             },
             {
@@ -45,7 +45,7 @@
               "class": "bold",
               "text": "Tabs",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/tabs.json",
+                "url": "https://jasonette.github.io/Jasonpedia/view/footer/tabs.json",
                 "transition": "modal"
               }
             }

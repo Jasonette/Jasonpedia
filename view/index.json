@@ -37,7 +37,7 @@
               "text": "Header",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/header/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/header/index.json"
               }
             },
             {
@@ -45,7 +45,7 @@
               "text": "Sections",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/section/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/section/index.json"
               }
             },
             {
@@ -53,7 +53,7 @@
               "text": "Layers",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/layer/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/layer/index.json"
               }
             },
             {
@@ -61,7 +61,7 @@
               "text": "Footer",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/footer/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/footer/index.json"
               }
             },
             {
@@ -77,7 +77,7 @@
               "text": "Component",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/component/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/index.json"
               }
             },
             {
@@ -85,7 +85,7 @@
               "text": "Background",
               "class": "bold",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/background/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/background/index.json"
               }
             }
           ]

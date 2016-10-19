@@ -72,7 +72,7 @@
               "text": "Core",
               "class": "bold padded",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/core/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/core/index.json"
               }
             },
             {
@@ -80,7 +80,7 @@
               "text": "View",
               "class": "bold padded",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/view/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/view/index.json"
               }
             },
             {
@@ -88,7 +88,7 @@
               "text": "Action",
               "class": "bold padded",
               "href": {
-                "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/master/action/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/index.json"
               }
             }
           ]
