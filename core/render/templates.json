@@ -82,7 +82,9 @@
                   "width": "200",
                   "height": "300",
                   "padding": "10",
-                  "align": "center"
+                  "padding_top": "30",
+                  "align": "center",
+                  "background": "#ffffff"
                 },
                 "components": [{
                   "type": "image",
@@ -151,6 +153,9 @@
             "items": {
               "{{#each members}}": {
                 "type": "horizontal",
+                "style": {
+                  "background": "#ffffff"
+                },
                 "components": [{
                   "type": "image",
                   "url": "{{image}}",
