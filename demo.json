@@ -102,7 +102,7 @@
             }, {
               "type": "label",
               "class": "normal",
-              "text": "Cool JSON snippets shared by the community. Wrote a cool/useful JSON markup? Share it here so others can use it"
+              "text": "Wrote a cool/useful JSON markup? Send a pull request"
             }]
           }
         }
