@@ -1,0 +1,33 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Horizontal Layout",
+      "styles": {
+        "note": {
+          "color": "#ffffff",
+          "font": "Georgia"
+          "size": "14"
+        }
+      }
+    },
+    "body": {
+      "sections": [{
+        "items": [{
+          "type": "horizontal",
+          "style": {
+            "padding": "15",
+            "spacing": "10"
+          },
+          "components": [{
+            "type": "label",
+            "text": "When I first encounter René Redzepi, he is cutting a live elk in half with a chainsaw. Noma’s unwavering commitment to native, hyper-local Nordic foods requires its kitchen staff to spend hours every morning foraging the neighboring woodlands and shorelines for wild ingredients, and Redzepi has a gift for sensing gastronomic potential in everything around him."
+          }, {
+            "type": "label",
+            "class": "note",
+            "text": "“A lot of times you can find these lovely little rose hip flowers pickling in the stomach fluids of the larger field mammals that live around here,” Redzepi says, his arm elbow-deep in the abdominal cavity of the freshly bisected animal, its viscera still twitching and gurgling as he fishes out two small, pink, slimy flower petals from within. “Sometimes you have to saw through 20 or so elk before you find any, but it’s always worth the effort. They’re absolutely perfect with caramelized sweetbreads.”"
+          }]
+        }]
+      }]
+    }
+  }
+}
