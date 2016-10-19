@@ -20,6 +20,7 @@
         "card": {
           "width": "200",
           "padding": "10",
+          "corner_radius": "2",
           "height": "100",
           "align": "center",
           "background": "#f5f5f5"
