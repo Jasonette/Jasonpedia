@@ -16,13 +16,49 @@
       "styles": {
         "labels": {
           "size": "20",
-          "padding": "50",
           "font": "HelveticaNeue-Bold",
           "align": "center"
         }
       },
       "templates": {
         "map": {
+          "layers": [{
+            "type": "label",
+            "text": "Display",
+            "class": "labels",
+            "style": {
+              "bottom": "50",
+              "left": "50",
+              "width": "100"
+            },
+            "action": {
+              "type": "$geo.get",
+              "success": {
+                "type": "$render",
+                "options": {
+                  "template": "coord"
+                }
+              }
+            }
+          }, {
+            "type": "label",
+            "text": "Map",
+            "class": "labels",
+            "style": {
+              "bottom": "50",
+              "left": "50",
+              "width": "100"
+            },
+            "action": {
+              "type": "$geo.get",
+              "success": {
+                "type": "$render",
+                "options": {
+                  "template": "map"
+                }
+              }
+            }
+          }],
           "sections": [{
             "items": [{
               "type": "map",
@@ -32,75 +68,95 @@
                 "height": "100"
               },
               "style": {
-                "height": "400"
+                "width": "100%",
+                "height": "100%"
               }
-            }, {
-              "type": "label",
-              "text": "Display current location",
-              "class": "labels",
-              "action": {
-                "type": "$geo.get",
-                "success": {
-                  "type": "$render",
-                  "options": {
-                    "template": "coord"
-                  }
-                }
-              }
-            }]
+            }
           }]
         },
         "coord": {
+          "layers": [{
+            "type": "label",
+            "text": "Display",
+            "class": "labels",
+            "style": {
+              "bottom": "50",
+              "left": "50",
+              "width": "100"
+            },
+            "action": {
+              "type": "$geo.get",
+              "success": {
+                "type": "$render",
+                "options": {
+                  "template": "coord"
+                }
+              }
+            }
+          }, {
+            "type": "label",
+            "text": "Map",
+            "class": "labels",
+            "style": {
+              "bottom": "50",
+              "left": "50",
+              "width": "100"
+            },
+            "action": {
+              "type": "$geo.get",
+              "success": {
+                "type": "$render",
+                "options": {
+                  "template": "map"
+                }
+              }
+            }
+          }],
           "sections": [{
             "items": [{
               "type": "label",
               "class": "labels",
               "text": "{{$jason.coord}}"
-            }, {
-              "type": "label",
-              "text": "Map current location",
-              "class": "labels",
-              "action": {
-                "type": "$geo.get",
-                "success": {
-                  "type": "$render",
-                  "options": {
-                    "template": "map"
-                  }
-                }
-              }
             }]
           }]
         },
         "body": {
-          "sections": [{
-            "items": [{
-              "type": "label",
-              "text": "Display current location",
-              "class": "labels",
-              "action": {
-                "type": "$geo.get",
-                "success": {
-                  "type": "$render",
-                  "options": {
-                    "template": "coord"
-                  }
+          "layers": [{
+            "type": "label",
+            "text": "Display",
+            "class": "labels",
+            "style": {
+              "bottom": "50",
+              "left": "50",
+              "width": "100"
+            },
+            "action": {
+              "type": "$geo.get",
+              "success": {
+                "type": "$render",
+                "options": {
+                  "template": "coord"
                 }
               }
-            }, {
-              "type": "label",
-              "text": "Map current location",
-              "class": "labels",
-              "action": {
-                "type": "$geo.get",
-                "success": {
-                  "type": "$render",
-                  "options": {
-                    "template": "map"
-                  }
+            }
+          }, {
+            "type": "label",
+            "text": "Map",
+            "class": "labels",
+            "style": {
+              "bottom": "50",
+              "left": "50",
+              "width": "100"
+            },
+            "action": {
+              "type": "$geo.get",
+              "success": {
+                "type": "$render",
+                "options": {
+                  "template": "map"
                 }
               }
-            }]
+            }
           }]
         }
       }
