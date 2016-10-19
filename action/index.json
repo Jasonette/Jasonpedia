@@ -64,7 +64,8 @@
     },
     "body": {
       "style": {
-        "background": "#8bb92d"
+        "background": "#8bb92d",
+        "color": "#ffffff"
       },
       "header": {
         "style": {
