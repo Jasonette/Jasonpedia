@@ -16,51 +16,51 @@
         "$foreground": {
           "type": "$reload"
         }
-      }
-    },
-    "data": {
-      "items": [{
-        "url": "https://imagejason.herokuapp.com",
-        "title": "imagejason",
-        "description": "takes photo using $media.camera, and uploads it to imagejason.herokuapp.com via $network.upload"
-      }, {
-        "url": "http://fureliza.herokuapp.com/",
-        "title": "eliza",
-        "description": "make a $network.request to node.js express based chatbot server. Returns auto-generated output based on the input"
-      }]
-    },
-    "templates": {
-      "body": {
-        "header": {
-          "menu": {
-            "text": "View JSON",
-            "href": {
-              "url": "https://github.com/Jasonette/Jasonpedia/blob/master/action/network/index.json",
-              "view": "web"
-            }
-          }
-        },
-        "sections": [
-          {
-            "items": {
-              "{{#each items}}": {
-                "type": "vertical",
-                "href": {
-                  "url": "{{url}}"
-                },
-                "components": [{
-                  "type": "label",
-                  "class": "bold",
-                  "text": "{{title}}"
-                }, {
-                  "type": "label",
-                  "class": "normal",
-                  "text": "{{description}}"
-                }]
+      },
+      "data": {
+        "items": [{
+          "url": "https://imagejason.herokuapp.com",
+          "title": "imagejason",
+          "description": "takes photo using $media.camera, and uploads it to imagejason.herokuapp.com via $network.upload"
+        }, {
+          "url": "http://fureliza.herokuapp.com/",
+          "title": "eliza",
+          "description": "make a $network.request to node.js express based chatbot server. Returns auto-generated output based on the input"
+        }]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/master/action/network/index.json",
+                "view": "web"
               }
             }
-          }
-        ]
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each items}}": {
+                  "type": "vertical",
+                  "href": {
+                    "url": "{{url}}"
+                  },
+                  "components": [{
+                    "type": "label",
+                    "class": "bold",
+                    "text": "{{title}}"
+                  }, {
+                    "type": "label",
+                    "class": "normal",
+                    "text": "{{description}}"
+                  }]
+                }
+              }
+            }
+          ]
+        }
       }
     }
   }
