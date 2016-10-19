@@ -41,7 +41,7 @@
                 "padding": "20"
               },
               "href": {
-                "url": "mailto:?subject=Documentation&body=https://github.com/Jasonette/documentation",
+                "url": "mailto:?subject=Documentation&body=https://jasonette.github.io/documentation",
                 "view": "app"
               },
               "components": [
