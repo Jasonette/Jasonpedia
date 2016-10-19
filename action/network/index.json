@@ -45,7 +45,8 @@
                 "{{#each items}}": {
                   "type": "vertical",
                   "href": {
-                    "url": "{{url}}"
+                    "url": "{{url}}",
+                    "transition": "modal"
                   },
                   "components": [{
                     "type": "label",
