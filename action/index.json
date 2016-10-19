@@ -6,6 +6,7 @@
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
           "padding": "10",
+          "align": "center",
           "background": "#ff0000",
           "width": "180",
           "height": "80",
