@@ -393,7 +393,7 @@
         {
           "header": {
             "type": "label",
-            "text": "Set/Get variables",
+            "text": "Local variables",
             "style": {
               "background": "#ebebeb"
             }
