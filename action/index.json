@@ -7,7 +7,7 @@
           "font": "HelveticaNeue-CondensedBold",
           "align": "center",
           "background": "#ffffff",
-          "corner_radius": "4",
+          "corner_radius": "3",
           "width": "140",
           "height": "90",
           "size": "15"
