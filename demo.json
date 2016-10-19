@@ -5,7 +5,6 @@
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
-          "padding": "10",
           "size": "15"
         },
         "normal": {
@@ -31,14 +30,6 @@
       },
       "sections": [
         {
-          "header": {
-            "type": "label",
-            "class": "normal",
-            "style": {
-              "background": "#ebebeb"
-            },
-            "text": "Official demo"
-          },
           "items": [
             {
               "type": "vertical",
@@ -59,7 +50,19 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "class": "bold",
+            "style": {
+              "background": "#ebebeb"
             },
+            "text": "Official demo"
+          },
+          "items": [
             {
               "type": "label",
               "text": "Core",
