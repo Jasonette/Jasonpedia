@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Vertical Layout",
-      "style": {
+      "styles": {
         "note": {
           "color": "#ffffff",
           "font": "HelveticaNeue-Bold",
