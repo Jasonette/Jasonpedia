@@ -35,23 +35,24 @@
           "align": "center"
         },
         "left": {
-          "bottom": "50",
+          "bottom": "20",
           "left": "50",
           "width": "100",
           "height": "100",
           "corner_radius": "50",
           "color": "#ffffff",
+          "background": "rgba(0,0,0,0.7)",
           "background": "#F2E205",
           "padding": "20"
         },
         "right": {
-          "bottom": "50",
+          "bottom": "20",
           "right": "50",
           "width": "100",
           "height": "100",
           "corner_radius": "50",
           "color": "#ffffff",
-          "background": "#CE2121",
+          "background": "rgba(0,0,0,0.7)",
           "padding": "20"
         }
       },
@@ -90,7 +91,7 @@
           },
           "layers": [{
             "type": "label",
-            "text": "Display",
+            "text": "Horizontal",
             "class": "labels left",
             "action": {
               "type": "$render",
@@ -100,7 +101,7 @@
             }
           }, {
             "type": "label",
-            "text": "Map",
+            "text": "Vertical",
             "class": "labels right",
             "action": {
               "type": "$render"
@@ -162,7 +163,7 @@
           },
           "layers": [{
             "type": "label",
-            "text": "Display",
+            "text": "Horizontal",
             "class": "labels left",
             "action": {
               "type": "$render",
@@ -172,7 +173,7 @@
             }
           }, {
             "type": "label",
-            "text": "Map",
+            "text": "Vertical",
             "class": "labels right",
             "action": {
               "type": "$render"
