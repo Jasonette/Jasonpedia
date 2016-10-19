@@ -6,6 +6,7 @@
         "note": {
           "color": "#ffffff",
           "font": "Georgia",
+          "background": "#ff0000",
           "size": "14"
         }
       }
