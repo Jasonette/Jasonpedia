@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Core",
+      "title": "$render",
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
@@ -21,6 +21,7 @@
     },
     "body": {
       "header": {
+        "title": "$render"
         "menu": {
           "text": "View JSON",
           "href": {
@@ -33,29 +34,17 @@
         {
           "items": [
             {
-              "type": "label",
-              "text": "$href",
-              "class": "bold",
-              "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/core/href/index.json"
-              }
-            }
-          ]
-        },
-        {
-          "items": [
-            {
               "type": "vertical",
               "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/core/render/index.json"
+                "url": "https://jasonette.github.io/Jasonpedia/core/render/templates.json"
               },
               "components": [{
                 "type": "label",
-                "text": "$render",
+                "text": "Multiple templates",
                 "class": "bold",
               }, {
                 "type": "label",
-                "text": "Check out different render options",
+                "text": "Switching between multiple different templates",
                 "class": "normal"
               }]
             }

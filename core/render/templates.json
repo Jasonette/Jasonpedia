@@ -1,0 +1,124 @@
+{
+  "$jason": {
+    "head": {
+      "title": "$render templates",
+      "data": {
+        "members": [{
+          "name": "Bart",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/bart.png"
+        }, {
+          "name": "Homer",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/homer.jpg"
+        }, {
+          "name": "Marge",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/marge.png"
+        }, {
+          "name": "Lisa",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/lisa.jpg"
+        }, {
+          "name": "Maggie",
+          "image": "https://jasonette.github.io/Jasonpedia/assets/maggie.png"
+        }]
+      },
+      "templates": {
+        "horizontal": {
+          "header": {
+            "menu": {
+              "text": "Switch view",
+              "action": {
+                "type": "$menu",
+                "options": {
+                  "items": [{
+                    "text": "Vertical",
+                    "action": {
+                      "type": "$render",
+                    }
+                  }, {
+                    "text": "Horizontal",
+                    "action": {
+                      "type": "$render",
+                      "options": {
+                        "template": "horizontal"
+                      }
+                    }
+                  }]
+                }
+              }
+            }
+          },
+          "sections": [{
+            "type": "horizontal",
+            "items": {
+              "{{#each members}}": {
+                "type": "vertical",
+                "style": {
+                  "width": "100",
+                  "height": "100",
+                  "align": "center"
+                },
+                "components": [{
+                  "type": "image",
+                  "url": "{{image}}",
+                  "style": {
+                    "width": "60",
+                    "height": "60",
+                    "padding": "20",
+                    "corner_radius": "30"
+                  }
+                }, {
+                  "type": "label",
+                  "text": "{{name}}"
+                }]
+              }
+            }
+          }]
+        },
+        "body": {
+          "header": {
+            "menu": {
+              "text": "Switch view",
+              "action": {
+                "type": "$menu",
+                "options": {
+                  "items": [{
+                    "text": "Vertical",
+                    "action": {
+                      "type": "$render",
+                    }
+                  }, {
+                    "text": "Horizontal",
+                    "action": {
+                      "type": "$render",
+                      "options": {
+                        "template": "horizontal"
+                      }
+                    }
+                  }]
+                }
+              }
+            }
+          },
+          "sections": [{
+            "items": {
+              "{{#each members}}": {
+                "type": "horizontal",
+                "components": [{
+                  "type": "image",
+                  "url": "{{image}}",
+                  "style": {
+                    "width": "60",
+                    "height": "60",
+                    "corner_radius": "30"
+                  }
+                }, {
+                  "type": "label",
+                  "text": "{{name}}"
+                }]
+              }
+            }
+          }]
+        }
+      }
+    }
+  }
+}
