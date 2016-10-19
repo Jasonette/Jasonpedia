@@ -3,7 +3,9 @@
     "head": {
       "title": "$geo",
       "actions": {
-        "type": "$render"
+        "$load": {
+          "type": "$render"
+        }
       },
       "templates": {
         "coord": {
