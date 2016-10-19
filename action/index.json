@@ -371,7 +371,7 @@
         {
           "header": {
             "type": "label",
-            "text": "$network",
+            "text": "$network & $session",
             "style": {
               "background": "#ebebeb"
             }
@@ -386,6 +386,28 @@
               },
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/action/network/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Set/Get variables",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "Variable",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/variable/index.json"
               }
             }
           ]
