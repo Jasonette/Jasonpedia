@@ -126,8 +126,7 @@
                   "height": "300",
                   "padding": "10",
                   "padding_top": "30",
-                  "align": "center",
-                  "background": "#ffffff"
+                  "align": "center"
                 },
                 "components": [{
                   "type": "image",
