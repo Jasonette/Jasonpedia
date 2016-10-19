@@ -107,7 +107,7 @@
             }, {
               "type": "label",
               "class": "normal",
-              "text": "Wrote a cool/useful JSON markup? Send a pull request"
+              "text": "Wrote a cool/useful JSON markup? Send a pull request to https://github.com/Jasonette/Jasonpedia"
             }]
           }
         }
