@@ -30,7 +30,7 @@
       },
       "styles": {
         "labels": {
-          "size": "14",
+          "size": "12",
           "font": "HelveticaNeue-Bold",
           "align": "center"
         },
