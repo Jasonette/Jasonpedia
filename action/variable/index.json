@@ -40,11 +40,14 @@
                 "components": [{
                   "type": "textfield",
                   "name": "blank",
+                  "style": {
+                    "height": "30"
+                  }
                 }, {
                   "type": "button",
                   "text": "Done",
                   "style": {
-                    "width": "80",
+                    "width": "60",
                     "color": "#ff0000"
                   },
                   "action": {
