@@ -35,26 +35,64 @@
               }]
             },
             {
-              "items": [{
-                "type": "horizontal",
-                "components": [{
-                  "type": "textfield",
-                  "name": "blank",
+              "header": {
+                "type": "label",
+                "text": "textarea"
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [{
+                    "type": "textfield",
+                    "name": "blank",
+                    "style": {
+                      "height": "30"
+                    }
+                  }, {
+                    "type": "button",
+                    "text": "Done",
+                    "style": {
+                      "width": "60",
+                      "color": "#ff0000"
+                    },
+                    "action": {
+                      "type": "$render"
+                    }
+                  }]
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "textarea"
+              },
+              "items": [
+                {
+                  "type": "horizontal",
                   "style": {
-                    "height": "30"
-                  }
-                }, {
-                  "type": "button",
-                  "text": "Done",
-                  "style": {
-                    "width": "60",
-                    "color": "#ff0000"
+                    "align": "top"
                   },
-                  "action": {
-                    "type": "$render"
-                  }
-                }]
-              }]
+                  "components": [{
+                    "type": "textarea",
+                    "name": "blank",
+                    "style": {
+                      "height": "200"
+                    }
+                  }, {
+                    "type": "button",
+                    "text": "Done",
+                    "style": {
+                      "width": "60",
+                      "height": "60",
+                      "color": "#ff0000"
+                    },
+                    "action": {
+                      "type": "$render"
+                    }
+                  }]
+                }
+              ]
             }
           ]
         }
