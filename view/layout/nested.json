@@ -16,6 +16,9 @@
         }, {
           "text": "I think this is a new feature on Twitter: a push notification for every tweet",
           "image": "https://pbs.twimg.com/media/CtJYvx1XgAIilZ4.jpg"
+        }, {
+          "text": "Found the most brilliant invention in human history",
+          "image": "https://pbs.twimg.com/media/Cr7cSz1WIAA0OZj.jpg"
         }]
       },
       "templates": {
@@ -64,7 +67,7 @@
                     "text": "{{text}}",
                     "style": {
                       "font": "HelveticaNeue",
-                      "size": "16"
+                      "size": "14"
                     }
                   }, {
                     "type": "image",
