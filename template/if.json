@@ -44,8 +44,18 @@
                     "{{#else}}": "https://jasonette.github.io/Jasonpedia/assets/egg.png"
                   }]
                 }, {
-                  "type": "label",
-                  "text": "{{username}}"
+                  "type": "vertical",
+                  "components": [{
+                    "type": "label",
+                    "style": {
+                      "font": "HelveticaNeue-Bold",
+                      "size": "12"
+                    },
+                    "text": "{{username}}"
+                  }, {
+                    "type": "label",
+                    "text": "JSON:\n\n{{JSON.stringify(this, null, "  ")}}"
+                  }]
                 }]
               }
             }
