@@ -22,7 +22,7 @@
           "sections": [{
             "header": {
               "type": "label",
-              "text": "What's going on here:\n\nDisplay the default avatar (egg) for those who don't have an avatar."
+              "text": "What's going on here:\n\nDisplay the default avatar (egg) for those who don't have an avatar.",
               "style": {
                 "background": "#f5f5f5"
               }
