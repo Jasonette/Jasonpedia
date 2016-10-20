@@ -35,7 +35,8 @@
           {
             "type": "horizontal",
             "style": {
-              "align": "top"
+              "align": "top",
+              "padding": "0"
             },
             "components": [{
               "type": "textarea",
