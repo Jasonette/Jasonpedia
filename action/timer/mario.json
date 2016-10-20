@@ -50,7 +50,7 @@
               "type": "vertical",
               "components": [{
                 "type": "label",
-                "url": "FRAME: https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
+                "text": "FRAME: https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
                 "style": {
                   "font": "Courier",
                   "size": "12",
@@ -58,7 +58,7 @@
                 }
               }, {
                 "type": "label",
-                "url": "COORD: {{$get.frame}}",
+                "text": "COORD: {{$get.frame}}",
                 "style": {
                   "font": "Courier",
                   "size": "12",
