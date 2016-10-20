@@ -11,6 +11,9 @@
       }
     },
     "body": {
+      "style": {
+        "background": "#f5f5f5"
+      },
       "header": {
         "menu": {
           "text": "View JSON",
