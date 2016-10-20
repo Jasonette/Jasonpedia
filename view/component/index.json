@@ -40,6 +40,14 @@
           "items": [
             {
               "type": "label",
+              "text": "label",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/label/index.json"
+              }
+            },
+            {
+              "type": "label",
               "text": "button",
               "class": "bold",
               "href": {
