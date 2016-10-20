@@ -33,11 +33,13 @@
       "templates": {
         "body": {
           "style": {
-            "background": "#000000"
+            "background": "#000000",
+            "color": "#ffffff"
           },
           "header": {
             "style": {
-              "background": "#000000"
+              "background": "#000000",
+              "color": "#ffffff"
             }
           },
           "layers": [{
@@ -48,7 +50,7 @@
               "left": "50%-100",
               "color": "#ffffff",
               "font": "Georgia",
-              "size": "40",
+              "size": "50",
               "align": "center",
               "width": "200"
             }
