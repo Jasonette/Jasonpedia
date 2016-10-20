@@ -16,6 +16,9 @@
       "sections": [{
         "header": {
           "type": "label",
+          "style": {
+            "background": "#f5f5f5"
+          },
           "text": "Full width image"
         },
         "items": [{
@@ -29,6 +32,9 @@
       }, {
         "header": {
           "type": "label",
+          "style": {
+            "background": "#f5f5f5"
+          },
           "text": "rounded image"
         },
         "items": [{
