@@ -1,0 +1,39 @@
+{
+  "$jason": {
+    "head": {
+      "title": "label"
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/label/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [{
+        "items": [{
+          "type": "label",
+          "text": "Helvetica Neue Bold, 30, orange",
+          "style": {
+            "font": "HelveticaNeue-Bold",
+            "size": "30",
+            "padding": "20",
+            "color": "#FFA500"
+          }
+        }, {
+          "type": "label",
+          "text": "Courier, 13, green",
+          "style": {
+            "font": "Courier",
+            "size": "13",
+            "padding": "20",
+            "color": "#00ff00"
+          }
+        }]
+      }]
+    }
+  }
+}
