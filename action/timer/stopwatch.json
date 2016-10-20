@@ -23,7 +23,7 @@
         "tick": {
           "type": "$set",
           "options": {
-            "index": "{{(parseInt($get.index) + 1).toString()}}"
+            "index": "{{'' + (parseInt($get.index) + 1)}}"
           },
           "success": {
             "type": "$render"
@@ -38,6 +38,7 @@
             "style": {
               "top": "50%",
               "left": "50%-100",
+              "color": "#ff0000",
               "font": "Courier",
               "size": "30",
               "width": "200"
