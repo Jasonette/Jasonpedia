@@ -18,6 +18,15 @@
           "success": {
             "type": "$reload"
           }
+        },
+        "$load": {
+          "type": "$set",
+          "options": {
+            "gauge": "0.2"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "templates": {
