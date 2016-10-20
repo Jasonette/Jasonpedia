@@ -19,10 +19,20 @@
       },
       "templates": {
         "body": {
+          "header": {
+            "title": "#if/#elseif/#else",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/if.json",
+                "view": "web"
+              }
+            }
+          },
           "sections": [{
             "header": {
               "type": "label",
-              "text": "What's going on here:\n\nDisplay the default avatar (egg) for those who don't have an avatar.",
+              "text": "What's going on here:\n\nDisplay the default avatar (egg) for those who don't have an avatar, using the #if and #else logic (view JSON for more)",
               "style": {
                 "background": "#f5f5f5"
               }
