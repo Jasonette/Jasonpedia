@@ -56,7 +56,7 @@
             "url": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
             "style": {
               "top": "50%",
-              "left": "{{'' + (parseInt($get.index)%500)}}",
+              "left": "{{'' + ((parseInt($get.index)+1)%500)}}",
               "width": "50",
               "height": "50"
             }
