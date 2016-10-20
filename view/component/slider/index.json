@@ -51,6 +51,8 @@
               "name": "gauge",
               "style": {
                 "height": "100",
+                "width": "50%",
+                "align": "center",
                 "color": "#00ff00"
               },
               "action": {
