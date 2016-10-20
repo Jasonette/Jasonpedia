@@ -37,7 +37,8 @@
           "url": "https://jasonette.github.io/Jasonpedia/template/each.json"
         }, {
           "title": "#if | #elseif | #else",
-          "description": "Use the conditionals to selectively render templates"
+          "description": "Use the conditionals to selectively render templates",
+          "url": "https://jasonette.github.io/Jasonpedia/template/if.json"
         }, {
           "title": "Use Javascript expressions",
           "description": "Jasonette template engine is built on top of native Javascript engine, so you can use any Javascript expression inside {{ }}"
