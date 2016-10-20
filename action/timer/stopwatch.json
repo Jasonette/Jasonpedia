@@ -32,16 +32,24 @@
       },
       "templates": {
         "body": {
+          "style": {
+            "background": "#000000"
+          },
+          "header": {
+            "style": {
+              "background": "#000000"
+            }
+          },
           "layers": [{
             "type": "label",
             "text": "{{$get.index}}",
             "style": {
               "top": "50%",
               "left": "50%-100",
-              "color": "#ff0000",
-              "font": "Courier",
-              "size": "30",
-              "background": "rgba(0,0,0,0.3)",
+              "color": "#ffffff",
+              "font": "Georgia",
+              "size": "40",
+              "align": "center",
               "width": "200"
             }
           }]
