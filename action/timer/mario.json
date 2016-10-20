@@ -43,16 +43,21 @@
             }
           },
           "layers": [{
+            "type": "label",
+            "text": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
+            "style": {
+              "top": "40%",
+              "left": "50%-100",
+              "color": "#ffffff",
+              "align": "center",
+              "width": "200"
+            }
+          }, {
             "type": "image",
             "url": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
-            "text": "{{$get.index}}",
             "style": {
               "top": "50%",
               "left": "50%-100",
-              "color": "#ffffff",
-              "font": "Georgia",
-              "size": "50",
-              "align": "center",
               "width": "200"
             }
           }]
