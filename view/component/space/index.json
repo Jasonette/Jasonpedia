@@ -47,12 +47,14 @@
           "items": [
             {
               "type": "vertical",
+              "style": {
+                "padding": "0"
+              },
               "components": [
                 {
                   "type": "label",
                   "style": {
-                    "background": "#ebebeb",
-                    "padding": "0"
+                    "background": "#ebebeb"
                   },
                   "text": "50px Space below this point",
                   "class": "bold"
@@ -67,8 +69,7 @@
                   "type": "label",
                   "text": "50px Space above this point",
                   "style": {
-                    "background": "#ebebeb",
-                    "padding": "0"
+                    "background": "#ebebeb"
                   },
                   "class": "bold"
                 }
