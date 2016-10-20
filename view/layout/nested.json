@@ -28,7 +28,7 @@
           }, {
             "type": "vertical",
             "style": {
-              "spacing": "10"
+              "spacing": "5"
             },
             "components": [{
               "type": "horizontal",
@@ -37,7 +37,7 @@
                 "text": "ethan",
                 "style": {
                   "font": "HelveticaNeue-Bold",
-                  "width": "60",
+                  "width": "50",
                   "size": "14"
                 }
               }, {
