@@ -16,10 +16,30 @@
       "sections": [{
         "items": [{
           "type": "label",
-          "text": "Helvetica Neue Bold, 30, orange",
+          "text": "Helvetica Neue Bold, 20, orange",
           "style": {
             "font": "HelveticaNeue-Bold",
-            "size": "30",
+            "size": "20",
+            "padding": "20",
+            "color": "#FFA500"
+          }
+        }, {
+          "type": "label",
+          "text": "Helvetica Neue Bold, 20, orange, align: right",
+          "style": {
+            "font": "HelveticaNeue-Bold",
+            "align": "right",
+            "size": "20",
+            "padding": "20",
+            "color": "#FFA500"
+          }
+        }, {
+          "type": "label",
+          "text": "Helvetica Neue Bold, 20, orange, align: center",
+          "style": {
+            "font": "HelveticaNeue-Bold",
+            "align": "center",
+            "size": "20",
             "padding": "20",
             "color": "#FFA500"
           }
