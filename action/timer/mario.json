@@ -56,9 +56,9 @@
             "url": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
             "style": {
               "top": "50%",
-              "left": "50%-100",
-              "width": "200",
-              "height": "200"
+              "left": "50%-25",
+              "width": "50",
+              "height": "50"
             }
           }]
         }
