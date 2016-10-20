@@ -40,6 +40,13 @@
             "style": {
               "background": "#000000",
               "color": "#ffffff"
+            },
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/timer/stopwatch.json",
+                "view": "web"
+              }
             }
           },
           "layers": [{
