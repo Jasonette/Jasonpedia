@@ -8,13 +8,15 @@
           "options": {
             "index": "0"
           },
-          "type": "$timer.start",
-          "options": {
-            "interval": "1",
-            "name": "stopwatch",
-            "repeats": "true",
-            "action": {
-              "trigger": "tick"
+          "success": {
+            "type": "$timer.start",
+            "options": {
+              "interval": "1",
+              "name": "stopwatch",
+              "repeats": "true",
+              "action": {
+                "trigger": "tick"
+              }
             }
           }
         },
