@@ -29,10 +29,12 @@
       "data": {
         "json_items": [{
           "title": "Inline Data",
-          "description": "Render inline data ($jason.head.data) using template"
+          "description": "Render inline data ($jason.head.data) using template",
+          "url": "https://jasonette.github.io/Jasonpedia/template/inline.json"
         }, {
           "title": "#each",
-          "description": "Loop through array using #each keyword"
+          "description": "Loop through array using #each keyword",
+          "url": "https://jasonette.github.io/Jasonpedia/template/each.json"
         }, {
           "title": "#if | #elseif | #else",
           "description": "Use the conditionals to selectively render templates"
@@ -90,6 +92,9 @@
               "items": {
                 "{{#each json_items}}": {
                   "type": "vertical",
+                  "href": {
+                    "url": "{{url}}"
+                  },
                   "components": [{
                     "type": "label",
                     "text": "{{title}}",
