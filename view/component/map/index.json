@@ -1,7 +1,14 @@
 {
   "$jason": {
     "head": {
-      "title": "map"
+      "title": "map",
+      "styles": {
+        "padded": {
+          "padding": "20",
+          "font": "HelveticaNeue-Bold",
+          "size": "20"
+        }
+      }
     },
     "body": {
       "header": {
