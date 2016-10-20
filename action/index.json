@@ -433,6 +433,28 @@
               }
             }
           ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Timer",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$timer",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/timer/index.json"
+              }
+            }
+          ]
         }
       ]
     }
