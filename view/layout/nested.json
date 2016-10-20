@@ -14,6 +14,9 @@
       "sections": [{
         "items": [{
           "type": "horizontal",
+          "style": {
+            "spacing": "10"
+          },
           "components": [{
             "type": "image",
             "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",
@@ -24,6 +27,9 @@
             }
           }, {
             "type": "vertical",
+            "style": {
+              "spacing": "10"
+            },
             "components": [{
               "type": "horizontal",
               "components": [{
@@ -31,6 +37,7 @@
                 "text": "ethan",
                 "style": {
                   "font": "HelveticaNeue-Bold",
+                  "width": "60",
                   "size": "14"
                 }
               }, {
@@ -41,8 +48,6 @@
                   "size": "13",
                   "font": "HelveticaNeue"
                 }
-              }, {
-                "type": "space"
               }]
             }, {
               "type": "label",
