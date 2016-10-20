@@ -34,6 +34,9 @@
       }
     },
     "body": {
+      "style": {
+        "border": "none"
+      },
       "header": {
         "menu": {
           "text": "View JSON",

@@ -32,12 +32,20 @@
         {
           "items": [
             {
-              "type": "label",
-              "text": "$href",
-              "class": "bold",
+              "type": "vertical",
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/core/href/index.json"
-              }
+              },
+              "components": [{
+                "type": "label",
+                "text": "$href",
+                "class": "bold",
+              }, {
+                "type": "label",
+                "text": "Various types of linking between views",
+                "class": "normal"
+              }]
+            }
             }
           ]
         },
