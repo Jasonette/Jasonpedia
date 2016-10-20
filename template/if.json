@@ -45,6 +45,9 @@
                   }]
                 }, {
                   "type": "vertical",
+                  "style": {
+                    "spacing": "5"
+                  },
                   "components": [{
                     "type": "label",
                     "style": {
@@ -56,11 +59,13 @@
                     "type": "label",
                     "style": {
                       "background": "#282828",
+                      "corner_radius": "3",
                       "color": "#c5d3d8",
                       "padding": "10",
+                      "size": "12",
                       "font": "Courier"
                     },
-                    "text": "JSON:\n\n{{JSON.stringify(this, null, '    ')}}"
+                    "text": "JSON:\n\n{{JSON.stringify(this, null, '  ')}}"
                   }]
                 }]
               }
