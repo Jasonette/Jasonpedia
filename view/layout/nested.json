@@ -81,32 +81,36 @@
                     }
                   }, {
                     "type": "horizontal",
+                    "style": {
+                      "padding_top": "10",
+                      "padding_bottom": "10"
+                    },
                     "components": [{
                       "type": "image",
                       "style": {
-                        "height": "15"
+                        "height": "20"
                       },
                       "url": "https://g.twimg.com/dev/documentation/image/reply-action_0.png"
                     }, {
                       "type": "space",
                       "style": {
-                        "width": "20"
+                        "width": "40"
                       }
                     }, {
                       "type": "image",
                       "style": {
-                        "height": "15"
+                        "height": "20"
                       },
                       "url": "https://g.twimg.com/dev/documentation/image/retweet-action.png"
                     }, {
                       "type": "space",
                       "style": {
-                        "width": "20"
+                        "width": "40"
                       }
                     }, {
                       "type": "image",
                       "style": {
-                        "height": "15"
+                        "height": "20"
                       },
                       "url": "https://g.twimg.com/dev/documentation/image/like-action.png"
                     }, {
