@@ -41,6 +41,7 @@
           "type": "horizontal",
           "style": {
             "padding": "0",
+            "align": "fill",
             "z_index": "-1"
           },
           "components": [{
