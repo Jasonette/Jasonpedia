@@ -25,7 +25,7 @@
           "type": "$set",
           "options": {
             "index": "{{'' + ((parseInt($get.index) + 1)%2)}}",
-            "frame": "{{'' + ((parseInt($get.frame) + 1)%500)}}"
+            "frame": "{{'' + ((parseInt($get.frame) + 5)%500)}}"
           },
           "success": {
             "type": "$render"
@@ -59,7 +59,6 @@
             "style": {
               "top": "50%",
               "left": "{{$get.frame}}",
-              "width": "50",
               "height": "50"
             }
           }]
