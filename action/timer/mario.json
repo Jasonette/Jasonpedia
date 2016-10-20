@@ -48,9 +48,12 @@
           "sections": [{
             "items": [{
               "type": "vertical",
+              "style": {
+                "spacing": "10"
+              },
               "components": [{
                 "type": "label",
-                "text": "FRAME: https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
+                "text": "FRAME\nhttps://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
                 "style": {
                   "font": "Courier",
                   "size": "12",
@@ -58,7 +61,7 @@
                 }
               }, {
                 "type": "label",
-                "text": "COORD: {{$get.frame}}",
+                "text": "COORD\n{{$get.frame}}",
                 "style": {
                   "font": "Courier",
                   "size": "12",
