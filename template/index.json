@@ -29,13 +29,19 @@
       "data": {
         "json_items": [{
           "title": "Inline Data",
-          "description": "Render inline data using template"
+          "description": "Render inline data ($jason.head.data) using template"
         }, {
           "title": "#each",
           "description": "Loop through array using #each keyword"
         }, {
           "title": "#if | #elseif | #else",
           "description": "Use the conditionals to selectively render templates"
+        }, {
+          "title": "Use Javascript expressions",
+          "description": "Jasonette template engine is built on top of native Javascript engine, so you can use any Javascript expression inside {{ }}"
+        }, {
+          "title": "Javascript function example",
+          "description": "Sometimes, just a single Javascript statement is not enough. You can embed a full Javascript function inside {{ }}. Just remember to have a return value, and escape them correctly"
         }],
         "nonjson_items": [{
           "title": "HTML",
