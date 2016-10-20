@@ -1,14 +1,14 @@
 {
   "$jason": {
     "head": {
-      "title": "label"
+      "title": "image"
     },
     "body": {
       "header": {
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/label/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/image/index.json",
             "view": "web"
           }
         }
