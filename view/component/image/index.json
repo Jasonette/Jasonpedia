@@ -41,6 +41,7 @@
           "type": "vertical",
           "style": {
             "padding": "50",
+            "background": "#0000ff",
             "align": "center"
           },
           "components": [{
