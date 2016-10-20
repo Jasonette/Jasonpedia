@@ -84,6 +84,7 @@
                   },
                   "components": [{
                     "type": "textarea",
+                    "placeholder": "Enter text and press Done",
                     "name": "blank",
                     "style": {
                       "height": "100"

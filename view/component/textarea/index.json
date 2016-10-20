@@ -1,0 +1,64 @@
+{
+  "$jason": {
+    "head": {
+      "title": "textarea",
+      "styles": {
+        "padded": {
+          "padding": "20",
+          "font": "HelveticaNeue-Bold",
+          "size": "20"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/textarea/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [{
+        "header": {
+          "type": "label",
+          "text": "textarea",
+          "style": {
+            "background": "#f5f5f5"
+          }
+        },
+        "items": [
+          {
+            "type": "horizontal",
+            "style": {
+              "align": "top"
+            },
+            "components": [{
+              "type": "textarea",
+              "name": "blank",
+              "style": {
+                "height": "100"
+              }
+            }, {
+              "type": "button",
+              "text": "Done",
+              "style": {
+                "width": "60",
+                "height": "30",
+                "color": "#ff0000"
+              },
+              "action": {
+                "type": "$util.banner",
+                "options": {
+                  "title": "Selected Value",
+                  "description": "{{$get.blank}}"
+                }
+              }
+            }]
+          }
+        ]
+      }]
+    }
+  }
+}

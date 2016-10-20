@@ -88,6 +88,22 @@
             },
             {
               "type": "label",
+              "text": "textarea",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/textarea/index.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "textfield",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/textfield/index.json"
+              }
+            },
+            {
+              "type": "label",
               "text": "space",
               "class": "bold",
               "href": {
