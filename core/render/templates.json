@@ -65,28 +65,6 @@
           "header": {
             "style": {
               "background": "#f8d728"
-            },
-            "menu": {
-              "text": "Switch Template",
-              "action": {
-                "type": "$menu",
-                "options": {
-                  "items": [{
-                    "text": "Vertical",
-                    "action": {
-                      "type": "$render"
-                    }
-                  }, {
-                    "text": "Horizontal",
-                    "action": {
-                      "type": "$render",
-                      "options": {
-                        "template": "horizontal"
-                      }
-                    }
-                  }]
-                }
-              }
             }
           },
           "layers": [{
