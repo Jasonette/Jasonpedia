@@ -37,6 +37,9 @@
             "components": [{
               "type": "textfield",
               "placeholder": "Enter text and press Done",
+              "style": {
+                "height": "30"
+              },
               "name": "blank"
             }, {
               "type": "button",
@@ -62,6 +65,9 @@
             },
             "components": [{
               "type": "textfield",
+              "style": {
+                "height": "30"
+              },
               "secure": "true",
               "placeholder": "Secure field",
               "name": "secure"
