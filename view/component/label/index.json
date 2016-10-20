@@ -32,6 +32,21 @@
             "padding": "20",
             "color": "#00ff00"
           }
+        }, {
+          "type": "vertical",
+          "style": {
+            "align": "center"
+          },
+          "components": [{
+            "type": "label",
+            "text": "Helvetica Neue Bold, 20, padding:30",
+            "style": {
+              "font": "HelveticaNeue-Bold",
+              "size": "20",
+              "color": "#0000ff",
+              "padding": "30"
+            }
+          }]
         }]
       }]
     }
