@@ -45,6 +45,14 @@
           },
           "sections": [
             {
+              "header": {
+                "type": "label",
+                "text": "Note: Sometimes the apps may take about 20 seconds to load. This is because these are demo purpose apps and go into hibernation if left idle for a while. But wait for a bit and they should work!",
+                "style": {
+                  "background": "rgba(14,122,254,0.1)",
+                  "size": "12"
+                }
+              },
               "items": {
                 "{{#each items}}": {
                   "type": "vertical",
