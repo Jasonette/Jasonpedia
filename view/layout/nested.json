@@ -82,8 +82,7 @@
                   }, {
                     "type": "horizontal",
                     "style": {
-                      "padding_top": "10",
-                      "padding_bottom": "10"
+                      "padding_top": "10"
                     },
                     "components": [{
                       "type": "image",
@@ -94,7 +93,7 @@
                     }, {
                       "type": "space",
                       "style": {
-                        "width": "40"
+                        "width": "60"
                       }
                     }, {
                       "type": "image",
@@ -105,7 +104,7 @@
                     }, {
                       "type": "space",
                       "style": {
-                        "width": "40"
+                        "width": "60"
                       }
                     }, {
                       "type": "image",
