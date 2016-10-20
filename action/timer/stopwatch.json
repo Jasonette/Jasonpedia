@@ -41,6 +41,7 @@
               "color": "#ff0000",
               "font": "Courier",
               "size": "30",
+              "background": "rgba(0,0,0,0.3)",
               "width": "200"
             }
           }]
