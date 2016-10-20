@@ -35,6 +35,7 @@
           {
             "type": "horizontal",
             "style": {
+              "background": "#ffffff",
               "align": "top"
             },
             "components": [{
@@ -64,6 +65,7 @@
           {
             "type": "horizontal",
             "style": {
+              "background": "#ffffff",
               "align": "top"
             },
             "components": [{
