@@ -44,21 +44,27 @@
         },
         "items": [{
           "type": "label",
+          "class": "padded",
           "text": "scroll down to see more"
         }, {
           "type": "label",
+          "class": "padded",
           "text": "scroll down to see more"
         }, {
           "type": "label",
+          "class": "padded",
           "text": "scroll down to see more"
         }, {
           "type": "label",
+          "class": "padded",
           "text": "scroll down to see more"
         }, {
           "type": "label",
+          "class": "padded",
           "text": "scroll down to see more"
         }, {
           "type": "label",
+          "class": "padded",
           "text": "scroll down to see more"
         }]
       }, {
