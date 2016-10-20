@@ -47,6 +47,14 @@
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/view/layout/horizontal.json"
               }
+            },
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "Complex Nested Layout",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/layout/nested.json"
+              }
             }
           ]
         }

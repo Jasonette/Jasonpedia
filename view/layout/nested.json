@@ -1,0 +1,67 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Vertical Layout",
+      "styles": {
+        "note": {
+          "color": "#ffffff",
+          "font": "HelveticaNeue-Bold",
+          "size": "15"
+        }
+      }
+    },
+    "body": {
+      "sections": [{
+        "items": [{
+          "type": "horizontal",
+          "components": [{
+            "type": "image",
+            "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",
+            "style": {
+              "width": "48",
+              "height": "48",
+              "corner_radius": "5"
+            }
+          }, {
+            "type": "vertical",
+            "components": [{
+              "type": "horizontal",
+              "components": [{
+                "type": "label",
+                "text": "ethan",
+                "style": {
+                  "font": "HelveticaNeue-Bold",
+                  "size": "14"
+                }
+              }, {
+                "type": "label",
+                "text": "@gliechtenstein · 8h",
+                "style": {
+                  "color": "#8899a6",
+                  "size": "13",
+                  "font": "HelveticaNeue"
+                }
+              }, {
+                "type": "space"
+              }]
+            }, {
+              "type": "label",
+              "text": "Animated GIFs are neon signs of the Internet.",
+              "style": {
+                "font": "HelveticaNeue",
+                "size": "16"
+              }
+            }, {
+              "type": "image",
+              "url": "https://pbs.twimg.com/media/Cub2D-vXYAIXFQo.jpg",
+              "style": {
+                "width": "100%",
+                "corner_radius": "5"
+              }
+            }]
+          }
+        }]
+      }]
+    }
+  }
+}
