@@ -41,6 +41,7 @@
           "type": "image",
           "url": "http://images.onionstatic.com/clickhole/3380/5/16x9/640.jpg",
           "style": {
+            "padding": "0",
             "z_index": "-1"
           }
         },
@@ -48,6 +49,7 @@
           "type": "horizontal",
           "style": {
             "padding": "15",
+            "background": "#ffffff",
             "distribution": "equalsize",
             "spacing": "10"
           },
