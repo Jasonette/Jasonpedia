@@ -4,13 +4,13 @@
       "title": "Jasonette Actions",
       "styles": {
         "bold": {
-          "font": "Courier",
+          "font": "HelveticaNeue-Bold",
           "align": "center",
           "background": "#ffffff",
           "corner_radius": "3",
           "width": "140",
           "height": "40",
-          "size": "13"
+          "size": "12"
         },
         "normal": {
           "font": "HelveticaNeue",
