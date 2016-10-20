@@ -51,7 +51,8 @@
                 {
                   "type": "label",
                   "style": {
-                    "background": "#ebebeb"
+                    "background": "#ebebeb",
+                    "padding": "0"
                   },
                   "text": "50px Space below this point",
                   "class": "bold"
@@ -66,7 +67,8 @@
                   "type": "label",
                   "text": "50px Space above this point",
                   "style": {
-                    "background": "#ebebeb"
+                    "background": "#ebebeb",
+                    "padding": "0"
                   },
                   "class": "bold"
                 }
