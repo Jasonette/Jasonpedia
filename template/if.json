@@ -54,7 +54,13 @@
                     "text": "{{username}}"
                   }, {
                     "type": "label",
-                    "text": "JSON:\n\n{{JSON.stringify(this, null, '  ')}}"
+                    "style": {
+                      "background": "#282828",
+                      "color": "#c5d3d8",
+                      "padding": "10",
+                      "font": "Courier"
+                    },
+                    "text": "JSON:\n\n{{JSON.stringify(this, null, '    ')}}"
                   }]
                 }]
               }
