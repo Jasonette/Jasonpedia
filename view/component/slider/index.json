@@ -6,7 +6,6 @@
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
           "align": "center",
-          "padding": "100",
           "size": "30"
         }
       },
