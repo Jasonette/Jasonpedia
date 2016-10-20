@@ -1,0 +1,68 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Space",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/space/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "style": {
+                "background": "#ebebeb"
+              },
+              "text": "50px Space below this point",
+              "class": "bold"
+            },
+            {
+              "type": "space",
+              "style": {
+                "height": "50"
+              }
+            },
+            {
+              "type": "label",
+              "text": "50px Space below this point",
+              "style": {
+                "background": "#ebebeb"
+              },
+              "class": "bold"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -85,6 +85,14 @@
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/view/component/slider/index.json"
               }
+            },
+            {
+              "type": "label",
+              "text": "space",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/space/index.json"
+              }
             }
           ]
         }
