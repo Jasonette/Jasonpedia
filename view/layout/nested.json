@@ -9,6 +9,14 @@
           "size": "15"
         }
       },
+      "actions": {
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+      },
       "data": {
         "tweets": [{
           "text": "Animated GIFs are neon signs of the Internet.",
