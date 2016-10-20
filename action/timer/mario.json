@@ -12,7 +12,7 @@
           "success": {
             "type": "$timer.start",
             "options": {
-              "interval": "0.01",
+              "interval": "0.1",
               "name": "mario",
               "repeats": "true",
               "action": {
@@ -36,7 +36,8 @@
         "body": {
           "style": {
             "background": "#000000",
-            "color": "#ffffff"
+            "color": "#ffffff",
+            "border": "none"
           },
           "header": {
             "style": {
@@ -44,16 +45,29 @@
               "color": "#ffffff"
             }
           },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "url": "FRAME: https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
+                "style": {
+                  "font": "Courier",
+                  "size": "12",
+                  "color": "#ebebeb"
+                }
+              }, {
+                "type": "label",
+                "url": "COORD: {{$get.frame}}",
+                "style": {
+                  "font": "Courier",
+                  "size": "12",
+                  "color": "#ebebeb"
+                }
+              }]
+            }]
+          }],
           "layers": [{
-            "type": "label",
-            "text": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
-            "style": {
-              "top": "40%",
-              "left": "10",
-              "color": "#ffffff",
-              "align": "center"
-            }
-          }, {
             "type": "image",
             "url": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
             "style": {
