@@ -59,6 +59,25 @@
               }]
             }
           ]
+        },
+        {
+          "items": [
+            {
+              "type": "vertical",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/core/snapshot/index.json"
+              },
+              "components": [{
+                "type": "label",
+                "text": "$snapshot",
+                "class": "bold",
+              }, {
+                "type": "label",
+                "text": "Take a snapshot of the current screen",
+                "class": "normal"
+              }]
+            }
+          ]
         }
       ]
     }
