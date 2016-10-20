@@ -39,6 +39,15 @@
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/view/layer/pokemon/index.json"
               }
+            },
+            {
+              "type": "label",
+              "class": "bold",
+              "text": "Weather",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/layer/weather/index.json",
+                "transition": "modal"
+              }
             }
           ]
         }
