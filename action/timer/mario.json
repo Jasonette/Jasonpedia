@@ -47,11 +47,9 @@
             "text": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
             "style": {
               "top": "40%",
-              "left": "50%-100",
+              "left": "10",
               "color": "#ffffff",
-              "align": "center",
-              "width": "200",
-              "height": "200"
+              "align": "center"
             }
           }, {
             "type": "image",
