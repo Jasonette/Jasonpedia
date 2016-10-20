@@ -20,6 +20,9 @@
             "items": {
               "{{#each users}}": {
                 "type": "horizontal",
+                "style": {
+                  "spacing": "10"
+                },
                 "components": [{
                   "type": "image",
                   "style": {
