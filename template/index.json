@@ -1,0 +1,80 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Template",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+      },
+      "data": {
+        "items": [{
+          "title": "Inline Data",
+          "description": "Render inline data using template"
+        }]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/index.json",
+                "view": "web"
+              }
+            }
+          },
+          "sections": [
+            {
+              "header": {
+                "type": "horizontal",
+                "style": {
+                  "background": "rgba(14,122,254,0.1)",
+                  "padding": "20"
+                },
+                "components": [{
+                  "style": {
+                    "size": "12"
+                  },
+                  "type": "label",
+                  "text": "Note: These demos demonstrate how you can use templates to build a view. The apps themselves will look the same as those not using templates, you will need to look at the JSON to see the difference"
+                }]
+              },
+              "items": {
+                "{{#each items}}": {
+                  "type": "vertical",
+                  "components": [{
+                    "type": "label",
+                    "text": "{{title}}",
+                    "class": "bold",
+                  }, {
+                    "type": "label",
+                    "text": "{{description}}",
+                    "class": "normal"
+                  }]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

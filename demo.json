@@ -102,8 +102,15 @@
               "text": "Action",
               "class": "bold padded",
               "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/action/index.json",
-                "fresh": "true"
+                "url": "https://jasonette.github.io/Jasonpedia/action/index.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Template",
+              "class": "bold padded",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/template/index.json"
               }
             }
           ]
