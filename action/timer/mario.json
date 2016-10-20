@@ -6,7 +6,8 @@
         "$load": {
           "type": "$set",
           "options": {
-            "index": "0"
+            "index": "0",
+            "frame": "0"
           },
           "success": {
             "type": "$timer.start",
@@ -23,7 +24,8 @@
         "tick": {
           "type": "$set",
           "options": {
-            "index": "{{'' + ((parseInt($get.index) + 1)%2)}}"
+            "index": "{{'' + ((parseInt($get.index) + 1)%2)}}",
+            "frame": "{{'' + ((parseInt($get.frame) + 1)%500)}}"
           },
           "success": {
             "type": "$render"
@@ -56,7 +58,7 @@
             "url": "https://jasonette.github.io/Jasonpedia/assets/{{$get.index}}.png",
             "style": {
               "top": "50%",
-              "left": "{{'' + ((parseInt($get.index)+1)%500)}}",
+              "left": "{{$get.frame}}",
               "width": "50",
               "height": "50"
             }
