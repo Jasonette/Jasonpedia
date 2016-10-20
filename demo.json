@@ -27,7 +27,8 @@
         "style": {
           "background": "#8bb92d",
           "color": "#ffffff",
-          "font": "AvenirNext-Bold"
+          "font": "AvenirNext-Bold",
+          "size": "12"
         },
         "menu": {
           "text": "View JSON",
