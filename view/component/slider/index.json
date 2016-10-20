@@ -58,6 +58,18 @@
               "action": {
                 "type": "$render"
               }
+            }, {
+              "type": "slider",
+              "name": "gauge",
+              "style": {
+                "height": "100",
+                "width": "100%",
+                "align": "center",
+                "color": "#ff0000"
+              },
+              "action": {
+                "type": "$render"
+              }
             }]
           }]
         }
