@@ -5,7 +5,6 @@
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
-          "padding": "10",
           "size": "15"
         },
         "normal": {
@@ -25,9 +24,25 @@
         }
       },
       "data": {
-        "items": [{
+        "json_items": [{
           "title": "Inline Data",
           "description": "Render inline data using template"
+        }, {
+          "title": "#each",
+          "description": "Loop through array using #each keyword"
+        }, {
+          "title": "#if | #elseif | #else",
+          "description": "Use the conditionals to selectively render templates"
+        }],
+        "nonjson_items": [{
+          "title": "HTML",
+          "description": "Transform any HTML content into JSON, which then can be rendered"
+        }, {
+          "title": "RSS",
+          "description": "Transform any RSS content into JSON, which then can be rendered"
+        }, {
+          "title": "CSV",
+          "description": "Transform any CSV content into JSON, which then can be rendered"
         }]
       },
       "templates": {
@@ -56,9 +71,35 @@
                   "type": "label",
                   "text": "Note: These demos demonstrate how you can use templates to build a view. The apps themselves will look the same as those not using templates, you will need to look at the JSON to see the difference"
                 }]
+              }
+            }, {
+              "header": {
+                "type": "label",
+                "class": "normal",
+                "text": "JSON Templating"
               },
               "items": {
-                "{{#each items}}": {
+                "{{#each json_items}}": {
+                  "type": "vertical",
+                  "components": [{
+                    "type": "label",
+                    "text": "{{title}}",
+                    "class": "bold",
+                  }, {
+                    "type": "label",
+                    "text": "{{description}}",
+                    "class": "normal"
+                  }]
+                }
+              }
+            }, {
+              "header": {
+                "type": "label",
+                "class": "normal",
+                "text": "Non-JSON templating"
+              },
+              "items": {
+                "{{#each nonjson_items}}": {
                   "type": "vertical",
                   "components": [{
                     "type": "label",
