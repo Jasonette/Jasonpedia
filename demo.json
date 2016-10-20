@@ -66,12 +66,19 @@
         },
         {
           "header": {
-            "type": "label",
-            "class": "bold",
+            "type": "vertical",
             "style": {
               "background": "#ebebeb"
             },
-            "text": "Official demo"
+            "components": [{
+              "type": "label",
+              "class": "bold",
+              "text": "Tutorial demos"
+            }, {
+              "type": "label",
+              "class": "normal",
+              "text": "Simple demos to demonstrate how each module works. Also used for testing purposes."
+            }]
           },
           "items": [
             {
