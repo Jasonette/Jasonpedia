@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Component",
+      "title": "Snapshot",
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
@@ -38,7 +38,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/index.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/core/snapshot/index.json",
             "view": "web"
           }
         }
@@ -55,7 +55,7 @@
               "type": "image",
               "url": "https://pbs.twimg.com/media/Cu0xSA3WEAAVyA9.jpg",
               "style": {
-                "width": "100%
+                "width": "100%"
               }
             }
           ]
