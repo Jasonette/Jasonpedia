@@ -44,7 +44,8 @@
               "font": "HelveticaNeue-Bold",
               "size": "20",
               "color": "#0000ff",
-              "padding": "30"
+              "padding": "30",
+              "background": "#ebebeb"
             }
           }]
         }]
