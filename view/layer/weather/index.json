@@ -103,7 +103,7 @@
             "menu": {
               "text": "View JSON",
               "href": {
-                "url": "http://www.jasonbase.com/things/1wn/edit",
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layer/weather/index.json",
                 "view": "web"
               }
             },
