@@ -39,7 +39,7 @@
               "text": "View JSON",
               "style": {
                 "color": "#2daaf5"
-              }
+              },
               "href": {
                 "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layout/nested.json"
               }
