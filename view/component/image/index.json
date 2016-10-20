@@ -16,10 +16,14 @@
       "sections": [{
         "header": {
           "type": "label",
-          "text": "images are full width by default"
+          "text": "Full width image"
         },
         "items": [{
           "type": "image",
+          "style": {
+            "width": "100%",
+            "padding": "0"
+          },
           "url": "http://i8.mangareader.net/ito-junjis-cat-diary/1/ito-junjis-cat-diary-2241289.jpg"
         }]
       }, {
