@@ -38,12 +38,15 @@
         }]
       }, {
         "header": {
-          "type": "image",
-          "url": "http://images.onionstatic.com/clickhole/3380/5/16x9/640.jpg",
+          "type": "horizontal",
           "style": {
             "padding": "0",
             "z_index": "-1"
-          }
+          },
+          "components": [{
+            "type": "image",
+            "url": "http://images.onionstatic.com/clickhole/3380/5/16x9/640.jpg",
+          }]
         },
         "items": [{
           "type": "horizontal",
