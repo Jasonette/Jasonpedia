@@ -7,6 +7,7 @@
       "sections": [{
         "items": [{
           "type": "html",
+          "css": "img{width: 100%;}",
           "text": "<img alt=\"\" src=\"https://cdn0.vox-cdn.com/thumbor/PPvtkzgfvglcclm7DNwByCxjY1M=/0x0:2500x1667/1310x873/cdn0.vox-cdn.com/uploads/chorus_image/image/51427661/nexus-6p-9736.0.0.jpg\" /> <p>Well it turns out Nexus devices <i>are</i> getting Android 7.1 at the same time as Google's new Pixel phones — or at least a developer preview build of it. This evening Google rolled out a preview release of 7.1 Nougat for the Nexus 6P, 5X, and Pixel C tablet. If your device is installed in the Android Beta program, you can install the update right now to get new features like Night Light, long-press app shortcuts, support for new circular icons, and optimizations to touch and display responsiveness among other changes.</p> <p>\"We’re delivering the initial Developer Preview at beta quality for the Nexus lineup of devices,\" Google's Dave Burke wrote in a <a href=\"http://android-developers.blogspot.com/2016/10/android71-dev-preview-available.html\" target=\"_blank\">blog post announcing the release</a>. \"The goal is to tease out any device-specific issues.\" There's a...</p> <p> <a href=\"http://www.theverge.com/circuitbreaker/2016/10/19/13340688/google-android-7-1-developer-preview-now-available\">Continue reading&hellip;</a> </p>"
         }]
       }]
