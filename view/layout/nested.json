@@ -21,60 +21,62 @@
       "templates": {
         "body": {
           "sections": [{
-            "items": [{
-              "type": "horizontal",
-              "style": {
-                "spacing": "10"
-              },
-              "components": [{
-                "type": "image",
-                "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",
+            "items": {
+              "{{#each tweets}}": {
+                "type": "horizontal",
                 "style": {
-                  "width": "48",
-                  "height": "48",
-                  "corner_radius": "5"
-                }
-              }, {
-                "type": "vertical",
-                "style": {
-                  "spacing": "5"
+                  "spacing": "10"
                 },
                 "components": [{
-                  "type": "horizontal",
-                  "components": [{
-                    "type": "label",
-                    "text": "ethan",
-                    "style": {
-                      "font": "HelveticaNeue-Bold",
-                      "width": "50",
-                      "size": "14"
-                    }
-                  }, {
-                    "type": "label",
-                    "text": "@gliechtenstein · 8h",
-                    "style": {
-                      "color": "#8899a6",
-                      "size": "13",
-                      "font": "HelveticaNeue"
-                    }
-                  }]
-                }, {
-                  "type": "label",
-                  "text": "{{text}}",
-                  "style": {
-                    "font": "HelveticaNeue",
-                    "size": "16"
-                  }
-                }, {
                   "type": "image",
-                  "url": "{{image}}",
+                  "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",
                   "style": {
-                    "width": "100%",
+                    "width": "48",
+                    "height": "48",
                     "corner_radius": "5"
                   }
+                }, {
+                  "type": "vertical",
+                  "style": {
+                    "spacing": "5"
+                  },
+                  "components": [{
+                    "type": "horizontal",
+                    "components": [{
+                      "type": "label",
+                      "text": "ethan",
+                      "style": {
+                        "font": "HelveticaNeue-Bold",
+                        "width": "50",
+                        "size": "14"
+                      }
+                    }, {
+                      "type": "label",
+                      "text": "@gliechtenstein · 8h",
+                      "style": {
+                        "color": "#8899a6",
+                        "size": "13",
+                        "font": "HelveticaNeue"
+                      }
+                    }]
+                  }, {
+                    "type": "label",
+                    "text": "{{text}}",
+                    "style": {
+                      "font": "HelveticaNeue",
+                      "size": "16"
+                    }
+                  }, {
+                    "type": "image",
+                    "url": "{{image}}",
+                    "style": {
+                      "width": "100%",
+                      "corner_radius": "5"
+                    }
+                  }]
                 }]
-              }]
-            }]
+              }
+            }
           }]
         }
       }
