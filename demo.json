@@ -23,6 +23,12 @@
     },
     "body": {
       "header": {
+        "title": "Jasonpedia",
+        "style": {
+          "background": "#8bb92d",
+          "color": "#ffffff",
+          "font": "AvenirNext-Bold"
+        },
         "menu": {
           "text": "View JSON",
           "href": {
