@@ -4,6 +4,15 @@
       "title": "HTML"
     },
     "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/html/index.json",
+            "view": "web"
+          }
+        }
+      },
       "sections": [{
         "items": [{
           "type": "html",
