@@ -1,0 +1,48 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Stopwatch",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "index": "0"
+          },
+          "type": "$timer.start",
+          "options": {
+            "interval": "1",
+            "name": "stopwatch",
+            "repeats": "true",
+            "action": {
+              "trigger": "tick"
+            }
+          }
+        },
+        "tick": {
+          "type": "$set",
+          "options": {
+            "index": "{{(parseInt($get.index) + 1).toString()}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "layers": [{
+            "type": "label",
+            "text": "{{$get.index}}",
+            "style": {
+              "top": "50%",
+              "left": "50%-100",
+              "font": "Courier",
+              "size": "30",
+              "width": "200"
+            }
+          }]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$jason": {
+    "head": {
+      "title": "$timer",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/timer/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "Stopwatch",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/timer/stopwatch.json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
