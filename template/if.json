@@ -1,0 +1,55 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Conditionals",
+      "data": {
+        "users": [{
+          "profile": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",
+          "username": "gliechtenstein"
+        }, {
+          "username": "guest" 
+        }, {
+          "profile": "https://pbs.twimg.com/profile_images/693649835086360577/xPofOC6p.png",
+          "username": "catsnacks"
+        }, {
+          "username": "guest" 
+        }, {
+          "username": "guest" 
+        }]
+      },
+      "templates": {
+        "body": {
+          "sections": [{
+            "header": {
+              "type": "label",
+              "text": "What's going on here:\n\nDisplay the default avatar (egg) for those who don't have an avatar."
+              "style": {
+                "background": "#f5f5f5"
+              }
+            },
+            "items": [{
+              "type": "horizontal",
+              "style": {
+                "spacing": "10"
+              },
+              "components": [{
+                "type": "image",
+                "style": {
+                  "width": "50"
+                },
+                "url": [{
+                  "{{#if 'profile' in this}}": "{{profile}}"
+                }, {
+                  "{{#else}}": "https://jasonette.github.io/Jasonpedia/assets/egg.png"
+                }]
+              }, {
+                "type": "label",
+                "text": "{{username}}"
+              }]
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
