@@ -55,13 +55,13 @@
           },
           "components": [{
             "type": "label",
-            "text": "Helvetica Neue, size:20, padding:60, corner_radius: 20, background: #ebebeb",
+            "text": "Helvetica Neue, size:20, padding:80, corner_radius: 40, background: #ebebeb",
             "style": {
               "font": "HelveticaNeue-Bold",
               "size": "20",
               "color": "#0000ff",
-              "corner_radius": "20",
-              "padding": "60",
+              "corner_radius": "40",
+              "padding": "90",
               "background": "#ebebeb"
             }
           }]
