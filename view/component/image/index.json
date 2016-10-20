@@ -59,7 +59,7 @@
           "style": {
             "background": "#f5f5f5"
           },
-          "text": "rounded image with opacity"
+          "text": "rounded image with transparency"
         },
         "items": [{
           "type": "vertical",
