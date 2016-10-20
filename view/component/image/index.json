@@ -1,0 +1,49 @@
+{
+  "$jason": {
+    "head": {
+      "title": "label"
+    },
+    "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/label/index.json",
+            "view": "web"
+          }
+        }
+      },
+      "sections": [{
+        "header": {
+          "type": "label",
+          "text": "images are full width by default"
+        },
+        "items": [{
+          "type": "image",
+          "url": "http://i8.mangareader.net/ito-junjis-cat-diary/1/ito-junjis-cat-diary-2241289.jpg"
+        }]
+      }, {
+        "header": {
+          "type": "label",
+          "text": "rounded image"
+        },
+        "items": [{
+          "type": "vertical",
+          "style": {
+            "padding": "50",
+            "align": "center"
+          },
+          "components": [{
+            "type": "image",
+            "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+            "style": {
+              "width": "200",
+              "corner_radius": "100"
+            }
+          }]
+        }]
+      }]
+    }
+  }
+}
+

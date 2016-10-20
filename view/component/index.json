@@ -48,6 +48,14 @@
             },
             {
               "type": "label",
+              "text": "image",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/image/index.json"
+              }
+            },
+            {
+              "type": "label",
               "text": "button",
               "class": "bold",
               "href": {
