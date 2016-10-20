@@ -5,8 +5,9 @@
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
-          "padding": "10",
-          "size": "15"
+          "align": "center",
+          "padding": "100",
+          "size": "30"
         }
       },
       "actions": {
