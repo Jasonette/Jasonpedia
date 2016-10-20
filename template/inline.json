@@ -10,11 +10,20 @@
         "body": {
           "sections": [{
             "items": [{
-              "type": "image",
-              "url": "{{profile}}"
-            }, {
-              "type": "label",
-              "text": "{{username}}"
+              "type": "horizontal",
+              "style": {
+                "spacing": "10"
+              },
+              "components": [{
+                "type": "image",
+                "style": {
+                  "width": "50"
+                },
+                "url": "{{profile}}"
+              }, {
+                "type": "label",
+                "text": "{{username}}"
+              }]
             }]
           }]
         }
