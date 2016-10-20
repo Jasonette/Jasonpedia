@@ -19,6 +19,9 @@
         }, {
           "text": "Found the most brilliant invention in human history",
           "image": "https://pbs.twimg.com/media/Cr7cSz1WIAA0OZj.jpg"
+        }, {
+          "text": "Ludlow and Rivington. NOW.",
+          "image": "https://pbs.twimg.com/media/CrNnHPUWEAEK_b3.jpg"
         }]
       },
       "templates": {
@@ -76,6 +79,39 @@
                       "width": "100%",
                       "corner_radius": "5"
                     }
+                  }, {
+                    "type": "horizontal",
+                    "components": [{
+                      "type": "image",
+                      "style": {
+                        "height": "15"
+                      },
+                      "url": "https://g.twimg.com/dev/documentation/image/reply-action_0.png"
+                    }, {
+                      "type": "space",
+                      "style": {
+                        "width": "20"
+                      }
+                    }, {
+                      "type": "image",
+                      "style": {
+                        "height": "15"
+                      },
+                      "url": "https://g.twimg.com/dev/documentation/image/retweet-action.png"
+                    }, {
+                      "type": "space",
+                      "style": {
+                        "width": "20"
+                      }
+                    }, {
+                      "type": "image",
+                      "style": {
+                        "height": "15"
+                      },
+                      "url": "https://g.twimg.com/dev/documentation/image/like-action.png"
+                    }, {
+                      "type": "space"
+                    }]
                   }]
                 }]
               }
