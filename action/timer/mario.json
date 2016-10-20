@@ -50,7 +50,8 @@
               "left": "50%-100",
               "color": "#ffffff",
               "align": "center",
-              "width": "200"
+              "width": "200",
+              "height": "200"
             }
           }, {
             "type": "image",
