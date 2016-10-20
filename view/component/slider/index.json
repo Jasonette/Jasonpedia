@@ -1,0 +1,56 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Slider",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "padding": "10",
+          "size": "15"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/component/slider/index.json",
+                "view": "web"
+              }
+            }
+          },
+          "sections": [{
+            "header": {
+              "type": "label",
+              "class": "bold",
+              "text": "{{'' + $get.gauge}}"
+            },
+            "items": [{
+              "type": "slider",
+              "name": "gauge",
+              "style": {
+                "height": "100",
+                "color": "#00ff00"
+              },
+              "action": {
+                "type": "$render"
+              }
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
