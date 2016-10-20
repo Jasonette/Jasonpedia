@@ -52,6 +52,22 @@
             }
           }]
         }]
+      }, {
+        "header": {
+          "type": "label",
+          "style": {
+            "background": "#f5f5f5"
+          },
+          "text": "animated gif"
+        },
+        "items": [{
+          "type": "image",
+          "url": "https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif",
+          "style": {
+            "padding": "0",
+            "width": "100%"
+          }
+        }]
       }]
     }
   }
