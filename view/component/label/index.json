@@ -39,11 +39,28 @@
           },
           "components": [{
             "type": "label",
-            "text": "Helvetica Neue Bold, 20, padding:30",
+            "text": "Helvetica Neue Bold, size:20, padding:30, background: #ebebeb",
             "style": {
               "font": "HelveticaNeue-Bold",
               "size": "20",
               "color": "#0000ff",
+              "padding": "30",
+              "background": "#ebebeb"
+            }
+          }]
+        }, {
+          "type": "vertical",
+          "style": {
+            "align": "center"
+          },
+          "components": [{
+            "type": "label",
+            "text": "Helvetica Neue, size:20, padding:30, corner_radius: 20, background: #ebebeb",
+            "style": {
+              "font": "HelveticaNeue-Bold",
+              "size": "20",
+              "color": "#0000ff",
+              "corner_radius": "20",
               "padding": "30",
               "background": "#ebebeb"
             }
