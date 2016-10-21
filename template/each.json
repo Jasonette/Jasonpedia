@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Inline Template",
+      "title": "#each",
       "data": {
         "users": [{
           "profile": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",

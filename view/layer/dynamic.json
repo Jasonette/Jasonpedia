@@ -57,7 +57,7 @@
             "menu": {
               "text": "View JSON",
               "href": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/layer/dynamic.json",
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layer/dynamic.json",
                 "view": "web"
               }
             }

@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Vertical Layout",
+      "title": "Nested Layout",
       "styles": {
         "note": {
           "color": "#ffffff",

@@ -16,7 +16,7 @@
             "menu": {
               "text": "View JSON",
               "href": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/layer/static.json",
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layer/static.json",
                 "view": "web"
               }
             },

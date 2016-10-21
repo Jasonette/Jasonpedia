@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Jasonette Demo",
+      "title": "Views",
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
@@ -24,7 +24,7 @@
         "menu": {
           "text": "View JSON",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/demo.json",
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/index.json",
             "view": "web"
           }
         }

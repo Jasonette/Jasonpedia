@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Javascript",
+      "title": "Javascript Function",
       "actions": {
         "$load": {
           "type": "$geo.get",

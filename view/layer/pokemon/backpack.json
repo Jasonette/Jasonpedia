@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Items",
+      "title": "Pokemon Items",
       "actions": {
         "$load": {
           "type": "$network.request",

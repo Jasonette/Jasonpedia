@@ -83,7 +83,7 @@
             "menu": {
               "text": "View JSON",
               "href": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layer/index.json",
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layer/pokemon/index.json",
                 "view": "web"
               }
             }

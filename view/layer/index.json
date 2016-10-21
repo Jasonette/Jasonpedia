@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Footer Examples",
+      "title": "Layer",
       "styles": {
         "bold": {
           "font": "HelveticaNeue-CondensedBold",
@@ -35,8 +35,7 @@
             "type": "label",
             "text": "Tutorials",
             "style": {
-              "background": "#f5f5f5",
-              "padding": "20"
+              "background": "#f5f5f5"
             }
           },
           "items": [{
@@ -60,8 +59,7 @@
             "type": "label",
             "text": "Demos",
             "style": {
-              "background": "#f5f5f5",
-              "padding": "20"
+              "background": "#f5f5f5"
             }
           },
           "items": [

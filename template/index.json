@@ -54,10 +54,12 @@
         }],
         "nonjson_items": [{
           "title": "HTML",
-          "description": "Transform any HTML content into JSON, which then can be rendered"
+          "description": "Transform any HTML content into JSON, which then can be rendered",
+          "url": "https://jasonette.github.io/Jasonpedia/template/html.json"
         }, {
           "title": "RSS",
-          "description": "Transform any RSS content into JSON, which then can be rendered"
+          "description": "Transform any RSS content into JSON, which then can be rendered",
+          "url": "https://jasonette.github.io/Jasonpedia/template/rss.json"
         }, {
           "title": "CSV",
           "description": "Transform any CSV content into JSON, which then can be rendered"
