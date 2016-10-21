@@ -59,7 +59,7 @@
             }
           }, {
             "type": "label",
-            "text": "Rotatable",
+            "text": "1UP",
             "action": {
               "type": "$audio.play",
               "options": {
