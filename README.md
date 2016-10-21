@@ -1,5 +1,5 @@
 # What is this?
-This repo consists 99% of JSON. And they are all **native iOS apps**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com/beta), it instantly turns into a native app. Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
+This repo consists 99% of JSON. And they are all **native iOS apps**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com/beta), they instantly turn into a native app. Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
 
 # How does this work?
 This repo publishes to `https://jasonette.github.io/Jasonpedia`.
