@@ -1,7 +1,7 @@
 # How does this work?
 This repo publishes to `https://jasonette.github.io/Jasonpedia`.
 
-For example the `hello.json` file in the root directory is directly available at [https://jasonette.github.io/Jasonpedia/hello.json](https://jasonette.github.io/Jasonpedia/hello.json).
+For example the [hello.json](https://github.com/Jasonette/Jasonpedia/blob/gh-pages/hello.json) file in the root directory is directly available at [https://jasonette.github.io/Jasonpedia/hello.json](https://jasonette.github.io/Jasonpedia/hello.json).
 
 So is every other file in this repo.
 
