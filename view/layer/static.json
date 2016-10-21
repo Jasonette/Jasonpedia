@@ -61,9 +61,6 @@
             "type": "label",
             "text": "Rotatable",
             "action": {
-              "trigger": "rotatable"
-            },
-            "action": {
               "type": "$audio.play",
               "options": {
                 "url": "https://jasonette.github.io/Jasonpedia/assets/1up.mp4"
