@@ -125,6 +125,9 @@
               "items": {
                 "{{#each nonjson_items}}": {
                   "type": "vertical",
+                  "href": {
+                    "url": "{{url}}"
+                  },
                   "components": [{
                     "type": "label",
                     "text": "{{title}}",
