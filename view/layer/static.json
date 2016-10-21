@@ -19,7 +19,7 @@
       },
       "layers": [{
         "type": "image",
-        "url": "https://jasonette.github.io/Jasonpedia/assets/0.png"
+        "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
         "style": {
           "rotate": "true",
           "width": "200",
