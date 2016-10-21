@@ -14,7 +14,9 @@
               "left": "50%-43"
             }
           },
-          "type": "$render"
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "templates": {
