@@ -40,13 +40,11 @@
             }
           },
           "items": [{
-            {
-              "type": "label",
-              "class": "bold",
-              "text": "Static layers",
-              "href": {
-                "url": "https://jasonette.github.io/Jasonpedia/view/layer/static.json"
-              }
+            "type": "label",
+            "class": "bold",
+            "text": "Static layers",
+            "href": {
+              "url": "https://jasonette.github.io/Jasonpedia/view/layer/static.json"
             }
           }]
         },
