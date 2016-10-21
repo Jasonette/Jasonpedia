@@ -64,7 +64,7 @@
                   "size": "12",
                   "font": "Courier"
                 },
-                "text": "$jason.coord.split(',')[0] + '📍'' + $jason.coord.split(',')[1]"
+                "text": "$jason.coord.split(',')[0] + '📍' + $jason.coord.split(',')[1]"
               }]
             }, {
               "type": "vertical",
@@ -84,7 +84,7 @@
                   "size": "12",
                   "font": "Courier"
                 },
-                "text": "{{$jason.coord.split(',')[0] + '📍'' + $jason.coord.split(',')[1]}}"
+                "text": "{{$jason.coord.split(',')[0] + '📍' + $jason.coord.split(',')[1]}}"
               }]
             }]
           }]
