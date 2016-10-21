@@ -5,10 +5,10 @@ Here are some highlights of what these mere JSON files can turn into:
 
                 _                           |     _                                       
 -------------------------------------------|--------------------------------------------
-![assets/example1.png](assets/example1.png)| ![assets/example2.png](assets/example2.png)
-![assets/example3.png](assets/example3.png)| ![assets/example4.png](assets/example4.png)
-![assets/example5.png](assets/example5.png)| ![assets/example6.png](assets/example6.png)
-![assets/timer.gif](assets/timer.gif)      |                                            
+![assets/screen1.png](assets/screen1.png)| ![assets/screen2.png](assets/screen2.png)
+![assets/screen3.png](assets/screen3.png)| ![assets/screen4.png](assets/screen4.png)
+![assets/screen5.png](assets/screen5.png)| ![assets/screen6.png](assets/screen6.png)
+![assets/screen7.gif](assets/screen7.gif)      |                                            
 
 # How does this work?
 This repo publishes to `https://jasonette.github.io/Jasonpedia`.
