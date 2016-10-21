@@ -7,7 +7,6 @@
           "type": "$set",
           "options": {
             "style": {
-              "rotate": "true",
               "width": "86",
               "height": "175",
               "bottom": "30%-87",
