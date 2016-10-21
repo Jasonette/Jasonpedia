@@ -45,7 +45,8 @@
           "url": "https://jasonette.github.io/Jasonpedia/template/js.json"
         }, {
           "title": "Javascript function example",
-          "description": "Sometimes, just a single Javascript statement is not enough. You can embed a full Javascript function inside {{ }}. Just remember to have a return value, and escape them correctly"
+          "description": "Sometimes, just a single Javascript statement is not enough. You can embed a full Javascript function inside {{ }}. Just remember to have a return value, and escape them correctly",
+          "url": "https://jasonette.github.io/Jasonpedia/template/jsfunction.json"
         }],
         "nonjson_items": [{
           "title": "HTML",
