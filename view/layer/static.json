@@ -17,6 +17,33 @@
           "success": {
             "type": "$render"
           }
+        },
+        "resizable": {
+          "type": "$set",
+          "options": {
+            "style": "{{var new_style = $get.style; new_style['resize']='true'; return new_style;}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "draggable": {
+          "type": "$set",
+          "options": {
+            "style": "{{var new_style = $get.style; new_style['move']='true'; return new_style;}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "rotatable": {
+          "type": "$set",
+          "options": {
+            "style": "{{var new_style = $get.style; new_style['rotate']='true'; return new_style;}}"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "templates": {
@@ -39,36 +66,48 @@
           "layers": [{
             "type": "label",
             "text": "Draggable",
+            "action": {
+              "trigger": "draggable"
+            },
             "style": {
-              "bottom": "10%",
+              "align": "center",
+              "bottom": "30",
               "left": "50%-50",
               "width": "100",
               "padding": "10",
-              "background": "#ff0000",
+              "background": "#6e2111",
               "color": "#ffffff",
-              "corner_radius": "2"
+              "corner_radius": "3"
             }
           }, {
             "type": "label",
             "text": "Resizable",
+            "action": {
+              "trigger": "resizable"
+            },
             "style": {
-              "bottom": "10%",
+              "align": "center",
+              "bottom": "30",
               "right": "20",
               "padding": "10",
-              "background": "#ff0000",
+              "background": "#6e2111",
               "color": "#ffffff",
-              "corner_radius": "2"
+              "corner_radius": "3"
             }
           }, {
             "type": "label",
             "text": "Rotatable",
+            "action": {
+              "trigger": "rotatable"
+            },
             "style": {
-              "bottom": "10%",
+              "align": "center",
+              "bottom": "30",
               "left": "20",
               "padding": "10",
-              "background": "#ff0000",
+              "background": "#6e2111",
               "color": "#ffffff",
-              "corner_radius": "2"
+              "corner_radius": "3"
             }
           }, {
             "type": "image",
