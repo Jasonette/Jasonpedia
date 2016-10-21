@@ -18,16 +18,14 @@
         }
       },
       "layers": [{
-        "type": "label",
-        "text": "This label is rotatable",
+        "type": "image",
+        "url": "https://jasonette.github.io/Jasonpedia/assets/0.png"
         "style": {
           "rotate": "true",
-          "width": "300",
-          "height": "300",
-          "top": "100",
-          "left": "50%-150",
-          "background": "#00ff00",
-          "color": "#ffffff"
+          "width": "200",
+          "height": "200",
+          "top": "50%-100",
+          "left": "50%-100"
         }
       }]
     }
