@@ -19,6 +19,9 @@
                 "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/layer/static.json",
                 "view": "web"
               }
+            },
+            "style": {
+              "background": "rgba(0,0,0,0)"
             }
           },
           "layers": [{
@@ -28,9 +31,10 @@
               "font": "Verdana",
               "color": "#fdfdfd",
               "size": "18",
-              "top": "10%",
+              "top": "30%",
               "left": "0",
               "width": "100%",
+              "height": "300",
               "align": "center"
             }
           }, {
