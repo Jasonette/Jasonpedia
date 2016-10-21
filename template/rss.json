@@ -1,0 +1,86 @@
+{
+  "$jason": {
+    "head": {
+      "title": "RSS Reader",
+      "actions": {
+        "$pull": {
+          "trigger": "reload"
+        },
+        "$load": {
+          "trigger": "reload"
+        },
+        "reload": {
+          "type": "$network.request",
+          "options": {
+            "url": "http://feeds.gawker.com/lifehacker/full",
+            "dataType": "rss"
+          },
+          "success": {
+            "type": "$convert.rss",
+            "options": {
+              "data": "{{$jason}}"
+            },
+            "success": {
+              "type": "$render"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "style": {
+              "background": "rgb(246, 246, 239)",
+              "theme": "light",
+              "color": "#000000"
+            },
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/rss.json",
+                "view": "web"
+              }
+            }
+          },
+          "style": {
+            "background": "rgb(246, 246, 239)",
+            "color": "#000000",
+            "border": "0"
+          },
+          "sections": {
+            "{{#each $jason}}": {
+              "header": {
+                "type": "vertical",
+                "style": {
+                  "background": "#ffffff",
+                  "padding": "10"
+                },
+                "components": [
+                  {
+                    "type": "label",
+                    "style": {
+                      "font": "HelveticaNeue-Bold",
+                      "size": "20"
+                    },
+                    "text": "{{title}}"
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{author}}"
+                  }
+                ]
+              },
+              "items": [
+                {
+                  "type": "html",
+                  "css": "body{font-family: Courier; font-size: 18px;} img{max-width: 100%; border-bottom: 30px solid white !important;}",
+                  "text": "<body>{{summary.replace(/width[ ]*=[ ]*\"[^\"]*\"/gi, '').replace(/height[ ]*=[ ]*\"[^\"]*\"/gi, '')}}</body>"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

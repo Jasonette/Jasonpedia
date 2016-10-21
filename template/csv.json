@@ -1,0 +1,90 @@
+{
+  "$jason": {
+    "head": {
+      "title": "CSV parser",
+      "description": "Parsing CSV into JSON and rendering",
+      "tags": [
+        "csv",
+        "demo"
+      ],
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://jasonette.github.io/Jasonpedia/template/csv.csv",
+            "dataType": "raw"
+          },
+          "success": {
+            "type": "$convert.csv",
+            "options": {
+              "data": "{{$jason}}"
+            },
+            "success": {
+              "type": "$render"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/csv.json",
+                "view": "web"
+              }
+            }
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each $jason}}": {
+                  "type": "horizontal",
+                  "href": {
+                    "url": "{{url}}",
+                    "view": "Web"
+                  },
+                  "style": {
+                    "padding": "10",
+                    "spacing": "5"
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "style": {
+                        "width": "50"
+                      },
+                      "url": "{{icon}}"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "{{name}}",
+                          "style": {
+                            "font": "HelveticaNeue-Bold",
+                            "size": "14"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{descrption}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "13"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

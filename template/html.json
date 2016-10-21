@@ -1,0 +1,141 @@
+{
+  "$jason": {
+    "head": {
+      "title": "HTML Template",
+      "actions": {
+        "$pull": {
+          "trigger": "reload"
+        },
+        "$show": {
+          "type": "$timer.start",
+          "options": {
+            "interval": "30",
+            "repeats": "true",
+            "name": "timer",
+            "action": {
+              "trigger": "reload"
+            }
+          },
+          "success": {
+            "trigger": "reload"
+          }
+        },
+        "reload": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://news.ycombinator.com/newest",
+            "dataType": "html"
+          },
+          "success": {
+            "type": "$render",
+            "options": {
+              "type": "html"
+            },
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Refreshed"
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "HN",
+            "style": {
+              "background": "rgb(246, 246, 239)",
+              "theme": "light",
+              "color": "#000000"
+            },
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/html.json",
+                "view": "web"
+              }
+            }
+          },
+          "style": {
+            "background": "rgb(246, 246, 239)",
+            "color": "#000000",
+            "border": "0"
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each $jason.find('tr.athing')}}": {
+                  "type": "horizontal",
+                  "href": {
+                    "url": "https://news.ycombinator.com/{{$(this).next().find('.subtext .age a').attr('href')}}",
+                    "view": "Web"
+                  },
+                  "menu": {
+                    "items": [
+                      {
+                        "text": "Visit\nSite",
+                        "action": {
+                          "type": "$href",
+                          "options": {
+                            "url": "{{$(this).find('td.title a').attr('href')}}",
+                            "view": "Web"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "style": {
+                    "padding": "4",
+                    "spacing": "10",
+                    "color": "#ff6600",
+                    "background": "rgb(246, 246, 239)"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "style": {
+                        "font": "HelveticaNeue-Bold",
+                        "size": "10",
+                        "padding": "10",
+                        "width": "50"
+                      },
+                      "text": "{{($(this).next().find('.subtext .score').text().split(' ')[0]).toString()+'\\npoints'}}"
+                    },
+                    {
+                      "type": "vertical",
+                      "style": {
+                        "spacing": "5",
+                        "background": "#ff0000"
+                      },
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "{{$(this).find('td.title > a').text()}}",
+                          "style": {
+                            "font": "HelveticaNeue-Bold",
+                            "color": "#ff6600",
+                            "size": "16"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "style": {
+                            "color": "#aaaaaa",
+                            "font": "HelveticaNeue",
+                            "size": "13"
+                          },
+                          "text": "{{$(this).find('td.title .sitestr').text() + '   ' + $(this).next().find('.subtext').find(':nth-child(3)').text()}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
