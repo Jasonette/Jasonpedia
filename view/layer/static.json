@@ -1,0 +1,48 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Static Layers"
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "http://jsonplaceholder.typicode.com/photos"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "border": "none"
+          },
+          "header": {
+            "title": "Static Layers",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/layer/static.json",
+                "view": "web"
+              }
+            }
+          },
+          "layers": [{
+            "type": "label",
+            "text": "This label is rotatable",
+            "style": {
+              "rotate": "true",
+              "width": "300",
+              "height': "300",
+              "top": "100",
+              "left": "50%-150",
+              "background": "#00ff00",
+              "color": "#ffffff"
+            }
+          }]
+        }
+      }
+    }
+  }
+}
