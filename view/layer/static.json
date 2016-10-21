@@ -27,7 +27,7 @@
           },
           "layers": [{
             "type": "label",
-            "text": "THESE ARE STATIC LABELS.\n\nSTATIC LABELS CAN BE STYLED AND ALSO RESPOND TO ACTIONS.\n\nTRY PRESSING A BUTTON BELOW.",
+            "text": "THESE ARE STATIC LAYERS.\n\nSTATIC LAYERS CAN BE STYLED AND ALSO RESPOND TO ACTIONS.\n\nTRY PRESSING A BUTTON BELOW.",
             "style": {
               "font": "Verdana",
               "color": "#fdfdfd",
