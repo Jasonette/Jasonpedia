@@ -63,7 +63,7 @@
         }, {
           "title": "CSV",
           "description": "Transform any CSV content into JSON, which then can be rendered",
-          "url": "https://jasonette.github.io/Jasonpedia/template/rss.json"
+          "url": "https://jasonette.github.io/Jasonpedia/template/csv.json"
         }]
       },
       "templates": {
