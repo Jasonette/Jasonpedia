@@ -2,11 +2,6 @@
   "$jason": {
     "head": {
       "title": "CSV parser",
-      "description": "Parsing CSV into JSON and rendering",
-      "tags": [
-        "csv",
-        "demo"
-      ],
       "actions": {
         "$load": {
           "type": "$network.request",
@@ -28,6 +23,7 @@
       "templates": {
         "body": {
           "header": {
+            "title": "FKA",
             "menu": {
               "text": "View JSON",
               "href": {
@@ -38,6 +34,20 @@
           },
           "sections": [
             {
+              "header": {
+                "type": "horizontal",
+                "style": {
+                  "background": "rgba(14,122,254,0.1)",
+                  "padding": "20"
+                },
+                "components": [{
+                  "style": {
+                    "size": "12"
+                  },
+                  "type": "label",
+                  "text": "This demo parses a CSV at https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/csv and renders it as JSON"
+                }]
+              },
               "items": {
                 "{{#each $jason}}": {
                   "type": "horizontal",
