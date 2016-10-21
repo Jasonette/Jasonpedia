@@ -1,0 +1,78 @@
+{
+  "$jason": {
+    "head": {
+      "title": "JSONPlaceholder demo",
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "http://jsonplaceholder.typicode.com/photos"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "border": "none"
+          },
+          "header": {
+            "title": "network request & render"
+          },
+          "sections": [
+            {
+              "header": {
+                "text": "This example fetches content from http://jsonplaceholder.typicode.com/photos and renders its results dynamically. View JSON for more details",
+                "style": {
+                  "background": "#f5f5f5",
+                  "padding": "20"
+                },
+                "menu": {
+                  "text": "View JSON",
+                  "href": {
+                    "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/network.json",
+                    "view": "web"
+                  }
+                }
+              },
+              "items": {
+                "{{#each $jason}}": {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "10",
+                    "spacing": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "style": {
+                        "width": "50"
+                      },
+                      "url": "{{thumbnailUrl}}"
+                    },
+                    {
+                      "type": "label",
+                      "style": {
+                        "size": "14"
+                      },
+                      "text": "{{title}}"
+                    }
+                  ],
+                  "action": {
+                    "type": "$widget.banner",
+                    "options": {
+                      "title": "You selected",
+                      "description": "{{title}}"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

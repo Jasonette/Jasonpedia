@@ -32,6 +32,10 @@
           "description": "Render inline data ($jason.head.data) using template",
           "url": "https://jasonette.github.io/Jasonpedia/template/inline.json"
         }, {
+          "title": "Dynamic Data",
+          "description": "Make a $network.request action to an API and render the template",
+          "url": "https://jasonette.github.io/Jasonpedia/template/network.json"
+        }, {
           "title": "#each",
           "description": "Loop through array using #each keyword",
           "url": "https://jasonette.github.io/Jasonpedia/template/each.json"
