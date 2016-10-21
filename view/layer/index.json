@@ -46,6 +46,13 @@
             "href": {
               "url": "https://jasonette.github.io/Jasonpedia/view/layer/static.json"
             }
+          }, {
+            "type": "label",
+            "class": "bold",
+            "text": "Dynamic layers",
+            "href": {
+              "url": "https://jasonette.github.io/Jasonpedia/view/layer/dynamic.json"
+            }
           }]
         },
         {

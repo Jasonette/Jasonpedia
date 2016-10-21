@@ -4,56 +4,12 @@
       "title": "Static Layers",
       "actions": {
         "$load": {
-          "type": "$set",
-          "options": {
-            "style": {
-              "width": "86",
-              "height": "175",
-              "bottom": "30%-87",
-              "left": "50%-43"
-            }
-          },
-          "success": {
-            "type": "$render"
-          }
+          "type": "$render"
         },
-        "resizable": {
-          "type": "$set",
-          "options": {
-            "style": "{{var new_style = $get.style; new_style['resize']='true'; return new_style;}}"
-          },
-          "success": {
-            "type": "$render"
-          }
-        },
-        "draggable": {
-          "type": "$set",
-          "options": {
-            "style": "{{var new_style = $get.style; new_style['move']='true'; return new_style;}}"
-          },
-          "success": {
-            "type": "$render"
-          }
-        },
-        "rotatable": {
-          "type": "$set",
-          "options": {
-            "style": "{{var new_style = $get.style; new_style['rotate']='true'; return new_style;}}"
-          },
-          "success": {
-            "type": "$render"
-          }
-        }
       },
       "templates": {
         "body": {
-          "style": {
-            "background": "https://jasonette.github.io/Jasonpedia/assets/mariobackground.jpg"
-          },
           "header": {
-            "style": {
-              "background": "rgba(0,0,0,0)"
-            },
             "menu": {
               "text": "View JSON",
               "href": {
@@ -64,9 +20,13 @@
           },
           "layers": [{
             "type": "label",
-            "text": "Draggable",
+            "text": "Banner",
             "action": {
-              "trigger": "draggable"
+              "type": "$util.banner",
+              "options": {
+                "title": "Banner",
+                "description": "This is a banner"
+              }
             },
             "style": {
               "align": "center",
@@ -80,9 +40,13 @@
             }
           }, {
             "type": "label",
-            "text": "Resizable",
+            "text": "Alert",
             "action": {
-              "trigger": "resizable"
+              "type": "$util.alert",
+              "options": {
+                "title": "Alert",
+                "description": "This is an alert"
+              }
             },
             "style": {
               "align": "center",
@@ -98,6 +62,12 @@
             "text": "Rotatable",
             "action": {
               "trigger": "rotatable"
+            },
+            "action": {
+              "type": "$audio.play",
+              "options": {
+                "url": "https://jasonette.github.io/Jasonpedia/assets/1up.mp4"
+              }
             },
             "style": {
               "align": "center",
