@@ -1,33 +1,38 @@
 {
   "$jason": {
     "head": {
-      "title": "Static Layers"
-    },
-    "body": {
-      "style": {
-        "border": "none"
-      },
-      "header": {
-        "title": "Static Layers",
-        "menu": {
-          "text": "View JSON",
-          "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/layer/static.json",
-            "view": "web"
-          }
+      "title": "Static Layers",
+      "templates": {
+        "body": {
+          "style": {
+            "url": "https://jasonette.github.io/Jasonpedia/assets/mariobackground.jpg"
+          },
+          "header": {
+            "title": "Static Layers",
+            "style": {
+              "background": "rgba(0,0,0,0)"
+            },
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/layer/static.json",
+                "view": "web"
+              }
+            }
+          },
+          "layers": [{
+            "type": "image",
+            "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
+            "style": {
+              "rotate": "true",
+              "width": "86",
+              "height": "175",
+              "top": "50%-87",
+              "left": "50%-43"
+            }
+          }]
         }
-      },
-      "layers": [{
-        "type": "image",
-        "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
-        "style": {
-          "rotate": "true",
-          "width": "86",
-          "height": "175",
-          "top": "50%-87",
-          "left": "50%-43"
-        }
-      }]
+      }
     }
   }
 }
