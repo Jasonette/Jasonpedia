@@ -2,6 +2,11 @@
   "$jason": {
     "head": {
       "title": "Static Layers",
+      "actions": {
+        "$load": {
+          "type": "$render"
+        }
+      },
       "templates": {
         "body": {
           "style": {
