@@ -20,7 +20,7 @@
             "menu": {
               "text": "View JSON",
               "href": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/js.json",
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/jsfunction.json",
                 "view": "web"
               }
             }
@@ -79,7 +79,7 @@
                 "text": "{{var items=[]; for(var i=0; i<10; i++){items.push(i);} return JSON.stringify(items);}}"
               }, {
                 "type": "label",
-                "text": "View JSON to see the actual javascript expression that evaluated to below:"
+                "text": "View the JSON to see the actual javascript expression that evaluated to below:"
               }]
             }]
           }]
