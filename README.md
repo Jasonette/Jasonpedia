@@ -1,5 +1,12 @@
 # What is this?
-This repo consists 99% of JSON. And they are all **native iOS apps**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com/beta), they instantly turn into a native app. Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
+This repo consists 99% of JSON. And they are all **native iOS apps**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com/beta), they instantly turn into a native apps. Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
+
+Here are some highlights of what these mere JSON files can turn into:
+
+                                           |                                            |
+-------------------------------------------|--------------------------------------------|---------------------------------------------
+![assets/example1.png](assets/example1.png)| ![assets/example2.png](assets/example2.png)| ![assets/example3.png](assets/example3.png)
+![assets/example4.png](assets/example4.png)| ![assets/example5.png](assets/example5.png)| ![assets/example6.png](assets/example6.png)
 
 # How does this work?
 This repo publishes to `https://jasonette.github.io/Jasonpedia`.
