@@ -41,7 +41,8 @@
           "url": "https://jasonette.github.io/Jasonpedia/template/if.json"
         }, {
           "title": "Use Javascript expressions",
-          "description": "Jasonette template engine is built on top of native Javascript engine, so you can use any Javascript expression inside {{ }}"
+          "description": "Jasonette template engine is built on top of native Javascript engine, so you can use any Javascript expression inside {{ }}",
+          "url": "https://jasonette.github.io/Jasonpedia/template/js.json"
         }, {
           "title": "Javascript function example",
           "description": "Sometimes, just a single Javascript statement is not enough. You can embed a full Javascript function inside {{ }}. Just remember to have a return value, and escape them correctly"
