@@ -11,7 +11,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://jasonette.github.io/Jasonpedia/template/csv.csv",
+            "url": "https://jasonette.github.io/Jasonpedia/template/csv",
             "dataType": "raw"
           },
           "success": {
