@@ -5,7 +5,7 @@
       "actions": {
         "$load": {
           "type": "$render"
-        },
+        }
       },
       "templates": {
         "body": {
