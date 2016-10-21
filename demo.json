@@ -130,7 +130,14 @@
               "class": "normal",
               "text": "Wrote a cool/useful JSON markup? Send a pull request to https://github.com/Jasonette/Jasonpedia"
             }]
-          }
+          },
+          "items": [{
+            "type": "label",
+            "text": "Instagram",
+            "href": {
+              "url": "https://raw.githubusercontent.com/Jasonette/Instagram/master/home.json"
+            }
+          }]
         }
       ]
     }
