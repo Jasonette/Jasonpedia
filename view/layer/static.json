@@ -9,6 +9,9 @@
       },
       "templates": {
         "body": {
+          "style": {
+            "background": "#000000"
+          },
           "header": {
             "menu": {
               "text": "View JSON",
@@ -19,6 +22,18 @@
             }
           },
           "layers": [{
+            "type": "label",
+            "text": "THESE ARE STATIC LABELS.\n\nSTATIC LABELS CAN BE STYLED AND ALSO RESPOND TO ACTIONS.\n\nTRY PRESSING A BUTTON BELOW.",
+            "style": {
+              "font": "Verdana",
+              "color": "#fdfdfd",
+              "size": "18",
+              "top": "10%",
+              "left": "0",
+              "width": "100%",
+              "align": "center"
+            }
+          }, {
             "type": "label",
             "text": "Banner",
             "action": {
@@ -78,7 +93,12 @@
           }, {
             "type": "image",
             "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
-            "style": "{{$get.style}}"
+            "style": {
+              "width": "86",
+              "height": "175",
+              "bottom": "30%-87",
+              "left": "50%-43"
+            }
           }]
         }
       }
