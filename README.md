@@ -9,7 +9,7 @@ Here are some highlights of what these JSON files can turn into:
 
                   _                         |     _                                        
 -------------------------------------------|--------------------------------------------
-![assets/screen1.png](assets/screen1.png)| ![assets/screen2.png](assets/screen2.png)
+[view/layer/dynamic.json](view/layer/dynamic.json)<br>![assets/screen1.png](assets/screen1.png)| ![assets/screen2.png](assets/screen2.png)
 ![assets/screen3.png](assets/screen3.png)| ![assets/screen4.png](assets/screen4.png)
 ![assets/screen5.png](assets/screen5.png)| ![assets/screen6.png](assets/screen6.png)
 ![assets/screen7.gif](assets/screen7.gif)      |                                            
