@@ -4,6 +4,16 @@
       "title": "Static Layers",
       "actions": {
         "$load": {
+          "type": "$set",
+          "options": {
+            "style": {
+              "rotate": "true",
+              "width": "86",
+              "height": "175",
+              "bottom": "30%-87",
+              "left": "50%-43"
+            }
+          },
           "type": "$render"
         }
       },
@@ -13,7 +23,6 @@
             "background": "https://jasonette.github.io/Jasonpedia/assets/mariobackground.jpg"
           },
           "header": {
-            "title": "Static Layers",
             "style": {
               "background": "rgba(0,0,0,0)"
             },
@@ -26,15 +35,43 @@
             }
           },
           "layers": [{
+            "type": "label",
+            "text": "Draggable",
+            "style": {
+              "bottom": "10%",
+              "left": "50%-50",
+              "width": "100",
+              "padding": "10",
+              "background": "#ff0000",
+              "color": "#ffffff",
+              "corner_radius": "2"
+            }
+          }, {
+            "type": "label",
+            "text": "Resizable",
+            "style": {
+              "bottom": "10%",
+              "right": "20",
+              "padding": "10",
+              "background": "#ff0000",
+              "color": "#ffffff",
+              "corner_radius": "2"
+            }
+          }, {
+            "type": "label",
+            "text": "Rotatable",
+            "style": {
+              "bottom": "10%",
+              "left": "20",
+              "padding": "10",
+              "background": "#ff0000",
+              "color": "#ffffff",
+              "corner_radius": "2"
+            }
+          }, {
             "type": "image",
             "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
-            "style": {
-              "rotate": "true",
-              "width": "86",
-              "height": "175",
-              "bottom": "30%-87",
-              "left": "50%-43"
-            }
+            "style": "{{$get.style}}"
           }]
         }
       }
