@@ -10,7 +10,7 @@
       "templates": {
         "body": {
           "style": {
-            "url": "https://jasonette.github.io/Jasonpedia/assets/mariobackground.jpg"
+            "background": "https://jasonette.github.io/Jasonpedia/assets/mariobackground.jpg"
           },
           "header": {
             "title": "Static Layers",
