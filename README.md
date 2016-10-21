@@ -1,7 +1,7 @@
 # What is this?
 99% of this repo is JSON. And **THEY ARE ALL NATIVE iOS APPS**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com/beta), they instantly turn into native apps.
 
-The basic gist is: Jasonette interprets the JSON markup and turns them into native iOS components.
+The basic gist is: Jasonette interprets the JSON markup into native iOS components. Just like how you use HTML to write a web page, you use JSON to write a native app.
 
 Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
 
