@@ -64,6 +64,19 @@
           },
           "layers": [{
             "type": "label",
+            "text": "IN THIS DEMO, MARIO IS A DYNAMIC LAYER, WHICH MEANS YOU CAN RESIZE, DRAG, ROTATE HIM.\n\nBUT FIRST, PRESS THE BUTTONS TO ACTIVATE EACH FEATURE",
+            "style": {
+              "font": "Verdana",
+              "color": "#fdfdfd",
+              "size": "18",
+              "top": "100",
+              "left": "0",
+              "width": "100%",
+              "height": "150",
+              "align": "center"
+            }
+          }, {
+            "type": "label",
             "text": "Draggable",
             "action": {
               "trigger": "draggable"
