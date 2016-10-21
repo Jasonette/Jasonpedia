@@ -5,9 +5,9 @@ The basic gist is: Jasonette interprets the JSON markup into native iOS componen
 
 Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
 
-Here are some highlights of what these mere JSON files can turn into:
+Here are some highlights of what these JSON files can turn into:
 
-                _                           |     _                                       
+                                           |                                            
 -------------------------------------------|--------------------------------------------
 ![assets/screen1.png](assets/screen1.png)| ![assets/screen2.png](assets/screen2.png)
 ![assets/screen3.png](assets/screen3.png)| ![assets/screen4.png](assets/screen4.png)
