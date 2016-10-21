@@ -1,0 +1,96 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Javascript",
+      "actions": {
+        "$load": {
+          "type": "$geo.get",
+          "options": {
+            "distance": "100"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Simple Javascript",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/template/js.json",
+                "view": "web"
+              }
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "spacing": "5"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Full return value from $geo.get"
+              }, {
+                "type": "label",
+                "style": {
+                  "background": "#282828",
+                  "corner_radius": "3",
+                  "color": "#c5d3d8",
+                  "padding": "10",
+                  "size": "12",
+                  "font": "Courier"
+                },
+                "text": "{{JSON.stringify(this)}}"
+              }]
+            }, {
+              "type": "vertical",
+              "style": {
+                "spacing": "5"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Template expression to run"
+              }, {
+                "type": "label",
+                "style": {
+                  "background": "#282828",
+                  "corner_radius": "3",
+                  "color": "#c5d3d8",
+                  "padding": "10",
+                  "size": "12",
+                  "font": "Courier"
+                },
+                "text": "Latitude: \{\{$jason.coord.split(',')[0]\nLongitude: $jason.coord.split(',')[1]\}\}"
+              }]
+            }]
+          }, {
+              "type": "vertical",
+              "style": {
+                "spacing": "5"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Evaluated Result"
+              }, {
+                "type": "label",
+                "style": {
+                  "background": "#282828",
+                  "corner_radius": "3",
+                  "color": "#c5d3d8",
+                  "padding": "10",
+                  "size": "12",
+                  "font": "Courier"
+                },
+                "text": "Latitude: {{$jason.coord.split(',')[0]\nLongitude: $jason.coord.split(',')[1]}}"
+              }]
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
