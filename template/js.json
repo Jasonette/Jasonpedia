@@ -66,8 +66,7 @@
                 },
                 "text": "Latitude: \{\{$jason.coord.split(',')[0]\nLongitude: $jason.coord.split(',')[1]\}\}"
               }]
-            }]
-          }, {
+            }, {
               "type": "vertical",
               "style": {
                 "spacing": "5"
