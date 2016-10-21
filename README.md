@@ -3,7 +3,7 @@ This repo consists 99% of JSON. And they are all **native iOS apps**. When you p
 
 Here are some highlights of what these mere JSON files can turn into:
 
-                                           |                                            
+                _                           |     _                                       
 -------------------------------------------|--------------------------------------------
 ![assets/example1.png](assets/example1.png)| ![assets/example2.png](assets/example2.png)
 ![assets/example3.png](assets/example3.png)| ![assets/example4.png](assets/example4.png)
