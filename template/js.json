@@ -44,7 +44,7 @@
                   "size": "12",
                   "font": "Courier"
                 },
-                "text": "{{JSON.stringify(this)}}"
+                "text": "{{JSON.stringify($jason, null, '  ')}}"
               }]
             }, {
               "type": "vertical",
@@ -64,7 +64,7 @@
                   "size": "12",
                   "font": "Courier"
                 },
-                "text": "Latitude: \\{\\{$jason.coord.split(',')[0]\nLongitude: $jason.coord.split(',')[1]\\}\\}"
+                "text": "$jason.coord.split(',')[0] + '\n\n' + $jason.coord.split(',')[1]"
               }]
             }, {
               "type": "vertical",
@@ -84,7 +84,7 @@
                   "size": "12",
                   "font": "Courier"
                 },
-                "text": "Latitude: {{$jason.coord.split(',')[0]\nLongitude: $jason.coord.split(',')[1]}}"
+                "text": "{{$jason.coord.split(',')[0] + '\n\n' + $jason.coord.split(',')[1]}}"
               }]
             }]
           }]
