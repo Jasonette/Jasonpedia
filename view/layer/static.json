@@ -32,7 +32,7 @@
               "rotate": "true",
               "width": "86",
               "height": "175",
-              "top": "50%-87",
+              "bottom": "30%+87",
               "left": "50%-43"
             }
           }]
