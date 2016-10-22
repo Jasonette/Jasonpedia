@@ -75,7 +75,35 @@
             }
           ]
         }
-      ]
+      ],
+      "footer": {
+        "tabs": {
+          "style": {
+            "background": "rgba(255,255,255,0.8)",
+            "color": "#000000"
+          },
+          "items": [{
+            "image": "https://jasonette.github.io/Jasonpedia/assets/0.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://jasonette.github.io/Jasonpedia/core/href/tabs.json"
+          }, {
+            "image": "https://jasonette.github.io/Jasonpedia/assets/2.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://jasonette.github.io/Jasonpedia/core/href/tabs.json"
+          }, {
+            "image": "https://jasonette.github.io/Jasonpedia/assets/3.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://jasonette.github.io/Jasonpedia/core/href/tabs.json"
+          }]
+        }
+      }
+    }
     }
   }
 }
