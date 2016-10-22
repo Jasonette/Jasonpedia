@@ -138,6 +138,13 @@
               "url": "https://raw.githubusercontent.com/Jasonette/Instagram/master/home.json",
               "transition": "modal"
             }
+          }, {
+            "type": "label",
+            "text": "Twitter",
+            "href": {
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter/master/home.json",
+              "transition": "modal"
+            }
           }]
         }
       ]
