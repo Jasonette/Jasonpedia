@@ -39,6 +39,14 @@
             },
             {
               "type": "label",
+              "text": "Push transition to another Jason View with tabs",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/core/href/tabs.json"
+              }
+            },
+            {
+              "type": "label",
               "text": "Modal transition to another Jason View",
               "class": "bold",
               "href": {
