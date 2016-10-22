@@ -73,7 +73,7 @@
             "components": [{
               "type": "label",
               "class": "bold",
-              "text": "Tutorial demos"
+              "text": "Tutorial"
             }, {
               "type": "label",
               "class": "normal",
@@ -124,7 +124,7 @@
             "components": [{
               "type": "label",
               "class": "bold",
-              "text": "Community demos"
+              "text": "Showcase"
             }, {
               "type": "label",
               "class": "normal",
