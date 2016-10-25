@@ -1,6 +1,8 @@
 {
   "$jason": {
-    "head": "Basic Layers",
+    "head": {
+      "title": "Basic Layers"
+    },
     "body": {
       "layers": [{
         "type": "label",
