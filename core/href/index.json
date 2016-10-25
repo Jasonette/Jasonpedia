@@ -68,7 +68,7 @@
               "text": "Open external app (mail)",
               "class": "bold",
               "href": {
-                "url": "mailto:ethan.gliechtenstein@gmail.com?subject=You%20genius!",
+                "url": "mailto:ethan.gliechtenstein@gmail.com?subject=It%20works!",
                 "view": "app"
               }
             },
