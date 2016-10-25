@@ -53,7 +53,7 @@
         "backpack": {
           "type": "$href",
           "options": {
-            "url": "https://jasonette.github.io/Jasonpedia/view/layer/index.json",
+            "url": "https://jasonette.github.io/Jasonpedia/view/layer/backpack.json",
             "transition": "modal"
           }
         },
@@ -188,14 +188,9 @@
               "action": {
                 "type": "$snapshot",
                 "success": {
-                  "type": "$util.share",
+                  "type": "$set",
                   "options": {
-                    "items": [
-                      {
-                        "type": "image",
-                        "data": "{{$jason.data}}"
-                      }
-                    ]
+                    "background": "{{$jason.data}}"
                   },
                   "success": {
                     "type": "$render"
