@@ -158,10 +158,15 @@
               },
               "url": "https://s3-us-west-2.amazonaws.com/fm.ethan.jason/pokerun.png",
               "action": {
-                "type": "$util.banner",
-                "options": {
-                  "title": "$util.banner action triggered!",
-                  "description": "You can attach an action to a layer"
+                "type": "$snapshot",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [{
+                      "type": "image",
+                      "data": "{{$jason.data}}"
+                    }]
+                  }
                 }
               }
             },
