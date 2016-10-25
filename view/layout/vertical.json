@@ -24,18 +24,23 @@
         "items": [{
           "type": "vertical",
           "style": {
-            "height": "300",
-            "background": "#FF5733"
+            "height": "300"
           },
           "components": [{
             "type": "label",
             "class": "note",
+            "style": {
+              "background": "#FF5733"
+            },
             "text": "First component: Label. There's a space component below this label."
           }, {
             "type": "space"
           }, {
             "type": "label",
             "class": "note",
+            "style": {
+              "background": "#FF5733"
+            },
             "text": "Third component: Label. There's a space component above this label."
           }]
         }]
