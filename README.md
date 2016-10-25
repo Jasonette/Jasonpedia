@@ -1,9 +1,9 @@
 # What is this?
-This repository is 99.9% JSON. And **THEY ARE ALL NATIVE iOS APPS**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com/beta), they instantly turn into native apps.
+This repository is 99.9% JSON. And **THEY ARE ALL NATIVE iOS APPS**. When you play these JSON snippets on [Jasonette](https://www.jasonette.com), they instantly turn into native apps.
 
 The basic gist is: Jasonette interprets the JSON markup into native iOS components. Just like how you use HTML to write a web page, you use JSON to write a native app.
 
-Check out [Jasonette](https://www.jasonette.com/beta) to learn more.
+Check out [Jasonette](https://www.jasonette.com) to learn more.
 
 Here are some highlights of what these JSON files can turn into:
 
@@ -22,7 +22,7 @@ For example the [hello.json](https://github.com/Jasonette/Jasonpedia/blob/gh-pag
 So is every other file in this repo.
 
 # How to use
-The easiest way is to just download [Jasonette](https://www.jasonette.com/beta) and run. The `demo.json` URL is embedded in Jasonette by default, and it functions as the entry point for rest of the files in this repo.
+The easiest way is to just download [Jasonette](https://www.jasonette.com) and run. The `demo.json` URL is embedded in Jasonette by default, and it functions as the entry point for rest of the files in this repo.
 
 # The purpose of this repo
 This repo serves multiple purposes:
