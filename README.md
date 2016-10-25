@@ -20,10 +20,10 @@ Here are some highlights of what these JSON files can turn into (hint: anything 
 
 First of all, I recommend you check out the [website](https://www.jasonette.com) to quickly learn how this works.
 
-## Recommended way
+### 1. Recommended way
 Jasonette ships with this repository's URL embedded by default, so if you just head over there and follow the "Get started" guide, you'll be able to try everything on this repository. (Note: The default root URL Jasonette ships with is [hello.json](https://github.com/Jasonette/Jasonpedia/blob/gh-pages/hello.json)).
 
-## Manually
+### 2. Manual way
 You can also manually add JSON to Jasonette. If you want to try adding each individual JSON file in this repository, you just need to add their published URLs to Jasonette and run. You can learn how to do that at [Getting started guide](https://jasonette.github.io/documentation).
 
 Just remember, this repo uses [Github pages](https://pages.github.com) to publish the JSON, so all the files will be avaialbe under the `https://jasonette.github.io/Jasonpedia` base url.
