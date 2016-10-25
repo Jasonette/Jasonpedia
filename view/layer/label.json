@@ -4,9 +4,16 @@
       "title": "Basic Layers"
     },
     "body": {
+      "header": {
+        "style": {
+          "background": "#8bb92d",
+          "color": "#ffffff"
+        },
+        "title": "Label Layer Demo"
+      },
       "layers": [{
         "type": "label",
-        "text": "{top: 10, left: 10}",
+        "text": "{top: 74, left: 10}",
         "style": {
           "top": "10",
           "left": "10",
@@ -17,7 +24,7 @@
         }
       }, {
         "type": "label",
-        "text": "{top: 10, right: 10}",
+        "text": "{top: 74, right: 10}",
         "style": {
           "top": "10",
           "right": "10",
@@ -44,6 +51,18 @@
           "bottom": "10",
           "right": "10",
           "padding": "10",
+          "background": "#ff0000",
+          "color": "#ffffff",
+          "align": "center"
+        }
+      }, {
+        "type": "label",
+        "text": "{top: 50%-50, left: 50%-50, width: 100, height: 100}"
+        "style": {
+          "top": "50%-50",
+          "left": "50%-50",
+          "width": "100",
+          "height": "100",
           "background": "#ff0000",
           "color": "#ffffff",
           "align": "center"
