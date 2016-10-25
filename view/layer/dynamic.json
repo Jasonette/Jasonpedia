@@ -9,7 +9,7 @@
             "style": {
               "width": "86",
               "height": "175",
-              "bottom": "60",
+              "bottom": "70",
               "left": "50%-43"
             }
           },
@@ -23,7 +23,14 @@
             "style": "{{var new_style = $get.style; new_style['resize']='true'; return new_style;}}"
           },
           "success": {
-            "type": "$render"
+            "type": "$util.banner",
+            "options": {
+              "title": "Now resizable",
+              "description": "Try pinching Mario with two fingers"
+            },
+            "success": {
+              "type": "$render"
+            }
           }
         },
         "draggable": {
@@ -32,7 +39,14 @@
             "style": "{{var new_style = $get.style; new_style['move']='true'; return new_style;}}"
           },
           "success": {
-            "type": "$render"
+            "type": "$util.banner",
+            "options": {
+              "title": "Now draggable",
+              "description": "Try dragging Mario around"
+            },
+            "success": {
+              "type": "$render"
+            }
           }
         },
         "rotatable": {
@@ -41,7 +55,14 @@
             "style": "{{var new_style = $get.style; new_style['rotate']='true'; return new_style;}}"
           },
           "success": {
-            "type": "$render"
+            "type": "$util.banner",
+            "options": {
+              "title": "Now rotatable",
+              "description": "Try rotating Mario with two fingers",
+            },
+            "success": {
+              "type": "$render"
+            }
           }
         }
       },
