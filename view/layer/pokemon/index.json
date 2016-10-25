@@ -23,7 +23,14 @@
           "type": "$set",
           "options": [
             {
-              "{{#if 'options' in $get.background}}": {
+              "{{#if (typeof $get.background) == 'string' }}": {
+                "background": {
+                  "type": "camera"
+                }
+              }
+            }, 
+            {
+              "{{#elseif 'options' in $get.background}}": {
                 "background": {
                   "type": "camera"
                 }
