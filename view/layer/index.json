@@ -41,6 +41,13 @@
           "items": [{
             "type": "label",
             "class": "bold",
+            "text": "Basic Labels",
+            "href": {
+              "url": "https://jasonette.github.io/Jasonpedia/view/layer/label.json"
+            }
+          }, {
+            "type": "label",
+            "class": "bold",
             "text": "Static layers",
             "href": {
               "url": "https://jasonette.github.io/Jasonpedia/view/layer/static.json"

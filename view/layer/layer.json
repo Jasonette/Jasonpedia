@@ -1,0 +1,52 @@
+{
+  "$jason": {
+    "head": "Basic Layers",
+    "body": {
+      "layers": [{
+        "type": "label",
+        "text": "{top: 10, left: 10}",
+        "style": {
+          "top": "10",
+          "left": "10",
+          "padding": "10",
+          "background": "#ff0000",
+          "color": "#ffffff",
+          "align": "center"
+        }
+      }, {
+        "type": "label",
+        "text": "{top: 10, right: 10}",
+        "style": {
+          "top": "10",
+          "right": "10",
+          "padding": "10",
+          "background": "#ff0000",
+          "color": "#ffffff",
+          "align": "center"
+        }
+      }, {
+        "type": "label",
+        "text": "{bottom: 10, left: 10}",
+        "style": {
+          "bottom": "10",
+          "left": "10",
+          "padding": "10",
+          "background": "#ff0000",
+          "color": "#ffffff",
+          "align": "center"
+        }
+      }, {
+        "type": "label",
+        "text": "{bottom: 10, right: 10}",
+        "style": {
+          "bottom": "10",
+          "right": "10",
+          "padding": "10",
+          "background": "#ff0000",
+          "color": "#ffffff",
+          "align": "center"
+        }
+      }]
+    }
+  }
+}
