@@ -190,7 +190,7 @@
                 "success": {
                   "type": "$set",
                   "options": {
-                    "background": "{{$jason.data}}"
+                    "background": "{{$jason.data_uri}}"
                   },
                   "success": {
                     "type": "$render"
