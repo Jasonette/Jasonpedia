@@ -11,6 +11,15 @@
       }
     },
     "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layout/vertical.json",
+            "view": "web"
+          }
+        }
+      },
       "sections": [{
         "items": [{
           "type": "vertical",
@@ -21,13 +30,13 @@
           "components": [{
             "type": "label",
             "class": "note",
-            "text": "Top"
+            "text": "First component: Label. There's a space component below this label."
           }, {
             "type": "space"
           }, {
             "type": "label",
             "class": "note",
-            "text": "Bottom"
+            "text": "Third component: Label. There's a space component above this label."
           }]
         }]
       }]

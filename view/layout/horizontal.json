@@ -18,6 +18,15 @@
       }
     },
     "body": {
+      "header": {
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/layout/horizontal.json",
+            "view": "web"
+          }
+        }
+      },
       "sections": [{
         "items": [{
           "type": "horizontal",
@@ -41,7 +50,7 @@
           "type": "horizontal",
           "style": {
             "padding": "0",
-            "align": "fill",
+            "align": "top",
             "z_index": "-1"
           },
           "components": [{
