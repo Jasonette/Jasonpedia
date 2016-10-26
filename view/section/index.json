@@ -478,9 +478,10 @@
                   {
                     "text": "One",
                     "action": {
-                      "type": "$util.toast",
+                      "type": "$util.banner",
                       "options": {
-                        "text": "One"
+                        "title": "1",
+                        "description": "Pressed One!"
                       }
                     }
                   },
@@ -490,9 +491,11 @@
                       "background": "rgb(154, 205, 50)"
                     },
                     "action": {
-                      "type": "$util.toast",
+                      "type": "$util.banner",
                       "options": {
-                        "text": "Two"
+                        "title": "2",
+                        "description": "Pressed Two!",
+                        "type": "error"
                       }
                     }
                   },
@@ -502,9 +505,11 @@
                       "background": "#FFFF00"
                     },
                     "action": {
-                      "type": "$util.toast",
+                      "type": "$util.banner",
                       "options": {
-                        "text": "Three"
+                        "title": "3",
+                        "description": "Pressed Three!",
+                        "type": "success"
                       }
                     }
                   },
@@ -514,9 +519,11 @@
                       "background": "#ff0000"
                     },
                     "action": {
-                      "type": "$util.toast",
+                      "type": "$util.banner",
                       "options": {
-                        "text": "Four"
+                        "title": "4",
+                        "description": "Pressed Four!",
+                        "type": "info"
                       }
                     }
                   }
