@@ -476,33 +476,49 @@
               "menu": {
                 "items": [
                   {
-                    "text": "Fish"
+                    "text": "One",
+                    "action": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "One"
+                      }
+                    }
                   },
                   {
-                    "text": "Lick",
+                    "text": "Two",
                     "style": {
                       "background": "rgb(154, 205, 50)"
                     },
                     "action": {
                       "type": "$util.toast",
                       "options": {
-                        "text": "Licked"
+                        "text": "Two"
                       }
                     }
                   },
                   {
-                    "text": "High",
+                    "text": "Three",
                     "style": {
                       "background": "#FFFF00"
                     },
-                    "url": ""
+                    "action": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Three"
+                      }
+                    }
                   },
                   {
-                    "text": "DJ",
+                    "text": "Four",
                     "style": {
                       "background": "#ff0000"
                     },
-                    "url": ""
+                    "action": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Four"
+                      }
+                    }
                   }
                 ]
               },
