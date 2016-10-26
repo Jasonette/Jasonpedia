@@ -135,14 +135,14 @@
             "type": "label",
             "text": "Instagram",
             "href": {
-              "url": "https://raw.githubusercontent.com/Jasonette/Instagram/master/home.json",
+              "url": "https://raw.githubusercontent.com/Jasonette/Instagram-UI-example/master/home.json",
               "transition": "modal"
             }
           }, {
             "type": "label",
             "text": "Twitter",
             "href": {
-              "url": "https://raw.githubusercontent.com/Jasonette/Twitter/master/home.json",
+              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json",
               "transition": "modal"
             }
           }]
