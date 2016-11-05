@@ -11,7 +11,7 @@ Here are some highlights of what these JSON files can turn into (hint: anything 
 -------------------------------------------|--------------------------------------------
 <br>[view/layer/dynamic.json](view/layer/dynamic.json)<br><br>![assets/screen1.png](assets/screen1.png)|<br> [view/layer/weather/index.json](view/layer/weather/index.json)<br><br>![assets/screen2.png](assets/screen2.png)
 <br>[view/section/index.json](view/section/index.json)<br><br>![assets/screen3.png](assets/screen3.png)|<br> [view/component/map/index.json](view/component/map/index.json)<br><br>![assets/screen4.png](assets/screen4.png)
-<br>[view/component/image.json](view/componenet/image.jason)<br><br>![assets/screen5.png](assets/screen5.png)|<br> [view/layout/nested.json](view/layout.nested.json)<br><br>![assets/screen6.png](assets/screen6.png)
+<br>[view/component/image.json](view/component/image/index.jason)<br><br>![assets/screen5.png](assets/screen5.png)|<br> [view/layout/nested.json](view/layout.nested.json)<br><br>![assets/screen6.png](assets/screen6.png)
 <br>[action/timer/mario.json](action/timer/mario.json)<br><br>![assets/screen7.gif](assets/screen7.gif)      |                                            
 
 # How to use this?
