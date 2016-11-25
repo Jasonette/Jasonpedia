@@ -39,7 +39,7 @@
               "components": [{
                 "type": "label",
                 "text": "$href",
-                "class": "bold",
+                "class": "bold"
               }, {
                 "type": "label",
                 "text": "Various types of linking between views",
@@ -58,7 +58,7 @@
               "components": [{
                 "type": "label",
                 "text": "$render",
-                "class": "bold",
+                "class": "bold"
               }, {
                 "type": "label",
                 "text": "Check out different render options",
@@ -77,7 +77,7 @@
               "components": [{
                 "type": "label",
                 "text": "$snapshot",
-                "class": "bold",
+                "class": "bold"
               }, {
                 "type": "label",
                 "text": "Take a snapshot of the current screen",
