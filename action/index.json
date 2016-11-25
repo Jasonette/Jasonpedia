@@ -235,7 +235,7 @@
               "components": [{
                 "type": "label",
                 "text": "$util.addressbook",
-                "class": "bold",
+                "class": "bold"
               }]
             }
           ]
