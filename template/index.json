@@ -131,7 +131,7 @@
                   "components": [{
                     "type": "label",
                     "text": "{{title}}",
-                    "class": "bold",
+                    "class": "bold"
                   }, {
                     "type": "label",
                     "text": "{{description}}",
