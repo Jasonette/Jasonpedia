@@ -58,7 +58,7 @@
             "type": "$util.banner",
             "options": {
               "title": "Now rotatable",
-              "description": "Try rotating Mario with two fingers",
+              "description": "Try rotating Mario with two fingers"
             },
             "success": {
               "type": "$render"
