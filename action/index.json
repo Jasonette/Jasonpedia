@@ -8,21 +8,15 @@
           "align": "center",
           "background": "#ffffff",
           "corner_radius": "3",
-          "width": "140",
-          "height": "40",
-          "size": "12"
+          "size": "12",
+          "padding": "10"
         },
-        "normal": {
-          "font": "HelveticaNeue",
-          "padding": "10",
-          "size": "12"
-        },
-        "card": {
+        "padded": {
           "width": "150",
-          "padding": "5",
-          "height": "60",
           "align": "center",
-          "background": "#f5f5f5"
+          "background": "#ffffff",
+          "font": "HelveticaNeue-Bold",
+          "height": "150"
         }
       },
       "actions": {
@@ -104,8 +98,7 @@
           },
           "items": [
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "action": {
                 "type": "$util.banner",
                 "options": {
@@ -113,30 +106,22 @@
                   "description": "I'm a banner. I display a title and a description."
                 }
               },
-              "components": [{
-                "type": "label",
-                "text": "$util.banner",
-                "class": "bold"
-              }]
+              "type": "label",
+              "text": "$util.banner"
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "action": {
                 "type": "$util.toast",
                 "options": {
                   "text": "I'm a toast. I display a simple text."
                 }
               },
-              "components": [{
-                "type": "label",
-                "class": "bold",
-                "text": "$util.toast"
-              }]
+              "type": "label",
+              "text": "$util.toast"
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "action": {
                 "type": "$util.alert",
                 "options": {
@@ -144,27 +129,19 @@
                   "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
                 }
               },
-              "components": [{
-                "type": "label",
-                "class": "bold",
-                "text": "$util.alert (basic)"
-              }]
+              "type": "label",
+              "text": "$util.alert (basic)"
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "action": {
                 "trigger": "form_alert"
               },
-              "components": [{
-                "type": "label",
-                "class": "bold",
-                "text": "$util.alert (with input fields)"
-              }]
+              "type": "label",
+              "text": "$util.alert (with input fields)"
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "action": {
                 "type": "$util.picker",
                 "options": {
@@ -201,15 +178,11 @@
                   ]
                 }
               },
-              "components": [{
-                "type": "label",
-                "class": "bold",
-                "text": "$util.picker"
-              }]
+              "type": "label",
+              "text": "$util.picker"
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "action": {
                 "type": "$util.datepicker",
                 "success": {
@@ -220,23 +193,16 @@
                   }
                 }
               },
-              "components": [{
-                "type": "label",
-                "text": "$util.datepicker",
-                "class": "bold"
-              }]
+              "type": "label",
+              "text": "$util.datepicker"
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "class": "padded",
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
               },
-              "components": [{
-                "type": "label",
-                "text": "$util.addressbook",
-                "class": "bold"
-              }]
+              "type": "label",
+              "text": "$util.addressbook"
             }
           ]
         },
@@ -254,23 +220,20 @@
           },
           "items": [
             {
-              "type": "vertical",
-              "class": "card",
+              "type": "label",
+              "text": "$media.play",
+              "class": "padded",
               "action": {
                 "type": "$media.play",
                 "options": {
                   "url": "https://vo.fod4.com/v/25c17d6eb2/v600.mp4"
                 }
-              },
-              "components": [{
-                "type": "label",
-                "text": "$media.play",
-                "class": "bold"
-              }]
+              }
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "type": "label",
+              "text": "$media.picker + $util.share (photo)",
+              "class": "padded",
               "action": {
                 "type": "$media.picker",
                 "success": {
@@ -284,16 +247,12 @@
                     ]
                   }
                 }
-              },
-              "components": [{
-                "type": "label",
-                "text": "$media.picker + $util.share (photo)",
-                "class": "bold"
-              }]
+              }
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "type": "label",
+              "class": "padded",
+              "text": "$media.camera + $util.share (photo)",
               "action": {
                 "type": "$media.camera",
                 "success": {
@@ -307,16 +266,12 @@
                     ]
                   }
                 }
-              },
-              "components": [{
-                "type": "label",
-                "text": "$media.camera + $util.share (photo)",
-                "class": "bold"
-              }]
+              }
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "type": "label",
+              "text": "$media.camera + $util.share (photo with editing)",
+              "class": "padded",
               "action": {
                 "type": "$media.camera",
                 "options": {
@@ -333,16 +288,12 @@
                     ]
                   }
                 }
-              },
-              "components": [{
-                "type": "label",
-                "text": "$media.camera + $util.share (photo with editing)",
-                "class": "bold"
-              }]
+              }
             },
             {
-              "type": "vertical",
-              "class": "card",
+              "type": "label",
+              "text": "$media.camera + $util.share (video)",
+              "class": "padded",
               "action": {
                 "type": "$media.camera",
                 "options": {
@@ -359,12 +310,7 @@
                     ]
                   }
                 }
-              },
-              "components": [{
-                "type": "label",
-                "text": "$media.camera + $util.share (video)",
-                "class": "bold"
-              }]
+              }
             }
           ]
         },
