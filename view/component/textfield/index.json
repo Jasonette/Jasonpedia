@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "textfield",
+      "title": "textfield example",
       "styles": {
         "padded": {
           "padding": "20",
@@ -23,78 +23,82 @@
           }
         }
       },
-      "sections": [{
-        "header": {
-          "type": "label",
-          "text": "textfield",
-          "style": {
-            "background": "#f5f5f5"
-          }
-        },
-        "items": [
-          {
-            "type": "horizontal",
+      "sections": [
+        {
+          "header": {
+            "type": "label",
+            "text": "textfield",
             "style": {
-              "background": "#ffffff",
-              "align": "top"
-            },
-            "components": [{
-              "type": "textfield",
-              "placeholder": "Enter text and press Done",
-              "style": {
-                "height": "30"
-              },
-              "name": "blank"
-            }, {
-              "type": "button",
-              "text": "Done",
-              "style": {
-                "width": "60",
-                "height": "30",
-                "color": "#ff0000"
-              },
-              "action": {
-                "type": "$util.banner",
-                "options": {
-                  "title": "Selected Value",
-                  "description": "{{$get.blank}}"
-                }
-              }
-            }]
+              "background": "#f5f5f5"
+            }
           },
-          {
-            "type": "horizontal",
-            "style": {
-              "background": "#ffffff",
-              "align": "top"
-            },
-            "components": [{
-              "type": "textfield",
+          "items": [
+            {
+              "type": "horizontal",
               "style": {
-                "secure": "true",
-                "height": "30"
+                "background": "#ffffff",
+                "align": "center"
               },
-              "placeholder": "Secure field",
-              "name": "secure"
-            }, {
-              "type": "button",
-              "text": "Done",
-              "style": {
-                "width": "60",
-                "height": "30",
-                "color": "#ff0000"
-              },
-              "action": {
-                "type": "$util.banner",
-                "options": {
-                  "title": "Selected secure value",
-                  "description": "{{$get.secure}}"
+              "components": [
+                {
+                  "type": "textfield",
+                  "placeholder": "Enter text and press Done",
+                  "name": "blank"
+                },
+                {
+                  "type": "button",
+                  "text": "Done",
+                  "style": {
+                    "width": "60",
+                    "height": "50",
+                    "color": "#ff0000"
+                  },
+                  "action": {
+                    "type": "$util.banner",
+                    "options": {
+                      "title": "Selected Value",
+                      "description": "{{$get.blank}}"
+                    }
+                  }
                 }
-              }
-            }]
-          }
-        ]
-      }]
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "background": "#ffffff",
+                "align": "center"
+              },
+              "components": [
+                {
+                  "type": "textfield",
+                  "style": {
+                    "secure": "true",
+                    "height": "50"
+                  },
+                  "placeholder": "Secure field",
+                  "name": "secure"
+                },
+                {
+                  "type": "button",
+                  "text": "Done",
+                  "style": {
+                    "width": "60",
+                    "color": "#ff0000"
+                  },
+                  "action": {
+                    "type": "$util.banner",
+                    "options": {
+                      "title": "Selected secure value",
+                      "description": "{{$get.secure}}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }
