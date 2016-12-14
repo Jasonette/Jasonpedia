@@ -1,5 +1,9 @@
 # What is this?
-This repository is 99.9% JSON. And **each JSON file is an iOS app. And an Android app. Simultaneously.** When you play these JSON snippets on [Jasonette](https://www.jasonette.com), they instantly turn into native apps.
+This repository is 99.9% JSON.
+
+**Each JSON file is an iOS app. And an Android app. Simultaneously.**
+
+And when you play these JSON snippets on [Jasonette](https://www.jasonette.com), they instantly turn into native apps.
 
 Here's how it works: Jasonette interprets the JSON markup into native iOS and Android components. Just like how you use HTML to write a web page, you use JSON to write a native app, which you can publish to the app store.
 
