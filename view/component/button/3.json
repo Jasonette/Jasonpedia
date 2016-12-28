@@ -73,7 +73,7 @@
                   "type": "button",
                   "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
                   "style": {
-                    "width": "100"
+                    "width": "50"
                   },
                   "action": {
                     "type": "$audio.play",
