@@ -6,6 +6,7 @@
         "items": [
           { "type": "Rectangle button", "url": "https://jasonette.github.io/Jasonpedia/view/component/button/1.json" },
           { "type": "Rounded button", "url": "https://jasonette.github.io/Jasonpedia/view/component/button/2.json" },
+          { "type": "Image button", "url": "https://jasonette.github.io/Jasonpedia/view/component/button/3.json" }
         ]
       },
       "templates": {

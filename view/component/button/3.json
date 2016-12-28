@@ -1,0 +1,138 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Mario Button"
+    },
+    "body": {
+      "style": {
+        "border": "none"
+      },
+      "header": {
+        "style": {
+          "shy": "true"
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "image",
+              "style": {
+                "padding": "0",
+                "width": "100%",
+                "z_index": "-1"
+              },
+              "url": "http://cdn.bgr.com/2016/09/super-mario-run.jpg?quality=98&strip=all"
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "padding": "20",
+                "spacing": "20"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "text": "There are two types of buttons, and we'll show you how they work",
+                  "style": {
+                    "font": "HelveticaNeue-Bold",
+                    "size": "40"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "There are two types of buttons: image type and text type. You can build them both simply by specifying the type as 'button'. But the difference is what comes next. If the button contains a 'url' attribute, it will be rendered as an image button, like the Mario button below. If the button contains a 'text' attribute, it will be rendered as a text attribute, like the red 'Tap Mario' button below."
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "padding": "50",
+                "spacing": "20"
+              },
+              "components": [
+                {
+                  "type": "button",
+                  "text": "Tap Mario =>",
+                  "style": {
+                    "font": "HelveticaNeue-Bold",
+                    "size": "20",
+                    "corner_radius": "3",
+                    "background": "#ff0000"
+                  },
+                  "action": {
+                    "type": "$util.alert",
+                    "options": {
+                      "title": "I said Mario!",
+                      "description": "Tap Mario, not the text."
+                    }
+                  }
+                },
+                {
+                  "type": "button",
+                  "url": "https://jasonette.github.io/Jasonpedia/assets/0.png",
+                  "style": {
+                    "width": "100"
+                  },
+                  "action": {
+                    "type": "$audio.play",
+                    "options": {
+                      "url": "https://raw.githubusercontent.com/gliechtenstein/Sounds/master/oh_no.mp3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "spacing": "10"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "text": "Label type buttons look like this in JSON:"
+                },
+                {
+                  "type": "label",
+                  "style": {
+                    "background": "#000000",
+                    "color": "#cecece",
+                    "size": "11",
+                    "padding": "10",
+                    "corner_radius": "3"
+                  },
+                  "text": "{\"type\": \"button\", \"text\": \"Tap Mario => \"}"
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "spacing": "10"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "text": "Image type buttons look like this in JSON:"
+                },
+                {
+                  "type": "label",
+                  "style": {
+                    "background": "#000000",
+                    "color": "#cecece",
+                    "size": "11",
+                    "padding": "10",
+                    "corner_radius": "3"
+                  },
+                  "text": "{\"type\": \"button\", \"url\": \"https://jasonette.github.io/Jasonpedia/assets/0.png\"}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
