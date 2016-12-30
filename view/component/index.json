@@ -109,6 +109,14 @@
               "href": {
                 "url": "https://jasonette.github.io/Jasonpedia/view/component/space/index.json"
               }
+            },
+            {
+              "type": "label",
+              "text": "common styling",
+              "class": "bold",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/view/component/style/index.json"
+              }
             }
           ]
         }

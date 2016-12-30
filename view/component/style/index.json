@@ -1,0 +1,32 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Common component styling",
+      "data": {
+        "items": [
+          { "type": "Opacity", "url": "https://jasonette.github.io/Jasonpedia/view/component/style/opacity.json" }
+        ]
+      },
+      "templates": {
+        "body": {
+          "sections": [{
+            "items": {
+              "{{#each items}}": {
+                "type": "label",
+                "style": {
+                  "padding": "10",
+                  "font": "HelveticaNeue-Bold",
+                  "size": "15"
+                },
+                "href": {
+                  "url": "{{url}}"
+                },
+                "text": "{{type}}"
+              }
+            }
+          }]
+        }
+      }
+    }
+  }
+}
