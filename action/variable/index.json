@@ -50,10 +50,7 @@
                   "type": "horizontal",
                   "components": [{
                     "type": "textfield",
-                    "name": "blank",
-                    "style": {
-                      "height": "30"
-                    }
+                    "name": "blank"
                   }, {
                     "type": "button",
                     "text": "Done",
