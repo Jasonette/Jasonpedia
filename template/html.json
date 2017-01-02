@@ -139,7 +139,7 @@
                             "font": "HelveticaNeue",
                             "size": "13"
                           },
-                          "text": "{{$(this).find('td.title .sitestr').text() + '   ' + $(this).next().find('.subtext').find(':nth-child(3)').text()}}"
+                          "text": "{{$(this).find('td.title .sitebit').text() + '   ' + $(this).next().find('.subtext').find(':nth-child(3)').text()}}"
                         }
                       ]
                     }
