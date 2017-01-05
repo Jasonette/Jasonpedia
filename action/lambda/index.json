@@ -1,0 +1,377 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Trigger demo",
+      "styles": {
+        "code": {
+          "background": "#646464",
+          "color": "#ffffff",
+          "size": "11",
+          "font": "Courier",
+          "padding": "10"
+        },
+        "header": {
+          "font": "HelveticaNeue-CondensedBold",
+          "size": "15",
+          "background": "#F2D608",
+          "color": "#000000"
+        }
+      },
+      "actions": {
+        "banner": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$jason.title}}",
+            "description": "{{$jason.description}}"
+          }
+        },
+        "banner2": {
+          "type": "$util.banner",
+          "options": "{{$jason}}"
+        },
+        "banner3": {
+          "type": "$util.banner",
+          "options": {
+            "title": "Banner3",
+            "description": "{{$jason.cats[0].status}}"
+          }
+        }
+      },
+      "data": {
+        "actions": {
+          "banner": {
+            "type": "$util.banner",
+            "options": {
+              "title": "{{$jason.title}}",
+              "description": "{{$jason.description}}"
+            }
+          },
+          "banner2": {
+            "type": "$util.banner",
+            "options": "{{$jason}}"
+          },
+          "banner3": {
+            "type": "$util.banner",
+            "options": {
+              "title": "Banner3",
+              "description": "{{$jason.cats[0].status}}"
+            }
+          }
+        },
+        "trigger_items": [
+          {
+            "action": {
+              "type": "$util.banner",
+              "options": {
+                "title": "Trigger",
+                "description": "it worked!"
+              }
+            }
+          },
+          {
+            "action": {
+              "trigger": "banner",
+              "options": {
+                "title": "Trigger",
+                "description": "it worked!"
+              }
+            }
+          },
+          {
+            "action": {
+              "trigger": "banner2",
+              "options": {
+                "title": "Trigger",
+                "description": "it worked!"
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$network.request",
+              "options": {
+                "url": "https://jasonbase.com/things/73g"
+              },
+              "success": {
+                "trigger": "banner3"
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$network.request",
+              "options": {
+                "url": "https://jasonbase.com/things/73g"
+              },
+              "success": {
+                "trigger": "banner2",
+                "options": {
+                  "title": "Banner2",
+                  "description": "{{$jason.cats[0].status}}"
+                }
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$network.request",
+              "options": {
+                "url": "https://jasonbase.com/things/73g"
+              },
+              "success": [
+                {
+                  "{{#if $jason && 'cats' in $jason}}": {
+                    "trigger": "banner2",
+                    "options": {
+                      "title": "Banner2",
+                      "description": "{{$jason.cats[0].status}}"
+                    }
+                  }
+                },
+                {
+                  "{{#else}}": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Error"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "items": [
+          {
+            "action": {
+              "type": "$util.banner",
+              "options": {
+                "title": "Trigger",
+                "description": "it worked!"
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$lambda",
+              "options": {
+                "name": "banner",
+                "options": {
+                  "title": "Trigger",
+                  "description": "it worked!"
+                }
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$lambda",
+              "options": {
+                "name": "banner2",
+                "options": {
+                  "title": "Trigger",
+                  "description": "it worked!"
+                }
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$network.request",
+              "options": {
+                "url": "https://jasonbase.com/things/73g"
+              },
+              "success": {
+                "type": "$lambda",
+                "options": {
+                  "name": "banner3"
+                }
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$network.request",
+              "options": {
+                "url": "https://jasonbase.com/things/73g"
+              },
+              "success": {
+                "type": "$lambda",
+                "options": {
+                  "name": "banner2",
+                  "options": {
+                    "title": "Banner2",
+                    "description": "{{$jason.cats[0].status}}"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "action": {
+              "type": "$network.request",
+              "options": {
+                "url": "https://jasonbase.com/things/73g"
+              },
+              "success": {
+                "type": "$lambda",
+                "options": [
+                  {
+                    "{{#if $jason && 'cats' in $jason}}": {
+                      "name": "banner2",
+                      "options": {
+                        "title": "Banner2",
+                        "description": "{{$jason.cats[0].status}}"
+                      }
+                    }
+                  },
+                  {
+                    "{{#else}}": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Error"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "$lambda + trigger",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/index.json",
+                "view": "web"
+              }
+            }
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "$lambda is a special purpose action that calls another action by name and handles its return values. You need to declare the action under $jason.head.actions and call it using $lambda.\n\n1. $lambda lets you pass an argument as 'options'.\n\n2. Once triggered, $lambda waits for the callee action to finish and return via $return.success or $return.error.\n\n3. When the callee action returns, the caller action continues its work by running its 'success' or 'error' actions with the return value received back from $lambda execution.",
+                  "style": {
+                    "size": "11"
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "vertical",
+                "class": "header",
+                "components": [
+                  {
+                    "type": "label",
+                    "text": "Action declarations",
+                    "class": "header"
+                  },
+                  {
+                    "type": "label",
+                    "text": "First, these are the actions declared under $jason.head.actions which we will trigger in the later sections",
+                    "style": {
+                      "size": "11"
+                    }
+                  }
+                ]
+              },
+              "items": [
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "code",
+                      "text": "{{JSON.stringify(actions, null, 2)}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "vertical",
+                "class": "header",
+                "components": [
+                  {
+                    "type": "label",
+                    "text": "Using the raw $lambda action (not recommended)",
+                    "class": "header"
+                  },
+                  {
+                    "type": "label",
+                    "text": "Try running the action by touching the code below",
+                    "style": {
+                      "size": "11"
+                    }
+                  }
+                ]
+              },
+              "items": {
+                "{{#each items}}": {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "action": "{{action}}",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "code",
+                      "text": "{{JSON.stringify(action, null, 2)}}"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "header": {
+                "type": "vertical",
+                "class": "header",
+                "components": [
+                  {
+                    "type": "label",
+                    "text": "Using the 'trigger' keyword (Recommended)",
+                    "class": "header"
+                  },
+                  {
+                    "type": "label",
+                    "text": "Try triggering the action by name by touching the code",
+                    "style": {
+                      "size": "11"
+                    }
+                  }
+                ]
+              },
+              "items": {
+                "{{#each trigger_items}}": {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "action": "{{action}}",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "code",
+                      "text": "{{JSON.stringify(action, null, 2)}}"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

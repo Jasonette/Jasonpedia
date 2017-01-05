@@ -361,6 +361,28 @@
         {
           "header": {
             "type": "label",
+            "text": "$lambda",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "Triggering a action by name and utilizing its return values",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
             "text": "Geo",
             "style": {
               "background": "#ebebeb"
