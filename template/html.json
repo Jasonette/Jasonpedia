@@ -7,18 +7,7 @@
           "trigger": "reload"
         },
         "$show": {
-          "type": "$timer.start",
-          "options": {
-            "interval": "30",
-            "repeats": "true",
-            "name": "timer",
-            "action": {
-              "trigger": "reload"
-            }
-          },
-          "success": {
-            "trigger": "reload"
-          }
+          "trigger": "reload"
         },
         "reload": {
           "type": "$network.request",
@@ -60,7 +49,7 @@
           "style": {
             "background": "rgb(246, 246, 239)",
             "color": "#000000",
-            "border": "0"
+            "border": "none"
           },
           "sections": [
             {
@@ -70,13 +59,15 @@
                   "background": "rgba(14,122,254,0.1)",
                   "padding": "20"
                 },
-                "components": [{
-                  "style": {
-                    "size": "12"
-                  },
-                  "type": "label",
-                  "text": "This demo parses an HTML content loaded from Hacker News (https://news.ycombinator.com) and renders it into native view"
-                }]
+                "components": [
+                  {
+                    "style": {
+                      "size": "12"
+                    },
+                    "type": "label",
+                    "text": "This demo parses an HTML content loaded from Hacker News (https://news.ycombinator.com) and renders it into native view"
+                  }
+                ]
               },
               "items": {
                 "{{#each $jason.find('tr.athing')}}": {
@@ -119,8 +110,7 @@
                     {
                       "type": "vertical",
                       "style": {
-                        "spacing": "5",
-                        "background": "#ff0000"
+                        "spacing": "5"
                       },
                       "components": [
                         {
