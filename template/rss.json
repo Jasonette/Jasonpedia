@@ -73,8 +73,7 @@
               "items": [
                 {
                   "type": "html",
-                  "css": "body{font-family: Courier; font-size: 18px;} img{max-width: 100%; border-bottom: 30px solid white !important;}",
-                  "text": "<body>{{summary.replace(/width[ ]*=[ ]*\"[^\"]*\"/gi, '').replace(/height[ ]*=[ ]*\"[^\"]*\"/gi, '')}}</body>"
+                  "text": "{{summary}}"
                 }
               ]
             }
