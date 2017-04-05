@@ -51,7 +51,8 @@
                   "style": {
                     "width": "60",
                     "height": "50",
-                    "color": "#ff0000"
+                    "color": "#ffffff",
+                    "background": "#0000ff"
                   },
                   "action": {
                     "type": "$util.banner",
@@ -73,8 +74,7 @@
                 {
                   "type": "textfield",
                   "style": {
-                    "secure": "true",
-                    "height": "50"
+                    "secure": "true"
                   },
                   "placeholder": "Secure field",
                   "name": "secure"
@@ -84,7 +84,8 @@
                   "text": "Done",
                   "style": {
                     "width": "60",
-                    "color": "#ff0000"
+                    "color": "#ffffff",
+                    "background": "#0000ff"
                   },
                   "action": {
                     "type": "$util.banner",
@@ -93,6 +94,23 @@
                       "description": "{{$get.secure}}"
                     }
                   }
+                }
+              ]
+            },
+                        {
+              "type": "horizontal",
+              "style": {
+                "background": "#ffffff",
+                "align": "center"
+              },
+              "components": [
+                {
+                  "type": "textfield",
+                  "style": {
+                    "border_color": "#000000"
+                  },
+                  "placeholder": "field with border",
+                  "name": "border"
                 }
               ]
             }
