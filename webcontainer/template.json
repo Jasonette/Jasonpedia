@@ -1,0 +1,43 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Web Container Background Template",
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "options": {
+            "template": "body"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "style": {
+              "background": {
+                "+": "$document.theme"
+              },
+              "color": "#ffffff"
+            },
+            "title": {
+              "+": "$document.title"
+            }
+          },
+          "style": {
+            "border": "none",
+            "color": "rgba(0,0,0,0)",
+            "background": {
+              "type": "html",
+              "text": {
+                "+": "$document.html"
+              },
+              "action": {
+                "+": "$document.action"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

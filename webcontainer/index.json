@@ -1,0 +1,80 @@
+{
+  "$jason": {
+    "head": {
+      "title": "HTML demo",
+      "data": {
+        "items": [
+          {
+            "name": "anime.js",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/animejs.json"
+          },
+          {
+            "name": "lots of web containers",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/lots.json"
+          },
+          {
+            "name": "pdf.js",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/pdf.json"
+          },
+          {
+            "name": "svg",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/svg.json"
+          },
+          {
+            "name": "three.js",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/threejsblocks.json"
+          },
+          {
+            "name": "three.js rainbow",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/threejsrainbow.json"
+          },
+          {
+            "name": "phaser",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/phasergame.json"
+          },
+          {
+            "name": "3000 particles",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/canvas.json"
+          },
+          {
+            "name": "Gauge D3",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/d3gauge.json"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "background": "#000000",
+            "color": "#ffffff",
+            "border": "none"
+          },
+          "header": {
+            "style": {
+              "background": "#000000",
+              "color": "#ffffff"
+            },
+            "title": "< ·ᴥ·>"
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each items}}": {
+                  "type": "html",
+                  "text": "<html><head><style>body{background:black;} .square{font-size: 20px; font-weight: light; font-family: 'Helvetica Neue', helvetica; display: inline-block; padding: 10px; border-radius: 20px; color:rgba(255,255,255,0.7);}</style><script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js'></script><script>var x=0; var y=0; var rotate=0; var move = function() {var el = document.querySelector('#domNode .el'); var domNode = anime({ targets: el, rotate: rotate}); if(rotate <= 15) {rotate=rotate+5;} else {rotate=0;} }; document.addEventListener('DOMContentLoaded', function(event) { setInterval(move, 1000); }); </script><body><div id='domNode'><div class='large square el'>{{name}}</div></div></body></html>",
+                  "style": {
+                    "height": "120",
+                    "color": "rgba(255,255,255,0.7)"
+                  },
+                  "href": {
+                    "url": "{{url}}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

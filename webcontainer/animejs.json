@@ -1,0 +1,132 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Anime.js Background with controllable UI",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "caption": " ",
+            "color": "#ffffff"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$pull": {
+          "type": "$set",
+          "options": {
+            "color": [
+              {
+                "{{#if 'color' in $get}}": "{{var letters = '0123456789ABCDEF'; var color = '#'; for (var i = 0; i < 6; i++ ) { color += letters[Math.floor(Math.random() * 16)]; } return color;}}"
+              },
+              {
+                "{{#else}}": "#ffffff"
+              }
+            ]
+          },
+          "success": {
+            "trigger": "update_color"
+          }
+        },
+        "update_color": {
+          "type": "$render"
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "style": {
+              "background": "rgba(0,0,0,0)",
+              "color": "{{$get.color}}"
+            },
+            "title": "Anime.js"
+          },
+          "footer": {
+            "input": {
+              "left": {
+                "image": "https://raw.githubusercontent.com/gliechtenstein/images/master/camera.png",
+                "style": {
+                  "color": "{{$get.color}}"
+                }
+              },
+              "textfield": {
+                "name": "caption",
+                "placeholder": "Enter text",
+                "action": {
+                  "type": "$render"
+                },
+                "style": {
+                  "corner_radius": "0",
+                  "color:placeholder": "rgba(255,255,255,0.6)",
+                  "color": "{{$get.color}}",
+                  "background": "#000000"
+                }
+              },
+              "style": {
+                "background": "#222222"
+              },
+              "right": {
+                "text": "Send",
+                "style": {
+                  "color": "{{$get.color}}"
+                },
+                "action": {
+                  "type": "$render"
+                }
+              }
+            }
+          },
+          "style": {
+            "border": "none",
+            "color": "rgba(0,0,0,0)",
+            "background": {
+              "type": "html",
+              "text": "<html><head><style>body{background:black;} .square{font-size: 20px; font-weight: bold; font-family: arial; display: inline-block; padding: 10px; border-radius: 20px; background: {{var color; if('color' in $get){ color=$get.color; } else {color='#ffffff';} return color; }};}</style><script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js'></script><script>var x=200; var y=200; var rotate=600; var move = function() {var el = document.querySelector('#domNode .el'); var domNode = anime({ targets: el, translateX: x, translateY: y, rotate: rotate}); x=Math.random()*screen.width; y=Math.random()*screen.height; rotate=Math.random()*600; }; document.addEventListener('DOMContentLoaded', function(event) { setInterval(move, 1000); }); </script><body><div id='domNode'><div class='large square el'>{{$get.caption}}</div></div></body></html>"
+            }
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "space",
+                  "style": {
+                    "height": "100"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "align": "center"
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "style": {
+                        "color": "{{$get.color}}",
+                        "align": "center",
+                        "height": "100"
+                      },
+                      "url": "https://raw.githubusercontent.com/gliechtenstein/images/master/swipe.png"
+                    }
+                  ]
+                },
+                {
+                  "type": "label",
+                  "text": "pull to\nrefresh color",
+                  "style": {
+                    "color": "{{$get.color}}",
+                    "align": "center",
+                    "font": "HelveticaNeue",
+                    "size": "20",
+                    "padding": "10"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

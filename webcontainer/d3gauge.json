@@ -1,0 +1,70 @@
+{
+  "$jason": {
+    "head": {
+      "title": "gauge d3",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "gauge": "0.1"
+          },
+          "success": {
+            "type": "$render",
+            "options": {
+              "template": "body"
+            }
+          }
+        },
+        "redraw": {
+          "type": "$render"
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "style": {
+              "background": "rgba(0,0,0,0)",
+              "color": "rgba(0,0,0,0)"
+            },
+            "title": "D3.js Gauge"
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "style": {
+                    "align": "center"
+                  },
+                  "components": [
+                    {
+                      "type": "slider",
+                      "name": "gauge",
+                      "style": {
+                        "width": "300",
+                        "color": "#ff0000"
+                      },
+                      "action": {
+                        "trigger": "redraw"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          "style": {
+            "border": "none",
+            "color": "rgba(0,0,0,0)",
+            "background": {
+              "type": "html",
+              "text": {
+                "+": "html@https://jasonette.github.io/Jasonpedia/webcontainer/gaugehtml.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "$jason": {
+    "head": {
+      "title": "attaching action to inline web container",
+      "actions": {
+        "banner": {
+          "type": "$util.banner",
+          "options": {
+            "title": "Touched",
+            "description": "{{$jason.id}}"
+          }
+        }
+      },
+      "data": {
+        "images": [
+          "https://image.shutterstock.com/z/stock-photo-businessman-climbing-stairs-ambitions-concept-602439413.jpg",
+          "https://image.shutterstock.com/z/stock-photo-image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-321651011.jpg",
+          "https://image.shutterstock.com/z/stock-photo-abstract-bokeh-background-297272828.jpg",
+          "https://image.shutterstock.com/z/stock-photo-sand-and-sea-and-sky-417655534.jpg",
+          "https://image.shutterstock.com/z/stock-photo-elegant-futuristic-light-and-reflection-with-grid-line-background-d-rendering-536582824.jpg",
+          "https://image.shutterstock.com/z/stock-photo-road-through-landscape-road-and-car-travel-scenic-and-sunset-road-travel-concept-car-travel-321745829.jpg"
+        ]
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": {
+                "{{#each images}}": {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "html",
+                      "style": {
+                        "height": "150"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "id": "top"
+                        }
+                      },
+                      "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url({{this}}); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                    },
+                    {
+                      "type": "horizontal",
+                      "style": {
+                        "spacing": "10",
+                        "padding": "10"
+                      },
+                      "components": [
+                        {
+                          "type": "html",
+                          "style": {
+                            "height": "50",
+                            "width": "50",
+                            "corner_radius": "25"
+                          },
+                          "action": {
+                            "trigger": "banner",
+                            "options": {
+                              "id": "avatar"
+                            }
+                          },
+                          "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url({{this}}); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "padding": "10",
+                            "spacing": "5"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Ethan",
+                              "style": {
+                                "font": "HelveticaNeue-Bold",
+                                "size": "14"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "Check out this video!",
+                              "style": {
+                                "font": "HelveticaNeue",
+                                "size": "12"
+                              }
+                            },
+                                                        {
+                              "type": "html",
+                              "style": {
+                                "height": "150"
+                              },
+                              "action": {
+                                "trigger": "banner",
+                                "options": {
+                                  "id": "medium top"
+                                }
+                              },
+                              "text": "<html><head><style>body{width: 100%; padding:0; margin:0;}</style></head><body>abcdefnedskfwefnkdsnfiewfn dskjf lsdkfjsd nsdf ksjdfksjdklfj sdfkjsldjf sdklfj sdlkjfdkls jlsjf slkf lksjdfl kjsdlkfj sljf lsjfdkl jsdfj sljkf lsjkfl jslkdfj lksjf kldsjflj slkjfd lsjdf </body></html>"
+                            },
+                            {
+                              "type": "html",
+                              "style": {
+                                "height": "150"
+                              },
+                              "action": {
+                                "trigger": "banner",
+                                "options": {
+                                  "id": "medium top"
+                                }
+                              },
+                              "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url({{this}}); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                            },
+                            {
+                              "type": "html",
+                              "style": {
+                                "height": "150"
+                              },
+                              "action": {
+                                "trigger": "banner",
+                                "options": {
+                                  "id": "medium top"
+                                }
+                              },
+                              "text": "<html><head><style>body{width: 100%; padding:0; margin:0;}</style></head><body>abcdefnedskfwefnkdsnfiewfn dskjf lsdkfjsd nsdf ksjdfksjdklfj sdfkjsldjf sdklfj sdlkjfdkls jlsjf slkf lksjdfl kjsdlkfj sljf lsjfdkl jsdfj sljkf lsjkfl jslkdfj lksjf kldsjflj slkjfd lsjdf </body></html>"
+                            },
+                            {
+                              "type": "horizontal",
+                              "components": [
+                                {
+                                  "type": "html",
+                                  "style": {
+                                    "width": "100",
+                                    "height": "150"
+                                  },
+                                  "action": {
+                                    "trigger": "banner",
+                                    "options": {
+                                      "id": "bottom left"
+                                    }
+                                  },
+                                  "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url({{this}}); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                                },
+                                {
+                                  "type": "space",
+                                  "style": {
+                                    "width": "10"
+                                  }
+                                },
+                                {
+                                  "type": "html",
+                                  "style": {
+                                    "height": "150"
+                                  },
+                                  "action": {
+                                    "trigger": "banner",
+                                    "options": {
+                                      "id": "bottom right"
+                                    }
+                                  },
+                                  "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url({{this}}); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
