@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Web Container Background Template",
-      "description": "template with action handler",
+      "description": "template without action handler",
       "actions": {
         "$load": {
           "type": "$render",
@@ -31,9 +31,6 @@
               "type": "html",
               "text": {
                 "+": "$document.html"
-              },
-              "action": {
-                "+": "$document.action"
               }
             }
           }
