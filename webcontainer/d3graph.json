@@ -1,0 +1,133 @@
+{
+  "$jason": {
+    "head": {
+      "title": "D3 graph app",
+      "actions": {
+        "$load": {
+          "trigger": "redraw"
+        },
+        "redraw": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://bl.ocks.org/mbostock/raw/3884955/data.tsv",
+            "data_type": "raw"
+          },
+          "success": {
+            "type": "$set",
+            "options": {
+              "tsv": "{{$jason.replace(/\\n/g, '\\\\n')}}"
+            },
+            "success": {
+              "type": "$render",
+              "options": {
+                "data_type": "raw"
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "style": {
+              "shy": "true",
+              "background": "#332017",
+              "color": "#ffffff"
+            },
+            "title": "D3.js graph"
+          },
+          "style": {
+            "border": "none",
+            "background": "#D7CCA9"
+          },
+          "sections": [
+            {
+              "header": {
+                "type": "label",
+                "text": "height 200",
+                "style": {
+                  "background": "#D7CCA9"
+                }
+              },
+              "items": [
+                {
+                  "type": "html",
+                  "style": {
+                    "height": "200",
+                    "padding": "0"
+                  },
+                  "text": {
+                    "+": "html@https://jasonette.github.io/Jasonpedia/webcontainer/d3html.json"
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "height 300",
+                "style": {
+                  "background": "#D7CCA9"
+                }
+              },
+              "items": [
+                {
+                  "type": "html",
+                  "style": {
+                    "height": "300",
+                    "padding": "0"
+                  },
+                  "text": {
+                    "+": "html@https://jasonette.github.io/Jasonpedia/webcontainer/d3html.json"
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "height 400",
+                "style": {
+                  "background": "#D7CCA9"
+                }
+              },
+              "items": [
+                {
+                  "type": "html",
+                  "style": {
+                    "height": "400",
+                    "padding": "0"
+                  },
+                  "text": {
+                    "+": "html@https://jasonette.github.io/Jasonpedia/webcontainer/d3html.json"
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "height 500",
+                "style": {
+                  "background": "#D7CCA9"
+                }
+              },
+              "items": [
+                {
+                  "type": "html",
+                  "style": {
+                    "height": "500",
+                    "padding": "0"
+                  },
+                  "text": {
+                    "+": "html@https://jasonette.github.io/Jasonpedia/webcontainer/d3html.json"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
