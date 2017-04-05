@@ -1,0 +1,57 @@
+{
+  "type": "horizontal",
+  "style": {
+    "spacing": "10",
+    "padding": "10"
+  },
+  "components": [
+    {
+      "type": "image",
+      "url": "{{avatar}}",
+      "style": {
+        "width": "50",
+        "corner_radius": "25"
+      }
+    },
+    {
+      "type": "vertical",
+      "style": {
+        "padding": "10",
+        "spacing": "5"
+      },
+      "components": [
+        {
+          "type": "label",
+          "text": "{{username}}",
+          "style": {
+            "font": "HelveticaNeue-Bold",
+            "size": "14"
+          }
+        },
+        {
+          "type": "label",
+          "text": "{{status}}",
+          "style": {
+            "font": "HelveticaNeue",
+            "size": "12"
+          }
+        },
+        {
+          "type": "space",
+          "style": {
+            "height": "20"
+          }
+        },
+        {
+          "type": "html",
+          "style": {
+            "height": "280",
+            "width": "280",
+            "corner_radius": "140"
+          },
+          "text": "{{embed}}"
+        }
+      ]
+    }
+  ]
+}

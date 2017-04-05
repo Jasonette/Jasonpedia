@@ -1,0 +1,31 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Feed",
+      "data": {
+        "items": {
+          "+": "https://jasonette.github.io/Jasonpedia/webcontainer/feed/db.json"
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "the feed",
+            "style": {
+              "theme": "dark"
+            }
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each items}}": {
+                  "+": "https://jasonette.github.io/Jasonpedia/webcontainer/feed/item.json"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

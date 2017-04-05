@@ -33,20 +33,16 @@
             "url": "https://jasonette.github.io/Jasonpedia/webcontainer/phasergame.json"
           },
           {
-            "name": "3000 particles",
-            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/canvas.json"
-          },
-          {
             "name": "Gauge D3",
             "url": "https://jasonette.github.io/Jasonpedia/webcontainer/d3gauge.json"
           },
           {
-            "name": "Iframe App",
-            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/iframe.json"
-          },
-          {
             "name": "D3 graph",
             "url": "https://jasonette.github.io/Jasonpedia/webcontainer/d3graph.json"
+          },
+          {
+            "name": "Feed",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/feed/index.json"
           }
         ]
       },
