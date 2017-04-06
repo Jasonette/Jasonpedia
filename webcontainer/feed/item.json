@@ -45,18 +45,7 @@
         [{
           "{{#if interactive == 'true'}}": {
             "type": "html",
-            "style": [{
-              "{{#if rounded == 'true'}}": {
-                "height": "280",
-                "width": "280",
-                "corner_radius": "140"
-              }
-            }, {
-              "{{#else}}": {
-                "height": "280",
-                "width": "280"
-              } 
-            }],
+            "style": "{{style}}",
             "text": "{{embed}}",
             "action": {
               "type": "$default"
@@ -65,18 +54,7 @@
         }, {
           "{{#else}}": {
             "type": "html",
-            "style": [{
-              "{{#if rounded == 'true'}}": {
-                "height": "280",
-                "width": "280",
-                "corner_radius": "140"
-              }
-            }, {
-              "{{#else}}": {
-                "height": "280",
-                "width": "280"
-              } 
-            }],
+            "style": "{{style}}",
             "text": "{{embed}}"
           }
         }]

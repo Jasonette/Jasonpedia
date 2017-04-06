@@ -4,7 +4,7 @@
       "title": "Feed",
       "data": {
         "items": {
-          "+": "https://jasonette.github.io/Jasonpedia/webcontainer/feed/db.json"
+          "+": "items@https://jasonette.github.io/Jasonpedia/webcontainer/feed/db.json"
         }
       },
       "templates": {
@@ -22,6 +22,13 @@
                   "+": "https://jasonette.github.io/Jasonpedia/webcontainer/feed/item.json"
                 }
               }
+            },
+            {
+              "items": [{
+                "+": "item@https://jasonette.github.io/Jasonpedia/webcontainer/feed/special_item.json"
+              }, {
+                "+": "item@https://jasonette.github.io/Jasonpedia/webcontainer/feed/animated_item.json"
+              }]
             }
           ]
         }

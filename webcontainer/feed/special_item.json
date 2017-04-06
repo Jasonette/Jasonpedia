@@ -1,0 +1,84 @@
+{
+  "item": {
+    "type": "vertical",
+    "components": [
+      {
+        "type": "html",
+        "style": {
+          "height": "150"
+        },
+        "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url(http://astute.co/wp-content/uploads/2014/11/stock-photography.jpg); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+      },
+      {
+        "type": "horizontal",
+        "style": {
+          "spacing": "10",
+          "padding": "10"
+        },
+        "components": [
+          {
+            "type": "html",
+            "style": {
+              "height": "100",
+              "width": "100",
+              "corner_radius": "50"
+            },
+            "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url(http://astute.co/wp-content/uploads/2014/11/stock-photography.jpg); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+          },
+          {
+            "type": "vertical",
+            "style": {
+              "padding": "10",
+              "spacing": "5"
+            },
+            "components": [
+              {
+                "type": "label",
+                "text": "Ethan",
+                "style": {
+                  "font": "HelveticaNeue-Bold",
+                  "size": "14"
+                }
+              },
+              {
+                "type": "label",
+                "text": "Check out this video!",
+                "style": {
+                  "font": "HelveticaNeue",
+                  "size": "12"
+                }
+              },
+              {
+                "type": "html",
+                "style": {
+                  "height": "150"
+                },
+                "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url(http://astute.co/wp-content/uploads/2014/11/stock-photography.jpg); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+              },
+              {
+                "type": "horizontal",
+                "components": [
+                  {
+                    "type": "html",
+                    "style": {
+                      "width": "100",
+                      "height": "150"
+                    },
+                    "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url(http://astute.co/wp-content/uploads/2014/11/stock-photography.jpg); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                  },
+                  {
+                    "type": "html",
+                    "style": {
+                      "height": "150"
+                    },
+                    "text": "<html><head><style>body{width: 100%; padding:0; margin:0;} h1{font-size: 20px; font-family: arial; width: 100%; height: 100%; color: white; background:url(http://astute.co/wp-content/uploads/2014/11/stock-photography.jpg); background-size: cover; padding: 10px;}</style></head><body><h1>Sunset</h1></body></html>"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

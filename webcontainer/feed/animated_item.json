@@ -1,0 +1,15 @@
+{
+  "item": {
+    "type": "vertical",
+    "style": {
+      "padding": "0",
+      "height": "400"
+    },
+    "components": [
+      {
+        "type": "html",
+        "text": "<html><head><style>.square{background: red; width: 50px; height: 50px;}</style><script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js'></script><script>var x=200; var move = function() {var el = document.querySelector('#domNode .el'); var domNode = anime({ targets: el, translateX: x, translateY: x}); x=200-x;}; document.addEventListener('DOMContentLoaded', function(event) { setInterval(move, 1000); }); </script><body><div id='domNode'><div class='large square el'></div></div></body></html>"
+      }
+    ]
+  }
+}
