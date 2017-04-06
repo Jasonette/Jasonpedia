@@ -42,15 +42,44 @@
             "height": "20"
           }
         },
-        {
-          "type": "html",
-          "style": {
-            "height": "280",
-            "width": "280",
-            "corner_radius": "140"
-          },
-          "text": "{{embed}}"
-        }
+        [{
+          "{{#if interactive == 'true'}}": {
+            "type": "html",
+            "style": [{
+              "{{#if rounded == 'true'}}": {
+                "height": "280",
+                "width": "280",
+                "corner_radius": "140"
+              }
+            }, {
+              "{{#else}}": {
+                "height": "280",
+                "width": "280"
+              } 
+            }],
+            "text": "{{embed}}",
+            "action": {
+              "type": "$default"
+            }
+          }
+        }, {
+          "{{#else}}": {
+            "type": "html",
+            "style": [{
+              "{{#if rounded == 'true'}}": {
+                "height": "280",
+                "width": "280",
+                "corner_radius": "140"
+              }
+            }, {
+              "{{#else}}": {
+                "height": "280",
+                "width": "280"
+              } 
+            }],
+            "text": "{{embed}}"
+          }
+        }]
       ]
     }
   ]
