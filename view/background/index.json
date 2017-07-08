@@ -122,6 +122,55 @@
                   "type": "$render"
                 }
               }
+            },
+            {
+              "type": "label",
+              "text": "Camera",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#ffffff",
+                "right": "20",
+                "padding": "10",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "70"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": {
+                    "type": "camera",
+                    "options": {
+                      "device": "back"
+                    }
+                  }
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "Mirror",
+              "style": {
+                "background": "rgba(0,0,0,0.7)",
+                "color": "#ffffff",
+                "right": "20",
+                "padding": "10",
+                "font": "HelveticaNeue-Bold",
+                "bottom": "20"
+              },
+              "action": {
+                "type": "$set",
+                "options": {
+                  "bg": {
+                    "type": "camera"
+                  }
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
             }
           ]
         }
