@@ -90,7 +90,7 @@
             "action": {
               "type": "$network.request",
               "options": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/cat.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/cat.json"
               },
               "success": {
                 "trigger": "banner3"
@@ -101,7 +101,7 @@
             "action": {
               "type": "$network.request",
               "options": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/cat.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/cat.json"
               },
               "success": {
                 "trigger": "banner2",
@@ -116,7 +116,7 @@
             "action": {
               "type": "$network.request",
               "options": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/cat.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/cat.json"
               },
               "success": [
                 {
@@ -178,7 +178,7 @@
             "action": {
               "type": "$network.request",
               "options": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/cat.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/cat.json"
               },
               "success": {
                 "type": "$lambda",
@@ -192,7 +192,7 @@
             "action": {
               "type": "$network.request",
               "options": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/cat.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/cat.json"
               },
               "success": {
                 "type": "$lambda",
@@ -210,7 +210,7 @@
             "action": {
               "type": "$network.request",
               "options": {
-                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/lambda/cat.json"
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/cat.json"
               },
               "success": {
                 "type": "$lambda",
