@@ -12,7 +12,7 @@
         "reload": {
           "type": "$network.request",
           "options": {
-            "url": "http://feeds.gawker.com/lifehacker/full",
+            "url": "https://pitchfork.com/rss/reviews/albums/",
             "dataType": "rss"
           },
           "success": {
@@ -72,8 +72,8 @@
               },
               "items": [
                 {
-                  "type": "html",
-                  "text": "{{summary}}"
+                  "type": "image",
+                  "url": "{{image.url}}"
                 }
               ]
             }
