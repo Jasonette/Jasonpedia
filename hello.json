@@ -12,11 +12,6 @@
       }
     },
     "body": {
-      "header": {
-        "style": {
-          "background": "#ffffff"
-        }
-      },
       "style": {
         "background": "#ffffff",
         "border": "none"
