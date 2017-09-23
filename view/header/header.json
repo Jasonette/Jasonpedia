@@ -1,0 +1,68 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Header",
+      "data": {
+        "items": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "background": "#222222",
+            "border": "none"
+          },
+          "header": {
+            "title": "Header/No Header Test",
+            "style": {
+              "background": "#ff0000",
+              "color": "#ffffff"
+            }
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each items}}": {
+                  "type": "label",
+                  "text": "{{this}}",
+                  "style": {
+                    "color": "#ffffff",
+                    "size": "40",
+                    "padding": "20",
+                    "align": "right"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

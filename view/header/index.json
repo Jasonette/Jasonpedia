@@ -47,7 +47,22 @@
             }
           }
         }
-      }
+      },
+      "sections": [{
+        "items": [{
+          "type": "label",
+          "text": "With header",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/header/header.json"
+          }
+        }, {
+          "type": "label",
+          "text": "No header",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/header/noheader.json"
+          }
+        }]
+      }]
     }
   }
 }
