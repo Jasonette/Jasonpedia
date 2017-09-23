@@ -25,6 +25,16 @@
       },
       "templates": {
         "body": {
+          "header": {
+            "title": "he.js decoding example",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/script/hejs/index.json",
+                "view": "web"
+              }
+            }
+          },
           "sections": [
             {
               "items": [

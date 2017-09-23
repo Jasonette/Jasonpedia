@@ -37,7 +37,14 @@
       "templates": {
         "body": {
           "header": {
-            "title": "Underscore.js Test"
+            "title": "Underscore.js Test",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/index.json",
+                "view": "web"
+              }
+            }
           },
           "sections": [
             {

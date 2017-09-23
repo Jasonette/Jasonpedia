@@ -8,7 +8,7 @@
           "options": {
             "items": [
               {
-                "text": "var randomcolor = function() { return '#'+Math.floor(Math.random()*16777215).toString(16);"
+                "text": "var randomcolor = function() { return '#'+Math.floor(Math.random()*16777215).toString(16); }"
               }
             ]
           },
@@ -40,7 +40,14 @@
               "color": "{{$jason.color}}",
               "background": "{{$jason.background}}"
             },
-            "title": "Pull to change to random color"
+            "title": "Pull to change to random color",
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/script/inline/index.json",
+                "view": "web"
+              }
+            }
           },
           "layers": [
             {
