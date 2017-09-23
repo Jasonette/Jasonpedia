@@ -9,6 +9,9 @@
       },
       "templates": {
         "body": {
+          "header": {
+            "title": "Result"
+          },
           "sections": [
             {
               "items": [
