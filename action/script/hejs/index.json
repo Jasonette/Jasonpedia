@@ -1,0 +1,46 @@
+{
+  "$jason": {
+    "head": {
+      "title": "he.js encoding Test",
+      "actions": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "url": "https://rawgit.com/mathiasbynens/he/master/he.js"
+              }
+            ]
+          },
+          "success": {
+            "type": "$set",
+            "options": {
+              "caption": "prisoner&#39;s dilemma"
+            },
+            "success": {
+              "type": "$render"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "[BEFORE DECODING] {{$get.caption}}"
+                },
+                {
+                  "type": "label",
+                  "text": "[AFTER DECODING] {{he.decode($get.caption)}}"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

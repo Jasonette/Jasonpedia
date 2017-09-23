@@ -405,6 +405,28 @@
         {
           "header": {
             "type": "label",
+            "text": "JavaScript",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$script.include",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/script/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
             "text": "Timer",
             "style": {
               "background": "#ebebeb"

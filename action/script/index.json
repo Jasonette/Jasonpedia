@@ -1,0 +1,86 @@
+{
+  "$jason": {
+    "head": {
+      "title": "$network",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      },
+      "data": {
+        "items": [{
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/hejs/index.json",
+          "title": "he.js",
+          "description": "html text encoding/decoding library"
+        }, {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/index.json",
+          "title": "underscore.js",
+          "description": "popular util library for manipulating data"
+        }, {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/inline/index.json",
+          "title": "Inline JavaScript Usage",
+          "description": "You can also include a JavaScript code inline using $script.include"
+        }]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/script/index.json",
+                "view": "web"
+              }
+            }
+          },
+          "sections": [
+            {
+              "header": {
+                "type": "horizontal",
+                "style": {
+                  "background": "rgba(14,122,254,0.1)",
+                  "padding": "20"
+                },
+                "components": [{
+                  "style": {
+                    "size": "12"
+                  },
+                  "type": "label",
+                  "text": "$script.include action lets you include remote/local/inline JavaScript into the template context so you can use them within the template"
+                }]
+              },
+              "items": {
+                "{{#each items}}": {
+                  "type": "vertical",
+                  "href": {
+                    "url": "{{url}}",
+                    "transition": "modal"
+                  },
+                  "components": [{
+                    "type": "label",
+                    "class": "bold",
+                    "text": "{{title}}"
+                  }, {
+                    "type": "label",
+                    "class": "normal",
+                    "text": "{{description}}"
+                  }]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

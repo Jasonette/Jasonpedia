@@ -1,0 +1,62 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Inline JS  Test",
+      "actions": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var randomcolor = function() { return '#'+Math.floor(Math.random()*16777215).toString(16);"
+              }
+            ]
+          },
+          "success": {
+            "trigger": "draw"
+          }
+        },
+        "$pull": {
+          "trigger": "draw"
+        },
+        "draw": {
+          "type": "$render",
+          "options": {
+            "data": {
+              "color": "{{randomcolor()}}",
+              "background": "{{randomcolor()}}"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "color": "{{$jason.color}}",
+            "background": "{{$jason.background}}"
+          },
+          "header": {
+            "style": {
+              "color": "{{$jason.color}}",
+              "background": "{{$jason.background}}"
+            },
+            "title": "Pull to change to random color"
+          },
+          "layers": [
+            {
+              "type": "label",
+              "text": "{{$jason.background}}",
+              "style": {
+                "align": "center",
+                "size": "40",
+                "height": "100",
+                "top": "50%-50",
+                "color": "{{$jason.color}}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

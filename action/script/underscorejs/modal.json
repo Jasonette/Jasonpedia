@@ -1,0 +1,33 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Code Modal",
+      "actions": {
+        "$load": {
+          "type": "$render"
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "{{JSON.stringify($params.code, null, 2)}}",
+                  "style": {
+                    "padding": "10",
+                    "background": "#222222",
+                    "color": "rgba(255,255,255,0.8)",
+                    "font": "courier",
+                    "size": "12"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

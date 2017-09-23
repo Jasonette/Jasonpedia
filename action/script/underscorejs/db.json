@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "title": "_.where",
+      "code": {
+        "type": "$href",
+        "options": {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/modal.json",
+          "options": {
+            "code": "{{$root._.where([{title: 'Harry Potter and the Sorcerer\\'s Stone', author: 'J. K. Rowling'}, {title: 'Cymbeline', author: 'Shakespeare', year: 1611}, {title: 'Fifty Shades of Grey', author: 'E. L. James'}, {title: 'The Machine Stops', author: 'E. M. Forster'}, {title: 'The Tempest', author: 'Shakespeare', year: 1611}], {author: 'Shakespeare'})}}"
+          }
+        }
+      }
+    },
+    {
+      "title": "_.every 'true' case",
+      "code": {
+        "type": "$href",
+        "options": {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/modal.json",
+          "options": {
+            "code": "Is every item in [1,2,3,4] a number? : {{ $root._.every([1,2,3,4], function(num) { return typeof num === 'number'; }).toString() }}"
+          }
+        }
+      }
+    },
+    {
+      "title": "_.every 'false' case",
+      "code": {
+        "type": "$href",
+        "options": {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/modal.json",
+          "options": {
+            "code": "Is every item in [1,'a',3,4] a number? : {{ $root._.every([1,'a',3,4], function(num) { return typeof num === 'number'; }).toString() }}"
+          }
+        }
+      }
+    },
+    {
+      "title": "_.indexBy",
+      "code": {
+        "type": "$href",
+        "options": {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/modal.json",
+          "options": {
+            "code": "{{$root._.indexBy([{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}], 'age')}}"
+          }
+        }
+      }
+    },
+    {
+      "title": "_.uniq",
+      "code": {
+        "type": "$href",
+        "options": {
+          "url": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/modal.json",
+          "options": {
+            "code": "{{$root._.uniq([1,1,2,2,3,3,3,3,4,5,6,6,6,6,6,6,6,6,6,7]).toString()}}"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Underscore.js Test",
+      "actions": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "url": "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+              }
+            ]
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "styles": {
+        "code": {
+          "padding": "10",
+          "size": "12",
+          "background": "#222222",
+          "color": "rgba(255,255,255,0.8)",
+          "font": "courier"
+        },
+        "title": {
+          "background": "#222222",
+          "color": "#8f9d6a",
+          "padding": "10"
+        }
+      },
+      "data": {
+        "@": "https://jasonette.github.io/Jasonpedia/action/script/underscorejs/db.json"
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Underscore.js Test"
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each tests}}": {
+                  "type": "vertical",
+                  "action": "{{code}}",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "{{title}}",
+                      "class": "title"
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{JSON.stringify(code, null, 2)}}",
+                      "class": "code"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
