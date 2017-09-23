@@ -53,13 +53,13 @@
           "type": "label",
           "text": "With header",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/header/header.json"
+            "url": "https://jasonette.github.io/Jasonpedia/view/header/header.json"
           }
         }, {
           "type": "label",
           "text": "No header",
           "href": {
-            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/view/header/noheader.json"
+            "url": "https://jasonette.github.io/Jasonpedia/view/header/noheader.json"
           }
         }]
       }]
