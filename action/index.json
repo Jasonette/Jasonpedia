@@ -317,6 +317,28 @@
         {
           "header": {
             "type": "label",
+            "text": "Barcode & QRCode scanning",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$vision",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/vision/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
             "text": "$network & $session",
             "style": {
               "background": "#ebebeb"

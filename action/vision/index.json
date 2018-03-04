@@ -1,0 +1,106 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Barcode Testing with inline update",
+      "actions": {
+        "$vision.ready": {
+          "trigger": "qr"
+        },
+        "$load": {
+          "type": "$set",
+          "options": {
+            "content": "Scanning..."
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$vision.onscan": {
+          "type": "$set",
+          "options": {
+            "content": "{{$jason.content}}"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$timer.start",
+              "options": {
+                "interval": "1",
+                "name": "timer1",
+                "action": {
+                  "trigger": "qr2"
+                }
+              }
+            }
+          }
+        },
+        "qr": {
+          "type": "$set",
+          "options": {
+            "content": "Scanning..."
+          },
+          "success": {
+            "type": "$vision.scan",
+            "success": {
+              "type": "$render"
+            }
+          }
+        },
+        "qr2": {
+          "type": "$vision.scan",
+          "options": {
+            "type": "qrcode"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "View JSON",
+              "href": {
+                "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/vision/index.json",
+                "view": "web"
+              }
+            }
+          },
+          "style": {
+            "border": "none"
+          },
+          "background": {
+            "type": "camera",
+            "options": {
+              "device": "back"
+            }
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "href": {
+                    "url": "{{$get.content}}",
+                    "transition": "modal"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "{{$get.content}}",
+                      "style": {
+                        "color": "#ffffff",
+                        "font": "Courier",
+                        "size": "16",
+                        "padding": "10",
+                        "background": "rgba(0,0,0,0.2)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
