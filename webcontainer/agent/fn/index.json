@@ -29,7 +29,7 @@
             "placeholder": "Type something"
           },
           "right": {
-            "text": "Update",
+            "text": "Generate",
             "action": { "trigger": "qr" }
           }
         }
