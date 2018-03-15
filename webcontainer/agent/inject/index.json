@@ -15,12 +15,15 @@
               {
                 "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/inject/injection.js"
               }
-            }
+            ]
           }
         }
       }
     },
     "body": {
+      "header": {
+        "title": "Pull to refresh injection"
+      },
       "background": {
         "type": "html",
         "url": "https://twitter.com/search?f=tweets&vertical=default&q=coffee&src=typd"

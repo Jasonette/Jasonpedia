@@ -15,6 +15,9 @@
       }
     },
     "body": {
+      "header": {
+        "title": "Generate QR Code"
+      },
       "background": {
         "type": "html",
         "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/fn/agent.html"
