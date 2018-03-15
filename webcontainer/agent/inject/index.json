@@ -26,7 +26,7 @@
       },
       "background": {
         "type": "html",
-        "url": "https://twitter.com/search?f=tweets&vertical=default&q=coffee&src=typd",
+        "url": "https://coinmarketcap.com",
         "action": {
           "type": "$default"
         }
