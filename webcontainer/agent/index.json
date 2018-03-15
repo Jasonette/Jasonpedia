@@ -23,6 +23,11 @@
             "title": "Jasonette => Web Container $agent function call",
             "description": "The $jason.body.background web container is implemented as an agent. This means it supports all $agent APIs between Jasonette core and the container",
             "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/fn/index.json"
+          },
+          {
+            "title": "Hybrid App",
+            "description": "Blur the line between web and native by seamlessly crossing over between native JASON view and web containers. In this case we use jasonbase.com to demonstrate this",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/hybrid.json"
           }
         ]
       },
