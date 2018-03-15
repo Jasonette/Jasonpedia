@@ -1,0 +1,48 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Selective URL handling",
+      "description": "By attaching an action called 'visit' and observing the $jason.url value, we can selectively trigger different actions depending on the clicked URL. In this case the browser demonstrates a regular behavior when you click the top menu items, but does a native $href transition if you click any other link",
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "visit": [
+          {
+            "{{#if /\\/(newest|newcomments|show|ask|jobs|submit)$/.test($jason.url) }}": {
+              "type": "$default"
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$href",
+              "options": {
+                "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/hijack.json",
+                "preload": {
+                  "background": "#ffffff"
+                },
+                "options": {
+                  "url": "{{$jason.url}}"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Custom Browser"
+          },
+          "background": {
+            "type": "html",
+            "url": "{{'url' in $params ? $params.url : 'https://news.ycombinator.com'}}",
+            "action": {
+              "trigger": "visit"
+            }
+          }
+        }
+      }
+    }
+  }
+}

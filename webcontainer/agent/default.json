@@ -1,0 +1,20 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Behave like a regular browser",
+      "description": "The web container will behave like a regular browser, refreshing content when you click a link"
+    },
+    "body": {
+      "header": {
+        "title": "Regular Browser"
+      },
+      "background": {
+        "type": "html",
+        "url": "https://news.ycombinator.com",
+        "action": {
+          "type": "$default"
+        }
+      }
+    }
+  }
+}

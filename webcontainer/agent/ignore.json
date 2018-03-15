@@ -1,0 +1,17 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Ignore User Interaction",
+      "description": "Nothing will happen when you touch the web view or try to scroll"
+    },
+    "body": {
+      "header": {
+        "title": "Unbrowsable Browser"
+      },
+      "background": {
+        "type": "html",
+        "url": "https://news.ycombinator.com"
+      }
+    }
+  }
+}

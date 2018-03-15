@@ -1,0 +1,36 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Jasonette => Web Container $agent function call",
+      "description": "This example takes user input from native body.footer.input component and sends it to the web container, calling the qr code update function",
+      "actions": {
+        "qr": {
+          "type": "$agent.request",
+          "options": {
+            "id": "$webcontainer",
+            "method": "qr",
+            "params": ["{{$get.val}}"]
+          }
+        }
+      }
+    },
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/fn/agent.html"
+      },
+      "footer": {
+        "input": {
+          "textfield": {
+            "name": "val",
+            "placeholder": "Type something"
+          },
+          "right": {
+            "text": "Update",
+            "action": { "trigger": "qr" }
+          }
+        }
+      }
+    }
+  }
+}

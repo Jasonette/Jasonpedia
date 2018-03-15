@@ -1,0 +1,30 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Jasonette => Web Container $agent function call",
+      "description": "This example takes user input from native body.footer.input component and sends it to the web container, calling the qr code update function",
+      "actions": {
+        "$load": {
+          "type": "$agent.inject",
+          "options": {
+            "id": "$webcontainer",
+            "items": [
+              {
+                "url": "https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.7/pulltorefresh.js"
+              },
+              {
+                "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/inject/injection.js"
+              }
+            }
+          }
+        }
+      }
+    },
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "https://twitter.com/search?f=tweets&vertical=default&q=coffee&src=typd"
+      }
+    }
+  }
+}

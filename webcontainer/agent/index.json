@@ -1,0 +1,70 @@
+{
+  "$jason": {
+    "head": {
+      "title": "$jason.body.background web container (agent)",
+      "data": {
+        "items": [
+          {
+            "title": "Ignore All User Interaction",
+            "description": "By default all web containers ignore user interaction such as touch or scroll",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/ignore.json"
+          },
+          {
+            "title": "$default Link Click Handling",
+            "description": "Setting type: $default as the action will let the web container behave like a regular browser",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/default.json"
+          },
+          {
+            "title": "Selective Link Click Handling via native jasonette action",
+            "description": "You can set an action attribute to handle link clicks",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/hijack.json"
+          },
+          {
+            "title": "Jasonette => Web Container $agent function call",
+            "description": "The $jason.body.background web container is implemented as an agent. This means it supports all $agent APIs between Jasonette core and the container",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/fn/index.json"
+          },
+          {
+            "title": "$agent.inject into web container",
+            "description": "You can inject 3rd party JavaScript files into existing web containers. This example demonstrates injection of pull to refresh behavior",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/inject/index.json"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Web Container Agent"
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each items}}": {
+                  "type": "vertical",
+                  "components": [{
+                    "type": "label",
+                    "text": "{{title}}",
+                    "style": {
+                      "font": "HelveticaNeue-Bold",
+                      "size": "14"
+                    }
+                  }, {
+                    "type": "label",
+                    "text": "{{description}}",
+                    "style": {
+                      "font": "HelveticaNeue",
+                      "size": "12"
+                    }
+                  }],
+                  "href": {
+                    "url": "{{url}}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

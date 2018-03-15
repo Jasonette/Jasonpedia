@@ -5,6 +5,10 @@
       "data": {
         "items": [
           {
+            "name": "Agent",
+            "url": "https://jasonette.github.io/Jasonpedia/webcontainer/agent/index.json"
+          },
+          {
             "name": "anime.js",
             "url": "https://jasonette.github.io/Jasonpedia/webcontainer/animejs.json"
           },

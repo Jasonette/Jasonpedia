@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#qr {
+  padding-top: 100px;
+}
+#qr img {
+  width: 100%;
+}
+</style>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script>
+var img;
+window.onload = function() {
+  img = new QRCode(document.querySelector("#qr"), "");
+}
+var qr = function(val) {
+  img.makeCode(val);
+}
+</script>
+</head>
+<body>
+<div id='qr'></div>
+</body>
+</html>
